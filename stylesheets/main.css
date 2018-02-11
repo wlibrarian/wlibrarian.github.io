@@ -1,0 +1,79 @@
+@media only screen and (max-width: 114ch) {
+    #top, main, header, nav {
+        min-width: 0em!important;
+        max-width: none!important;
+        display: block!important;
+    }
+    #top {
+        padding: 5% 1em 0em 1em!important;
+    }
+    main {
+        width: auto!important;
+        margin: auto!important;
+    }
+}
+
+body {
+    font: 1.2em/1.62 Lato, Helvetica, Arial, sans-serif;
+    width: 100%;
+    margin: 1em auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-weight: 400;
+}
+
+emph {
+    font-style: italic;
+}
+
+main {
+    max-width: 40cm;
+    width: 80%;
+    min-width: 81ch;
+    margin: 1em auto;
+}
+
+header {
+    background-color: #FFC0CB;
+}
+
+#top {
+    min-width: 80ch;
+    max-width: 80%;
+    padding-left: auto;
+    padding-right: auto;
+    margin: auto;
+    padding-top: 5%;
+    display: block;
+}
+
+#logo {
+    direction: rtl;
+    margin: auto;
+}
+
+object {
+    max-width: 80%;
+    max-height: 3em;
+}
+
+nav {
+    height: auto;
+    margin: auto;
+    width: auto;
+    padding: 0.5ch 2ch;
+    background-color: #FF8197;
+}
+
+.fill {
+    flex-grow: 1;
+}
+
+.nav {
+    color: #555555;
+    text-decoration: none;
+}

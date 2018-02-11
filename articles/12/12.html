@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>Librarian Online - 
+Adventures in Recreational Mathematics: Volume II
+</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://librarian.cf/stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="https://librarian.cf/stylesheets/article.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id='top'>
+        <a href="https://librarian.cf" style="display: block;">
+        <div id='logo'>
+            <object style="pointer-events: none;" type="image/svg+xml" data="https://librarian.cf/media/logo.svg">Your browser does not support SVG</object>
+        </div>
+        </a>
+        <nav>
+            <a href="https://librarian.cf/" class="nav">Home</a> &vellip;
+            <a href="https://librarian.cf/d.html" class="nav">Dialectic</a> &vellip;
+            <a href="https://librarian.cf/r.html" class="nav">Review</a> &vellip;
+            <a href="https://librarian.cf/s.html" class="nav">Sciences and mathematics</a> &vellip;
+            <a href="https://librarian.cf/i.html" class="nav">Issues</a> &vellip;
+            <a href="https://librarian.cf/l.html" class="nav">Letters</a> &vellip;
+            <a href="https://librarian.cf/e.html" class="nav">Editorial</a>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <aside class="fill"></aside>
+        <aside class="meta provenance">
+<a class='nav' href='https://librarian.cf/authors/isky-mathews.html'>Isky Mathews</a>
+27.5.17
+
+        </aside>
+        <article>
+<h1 id="adventures-in-recreational-mathematics-volume-ii">Adventures in Recreational Mathematics: Volume II</h1>
+
+<p>Welcome to the second instalment of AiRM, this time taking a look at <strong>cellular automata</strong>.</p>
+<p>We have some exciting articles lined up for the future, potentially including but not limited to Chaos Theory, Trans-finite Set Theory, Game Theory and more - so, watch this space!</p>
+<p>To understand what a cellular automaton is, I think it is helpful to understand the motivation behind the concept’s creation in the 1940s, leading up to a book which essentially founded the field: <em>The Theory of Self-Reproducing Automata</em> by <strong>John von Neumann</strong>.</p>
+<p>In this case, it is also necessary to have a word on John von Neumann, since he was an exceptional man and potentially merits the term genius in all the ways he contributed to mathematics. In fact, his remarkable intelligence was noticeable from a young age, when at just 6 years old, he was able to proficiently converse in Ancient Greek and became quickly famous in his school for being able to multiply and divide 8-digit numbers in his head in under 10 seconds.</p>
+<p>By 15, he was under the tutelage of Gabor Szego (a mathematician famous for his contributions to calculus and linear algebra), had a great understanding of most founding fields of higher mathematics and at age 19, he published his first mathematical papers. <em>Hans Bethe</em>, Nobel Prize winning physicist, was a long-time friend of von Neumann’s. When Bethe observed von Neumann talking with his baby daughter Marina, he noticed that “John” could very easily lower himself so that they were able to talk as equals and then wondered if von Neumann used just the same approach when talking to his physicist friends.</p>
+<p>By the 1940s, von Neumann had become interested in self-replication. He wanted to comprehend on an abstract level how a dynamic system or mechanistic object like life on earth could go about creating copies of itself in an efficient way and one that could allow for variation (a property referred to as <em>evolvability</em>) – he came to the conclusion that it ultimately relied upon:</p>
+<ul>
+<li><p>The propagation of information in systems.</p></li>
+<li><p>The culmination of well-defined local rules into complex global behaviour.</p></li>
+<li><p>The information structure (or “tape” as he called it) being an active part of the construction process.</p></li>
+</ul>
+<p>Consider that these observations were made prior to the discovery of the structure of DNA. von Neumann had, in a heuristic sense, understood what it had to look like.</p>
+<p>To define a cellular automaton, consider an <span class="math inline"><em>n</em></span>-dimensional space (a plane, say) divided into discrete unit-squares, where each square is a <em>cell</em> which can be in one of a defined number of states. Then, we wish to propagate each cell to a new state with the use of a <em>ruleset</em>, where we look at a <em>neighbourhood</em> of defined nearby or local cells for a given cell and based on their states, we assign that cell its next state. The ruleset itself is an ordered list of sets-of-length 2 containing every possible configuration of the neighbourhood and a state assigned to that.</p>
+<p>This sounds quite abstract, so to illustrate, we can take a look at one of the elementary automata, discovered in the 1980s by Stephen Wolfram.</p>
+<div class="figure">
+<img src="image_0.png" />
+
+</div>
+<p>This particular automaton is 1 dimensional, has 2 states and is named <strong><em>Rule 110</em></strong>, as you can see. Since Rule 110’s neighbourhood for a given cell consists of the cell itself &amp; the two cells directly adjacent to it (thus, having size 3) and since there are 2 states, the number of possible configurations of the neighbourhood is <span class="math inline">2<sup>3</sup></span>, represented by the 8 boxes at the top just below the name. The row of three in a given box denotes a particular neighbourhood configuration (for example, the far right box is where the neighbourhood cells are only in State 0) and the cell in the middle column below it shows the defined outcome for that situation, which can be notated as a number in general from <span class="math inline">1, 2, …, <em>n</em></span> where the number of states is <span class="math inline"><em>n</em> ∈ ℕ, <em>n</em> &gt; 0</span>.</p>
+<p>You should notice that the boxes are arranged in a systematic order, gradually moving cell by cell down to the situation where all cells are in State 0. Thus, by numbering each situation with its state number like in the image, we can think of each situation as a digit in a base-<span class="math inline"><em>n</em></span> number unique to that ruleset. For this automaton, this number is “01101110” which in base-10 is <em>110</em> – these numbers are called <strong><em>Wolfram numbers</em></strong> after the aforementioned Wolfram began to catalogue thousands of cellular automata to understand them experimentally using this notation.</p>
+<p>The image below the boxes starts with a one dimensional <em>lattice</em> and a single State 1 cell and every row below it shows an iteration of the system by using the ruleset shown above. In fact, Rule 110 holds particular meaning as a cellular automaton, since it was proven to be computational universal, i.e. it transfers information between cells in such a way that in rather specific situations, found by the mathematician Matthew Cook, one can encode numbers in binary form into it and perform computations or run programs on these numbers. While the proof itself and perhaps even the proper statement of the theorem is quite complicated and beyond the scope of <em>AiRM</em>, we can show you illustrations of information transfer within Rule 110. For example, there are numerous kinds of spaceships, configurations of cells that move as a single unit:</p>
+<div class="figure">
+<img src="image_1.png" />
+
+</div>
+<p>And here they collide:</p>
+<div class="figure">
+<img src="image_2.png" />
+
+</div>
+<p>Unfortunately, the proof mentioned was withheld for around a decade since Wolfram wanted it to be first mentioned in his nascent tome, <em>A New Kind of Science</em>, forcing Cook to not publish one of his most proud achievements as an employee of <em>Wolfram Research</em>. Eventually, when Cook published early, Wolfram attempted to sue him for breaking a non-disclosure agreement… We at AiRM believe it is always bad when the spread of intellectual work is inhibited and this should never happen again.</p>
+<p>However, we must return to John von Neumann and his design for a self-replicating machine: while Rule 110 is only 1 dimensional with 2 states, von Neumann’s original automaton had a grand 29 states, was 2 dimensional &amp; used a neighbourhood which looked at a cell and its four adjacent cells. As you can imagine, the ruleset would be massive and is too long to explain here (it required its own book, you see) but we can give an outline. There was the null or ground State 0 as per usual, a group of 8 <em>transmission</em> states which could act as wires to transmit binary signals, a group of 4 <em>confluent</em> states which could act as junctions for these wires to give information to &amp; finally 16 <em>transition</em> states which could be built by confluent cells given the right signals from transmission cells.</p>
+<p>The result was an incredible piece of engineering (one which many have tried fairly unsuccessfully to make simpler): a <em>universal constructor</em>, which, if added to any arrangement of cells in von Neumann’s automaton, would be able to reproduce that arrangement countless numbers of times. The image below, which I have yet to fully understand, is taken from WikiCommons based on the work of a mathematician who actually implemented von Neumann’s machine. Considering the fact that von Neumann made this without the existence of proper computers that could run simulations of cellular automata, this is undoubtedly impressive.</p>
+<div class="figure">
+<img src="image_3.png" />
+
+</div>
+<p>Many mathematicians have considered this work quite astounding due to the existence of <em>garden of Eden patterns</em>, which are a set of cells with specific states which cannot be formed through iteration of a previous set, though obviously can act as a starting “position”. He apparently accounted for this and since then a much greater understanding of gardens of Eden has come about due to a theorem proved by the mathematicians Edward Moore &amp; John Myhill which states that such patterns exist for a given cellular automaton if and only if in the automaton it is possible to construct pairs of structures which after an iteration “evolve” into the same structure.</p>
+<p>However, due to the relative obscurity of the work and the fact that his book was put in the shadow by his many other great works, von Neumann’s universal constructor and indeed the whole idea of cellular automata was forgotten for around 30 years until a British mathematician, <strong><em>John Horton Conway</em></strong>, created a much simpler 2-state, 2-dimensional automaton whose neighbourhood is the 3x3 block of cells around &amp; containing a given cell and which exhibited surprising complexity. This automaton was called Conway’s <em>Game of Life</em> and its rules were the following:</p>
+<ul>
+<li><p>A State-1 (alive) cell with fewer than 2 State-1 cells in its neighbourhood becomes State-0 (dies).</p></li>
+<li><p>A State-1 cell with 2 or 3 State-1 cells in its neighbourhood stays at State-1.</p></li>
+<li><p>A State-1 cell with more than 3 State-1 <em>neighbours</em> becomes State-0.</p></li>
+<li><p>A State-0 cell with exactly 3 State-1 neighbours becomes State-1.</p></li>
+</ul>
+<p>With just these four rules come the surprising results that the automaton is firstly also capable of universal construction, despite being so much simpler than von Neumann’s automaton, that it is capable of universal computation, like Rule 110 (or just a normal computer) and finally that for a given starting set of states, the problem of determining whether the system will eventually evolve to a “static” situation (where no further changes happen to the states of any cell in future iterations of the system) is <em>generally undecidable</em>, i.e. there is no algorithm that solve this problem for all situations. As Conway said himself “My life game wasn’t designed. I just sort of thought that if you couldn’t predict what it did, then probably that was because it was capable of doing anything.”</p>
+<p>There are many complicated structures, such as analogues of the previously mentioned spaceships, in the Game of Life. For example, here is the famous glider:</p>
+<div class="figure">
+<img src="image_4.png" />
+
+</div>
+<p>This object will move down diagonally right – I suggest you take out a piece of square paper and check with the rules I mentioned … or you could look it up and simply watch one of the many GIFs on <em>LifeWiki</em>, the wiki made by enthusiasts of the automaton which catalogues thousands of structures made by people and their amazing properties.</p>
+<div class="figure">
+<img src="image_5.png" />
+
+</div>
+<p>Even more amazing, people have made spaceships which release objects that release gliders (as in, they make <em>glider guns</em>)* * themselves!</p>
+<p>Finally, we should consider the work of <strong>Christopher Langton</strong>, a somewhat famous mathematician and computer scientist, who founded the field of <em>Artificial Life</em> &amp; made significant contributions to the field of cellular automata (for example, creating the Turing-complete <em>Langton’s Ant</em>). He described an automaton <em>invariant</em> which he named his <em>lambda parameter</em>. One calculates this simply by taking the ratio <span class="math inline"><em>r</em></span> of the number of configurations of the neighbourhood that lead to a live or nonzero state to the number of possible configurations of the neighbourhood and, while simple to calculate, it brings many revelations.</p>
+<p>What Langton observed was that for values of <span class="math inline"><em>λ</em></span> near 0, a randomly chosen automaton would often be “ordered” – so they would either die out very quickly or they settle into predictable patterns, and for values near 1, the automaton would generally display highly chaotic behaviour. He finally observed that the majority of the complex automata, which would show groups of cells acting as discrete structures &amp; interacting with each other, would often have a <span class="math inline"><em>λ</em></span> value close to 0.5, the boundary which he referred to as the “edge of chaos”.</p>
+<p>Some people have suggested that this is analogous to life itself: not quite chaos, definitely not simple &amp; ordered but somewhere in between. Others have suggested that the process of natural selection actually pushes chemical reactions (which, when considered abstractly are very similar to cellular automata) to the edge of chaos, since the majority of chemical reactions happen ambiently, when certain imbalances in charge or fluids occur in a variety of media, but those whose mechanics are slightly more complex &amp; change the environment around them in such a way as to continue propagating are by definition more likely to “survive” – potentially suggesting that biogenesis is both natural and inevitable.</p>
+<p>If you’ve found this edition of Adventures in Recreational Mathematics interesting and/or want to play around with other cellular automata, we suggest these topics for further reading:</p>
+<ul>
+<li><p>Finite-state Machines (part of understanding the more formal definition of C.A.)</p></li>
+<li><p>Von Neumann Universal Constructor</p></li>
+<li><p>Wireworld (another, extremely intuitive C.A. in which some individuals have made a fully programmable computer!)</p></li>
+<li><p>Langton’s Loops, Langton’s Ant &amp; Turmites in general</p></li>
+<li><p>A New Kind of Science by Stephen Wolfram</p></li>
+<li><p>Garden of Eden Theorem</p></li>
+<li><p>Rule 30</p></li>
+</ul>
+<p><strong><em>Challenge II</em></strong>:</p>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the lambda value for the Game of Life.</p></li>
+<li><p>Design your own spaceship in your own cellular automaton. There are quite literally an uncountably infinite number of ways of answering this one, so we’ll be excited to see your answers.</p></li>
+</ol>
+<p>Finally, we have some exciting news! Due to the fact that AiRM may be taking up permanent residence in The Librarian, there will soon be an <em>AiRM Challenge</em> page on <strong>The Librarian’s website (www.librarian.cf/)</strong> which will list all previous challenges and will have buttons to reveal student answers! So now, if (or, rather, when) you decide to attempt any of the challenges, you can go to the website to read them and if you are successful in cracking any of them, your answer will be up there permanently!</p>
+<p>This article was written by Isky Mathews but feel free to also send your solutions to Benedict Randall Shaw, the other columnist.</p>
+
+
+        </article>
+        <aside class="meta topics">
+
+
+
+
+
+<h3><a class='nav' href='https://librarian.cf/s.html'>Sciences and Mathematics</a></h3><figure>
+<a href=https://librarian.cf/articles/3/3.html
+ class='nav'>
+<h4 id="church-of-england-research-youth-views-on-technology-in-survey-of-chaplains-breakfast-joshua-loo">Church of England research youth views on technology in survey of Chaplain's Breakfast / <strong>Joshua Loo</strong></h4>
+</a>
+</figure><figure>
+<a href=https://librarian.cf/articles/5/5.html
+ class='nav'>
+<h4 id="how-to-write-a-librarian-article-joshua-loo">How to write a Librarian article / <strong>Joshua Loo</strong></h4>
+</a>
+</figure>
+
+        </aside>
+        <aside class="fill"></aside>
+    </main>
+</body>
+
+</html>
+

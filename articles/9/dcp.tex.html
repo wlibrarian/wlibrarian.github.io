@@ -1,0 +1,199 @@
+<html><head><style type="text/css">pre { margin: 1px }
+			.fmt0 {  } /* normal */
+			.fmt1 {  } /* background */
+			.fmt2 { background-color: #ffcabf; } /* line:error */
+			.fmt3 { background-color: #fffbbf; } /* line:warning */
+			.fmt4 { background-color: #bfd6ff; } /* line:badbox */
+			.fmt5 {  } /* line:bookmark */
+			.fmt6 {  } /* line:bookmark0 */
+			.fmt7 {  } /* line:bookmark1 */
+			.fmt8 {  } /* line:bookmark2 */
+			.fmt9 {  } /* line:bookmark3 */
+			.fmt10 {  } /* line:bookmark4 */
+			.fmt11 {  } /* line:bookmark5 */
+			.fmt12 {  } /* line:bookmark6 */
+			.fmt13 {  } /* line:bookmark7 */
+			.fmt14 {  } /* line:bookmark8 */
+			.fmt15 {  } /* line:bookmark9 */
+			.fmt16 { color: #555580; } /* magicComment */
+			.fmt17 { background-color: #a8cf83; } /* commentTodo */
+			.fmt18 { color: #808080; } /* comment */
+			.fmt19 { color: #800000; } /* keyword */
+			.fmt20 { font-weight: 700;color: #0095ff; } /* extra-keyword */
+			.fmt21 { color: #808000; } /* math-keyword */
+			.fmt22 { border-bottom: 1px solid #0000ff;color: #0000ff; } /* link */
+			.fmt23 { font-weight: 700;color: #0055ff; } /* align-ampersand */
+			.fmt24 { color: #008080; } /* verbatim */
+			.fmt25 { color: #800000; } /* sweave-block */
+			.fmt26 { font-weight: 700;color: #0095ff; } /* sweave-delimiter */
+			.fmt27 { color: #800000; } /* pweave-block */
+			.fmt28 { font-weight: 700;color: #0095ff; } /* pweave-delimiter */
+			.fmt29 { color: #804000; } /* picture */
+			.fmt30 { font-weight: 700;color: #c00000;background-color: #ffff7f; } /* braceMatch */
+			.fmt31 { font-weight: 700;color: #ffff7f;background-color: #c00000; } /* braceMismatch */
+			.fmt32 { color: #000000;background-color: #ffff40; } /* search */
+			.fmt33 { color: #008000; } /* numbers */
+			.fmt34 { color: #509600; } /* math-delimiter */
+			.fmt35 { color: #ff0000; } /* text */
+			.fmt36 { color: #ff0088; } /* escapeseq */
+			.fmt37 { border-bottom: 1px dashed #ff0000; } /* spellingMistake */
+			.fmt38 { border-bottom: 1px dashed #008000; } /* wordRepetition */
+			.fmt39 { border-bottom: 1px dashed #008000; } /* wordRepetitionLongRange */
+			.fmt40 { text-decoration: line-through; } /* badWord */
+			.fmt41 { border-bottom: 1px dashed #000080; } /* grammarMistake */
+			.fmt42 { background-color: #00ffa0; } /* grammarMistakeSpecial1 */
+			.fmt43 { background-color: #00c0ff; } /* grammarMistakeSpecial2 */
+			.fmt44 { background-color: #00ff00; } /* grammarMistakeSpecial3 */
+			.fmt45 { background-color: #c8ff61; } /* grammarMistakeSpecial4 */
+			.fmt46 { background-color: #ffbf9f; } /* latexSyntaxMistake */
+			.fmt47 { font-style: italic;color: #0000ff; } /* temporaryCodeCompletion */
+			.fmt48 { color: #000080; } /* environment */
+			.fmt49 { color: #008000; } /* referencePresent */
+			.fmt50 { border-bottom: 1px dashed #008000;color: #008000; } /* referenceMissing */
+			.fmt51 { border-bottom: 1px dashed #800080;color: #800080; } /* referenceMultiple */
+			.fmt52 { color: #008000; } /* citationPresent */
+			.fmt53 { border-bottom: 1px dashed #008000;color: #008000; } /* citationMissing */
+			.fmt54 { color: #008000; } /* packagePresent */
+			.fmt55 { border-bottom: 1px dashed #008000;color: #008000; } /* packageMissing */
+			.fmt56 { font-weight: 700;color: #000000; } /* structure */
+			.fmt57 { background-color: #eeeeff; } /* current */
+			.fmt58 { background-color: #aaffff; } /* selection */
+			.fmt59 { background-color: #ffaaaa; } /* replacement */
+			.fmt60 { text-decoration: line-through;background-color: #ffaaaa; } /* diffDelete */
+			.fmt61 { background-color: #aaffaa; } /* diffAdd */
+			.fmt62 { background-color: #ffff50; } /* diffReplace */
+			.fmt63 { background-color: #ddffcc; } /* previewSelection */
+			.fmt64 { font-weight: 700;color: #0095ff; } /* txs-test */
+			.fmt65 { color: #008000; } /* txs-test-pass */
+			.fmt66 { color: #c00000; } /* txs-test-fail */
+			.fmt67 { color: #ea8800; } /* txs-test-warn */
+			.fmt68 { color: #808000; } /* txs-test-qdebug */
+			.fmt69 { color: #ffa500; } /* dtx:guard */
+			.fmt70 { font-weight: 700;color: #006400; } /* dtx:macro */
+			.fmt71 { color: #008080; } /* dtx:verbatim */
+			.fmt72 { color: #cc8100; } /* dtx:specialchar */
+			.fmt73 { font-weight: 700;color: #10c010; } /* dtx:commands */
+			.fmt74 { color: #b200ff; } /* lua:keyword */
+			.fmt75 { color: #808080; } /* lua:comment */
+			.fmt76 { color: #804000; } /* asymptote:block */
+			.fmt77 { color: #800080; } /* asymptote:keyword */
+			.fmt78 { color: #808000; } /* asymptote:type */
+			.fmt79 { color: #008000; } /* asymptote:numbers */
+			.fmt80 { color: #000080; } /* asymptote:string */
+			.fmt81 { color: #808080; } /* asymptote:comment */
+			.fmt82 { color: #808080; } /* qtscript:comment */
+			.fmt83 { color: #008000; } /* qtscript:string */
+			.fmt84 { color: #000080; } /* qtscript:number */
+			.fmt85 { color: #808000; } /* qtscript:keyword */
+			.fmt86 { color: #800000; } /* qtscript:txs-variable */
+			.fmt87 { font-style: italic; } /* qtscript:txs-function */
+			.fmt88 { background-color: #ffff7f; } /* preedit */
+		</style></head><body><pre><span class="fmt19">\documentclass</span>[10pt,a4paper,twocolumn]{<span class="fmt54">article</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>[utf8]{<span class="fmt54">inputenc</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>[margin=1.5cm,includehead,includefoot]{<span class="fmt54">geometry</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt54">fancyhdr</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt54">url</span>} </pre>
+		<pre> </pre>
+		<pre><span class="fmt19">\pagestyle</span>{fancy} </pre>
+		<pre><span class="fmt19">\fancyhf</span>{} </pre>
+		<pre><span class="fmt19">\fancyhead</span>[R]{The Death of Chinese Pluralism} </pre>
+		<pre><span class="fmt19">\fancyhead</span>[L]{Joshua Loo} </pre>
+		<pre><span class="fmt19">\fancyfoot</span>[C]{<span class="fmt19">\thepage</span>} </pre>
+		<pre> </pre>
+		<pre><span class="fmt19">\renewcommand</span>{<span class="fmt19">\footrulewidth</span>}{0.5pt} </pre>
+		<pre> </pre>
+		<pre><span class="fmt19">\setlength</span>{<span class="fmt19">\parindent</span>}{0em} </pre>
+		<pre><span class="fmt19">\setlength</span>{<span class="fmt19">\parskip</span>}{1.25em} </pre>
+		<pre> </pre>
+		<pre><span class="fmt19">\newcounter</span>{count} </pre>
+		<pre> </pre>
+		<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt48">document</span></span><span class="fmt20">}</span> </pre>
+		<pre> </pre>
+		<pre><span class="fmt20">\section</span>{<span class="fmt56">Introductory</span>} </pre>
+		<pre> </pre>
+		<pre>About 100 thousand Hong Kong residents marked June 4 with an annual commemoration of the Tiananmen Square massacre. These commemorations provide an important reminder of the true nature of the Chinese state. They are important on their own, by virtue of the sheer barbarity involved in the massacre. Yet they now are perhaps important for us in a self-interested calculus. </pre>
+		<pre> </pre>
+		<pre>China matters. Almost everyone acknowledges now that it matters, and that whatever rhetoric surrounds its rise is not wholly ``hype'', as it might have been of Japan. It matters not only in the UK, where <span class="fmt34">$</span><span class="fmt33">7</span><span class="fmt19">\%</span><span class="fmt34">$</span> of our electricity supply will soon be reliant on Chinese goodwill and engineering<span class="fmt19">\cite</span>{<span class="fmt52">hinkley</span>}, in Africa, where China has built vast quantities of infrastructure including railways and roads with a pledge of <span class="fmt19">\$</span>60bn <span class="fmt38">of</span> investment<span class="fmt19">\cite</span>{<span class="fmt52">ifrica</span>}, or in those parts of the Eurasian landmass which are to be connected by its One Belt <span class="fmt38">One</span> Road initiative, but also in the entire world with universal and undeniable force, when the vast majority of the computing equipment essential to the working of <span class="fmt38">the</span> modern world is manufactured in China. </pre>
+		<pre> </pre>
+		<pre>When such a rise occurs, it is important that the nature of <span class="fmt38">the</span> rising power is analysed, both out of an intrinsic need to know of one's fate as interaction with China changes both in intensity and <span class="fmt38">in</span> balance <span class="fmt38">and</span> out of a need to make informed choices as to those dimensions in interaction with China. </pre>
+		<pre> </pre>
+		<pre>First, three initial examples will help to illustrate the scope and aim of this article. </pre>
+		<pre> </pre>
+		<pre>Yang Shuping, a student at the University of Maryland, said in a graduation speech that she felt the "fresh air of free <span class="fmt39">speech</span>" during her time at university<span class="fmt19">\cite</span>{<span class="fmt52">yang</span>}. Ordinarily, this would not be a particularly incisive or controversial idea. Though the United States may be suffering from slippage in freedom of speech, the free exchange of ideas is in much better shape in the United States than in China<span class="fmt19">\cite</span>{<span class="fmt52">press</span>}<span class="fmt19">\cite</span>{<span class="fmt52">freedomhouse</span>}. When the video was posted on Weibo, a group of Chinese students <span class="fmt39">posted</span> a video titled ``\#Proud of China UMD", whose prologue claimed that the commencement speech contained "false statements and rumor [sic] about multiple China-related issues. We are deeply concerned about some of the stereotypical comments in her speech."<span class="fmt19">\cite</span>{<span class="fmt52">umd</span>} Apart from some embellishment in relation to air pollution in her city of Kunming, it's not clear exactly what was taken issue with. </pre>
+		<pre> </pre>
+		<pre>``We need to open up and embrace all the suggestions from outside world," claims the first speaker. "I would be so piss[ed] off if anyone described my country with destruction<span class="fmt19">\footnote</span>{The audio isn't entirely clear.}," she continues. </pre>
+		<pre> </pre>
+		<pre>A few days before, China held a ``Belt and Road initiative" meeting in Beijing. One notable absence was that of Lee Hsien Loong, Prime Minister of Singapore; Singaporean media speculated that this was due to an incident several months prior, wherein a Terrex armed vehicle was impounded by Hong Kong authorities while returning from a training exercise in Taiwan<span class="fmt19">\cite</span>{<span class="fmt52">beltroad</span>}. </pre>
+		<pre> </pre>
+		<pre>Several months earlier, a mainland legal expert proposed an adjustment in the ratio of foreign judges in Hong Kong, after a <span class="fmt39">foreign</span> judge, David Dufton, sentenced police officers who assaulted protestors in the 2014 Occupy Hong Kong protests to jail<span class="fmt19">\cite</span>{<span class="fmt52">foreignjudge</span>}. </pre>
+		<pre> </pre>
+		<pre>Although all these incidents appear to be unrelated, they are a symptom of <span class="fmt38">a</span> deeper maliaise which touches the heart of every state and establishment, but does so with particularly problematic consequences in states which have experienced recent political ruptures or are lack conventional accountability mechanisms. China, which suffers acutely from both problems, is run by a leadership both in great need and with few sources of legitimacy. </pre>
+		<pre> </pre>
+		<pre>These travails may seem to be the unimportant rumblings of a faraway Eastern nation. They are not. <span class="fmt38">They</span> will soon, if they do not already, affect you and me as much <span class="fmt38">as</span> they affected Yang and Dufton. When China was introverted, it was easy enough for its political oppression to stay within China; now that it has opened up, it is willing and able to exert pressure on outside actors to change their behaviour, often for the worse. It is therefore important to question what motivates the Chinese state and how it comes to decisions, in order to determine what is likely to occur as a result of this externally as well <span class="fmt38">as</span> internally. </pre>
+		<pre> </pre>
+		<pre>This article will explore the ways in which the Chinese state can achieve legitimacy. It concludes that, in the absence of democratic reform, the Chinese state will either collapse or become increasingly stridently nationalist, associating Chinese identity with so-called ``<span class="fmt39">Chinese</span> values'' of dictatorship and international dominance, which presents a number of problems for other states, both in their treatment of Chinese citizens and in their relations with China. </pre>
+		<pre> </pre>
+		<pre><span class="fmt20">\subsection</span>{<span class="fmt56">The</span><span class="fmt56"> </span><span class="fmt56">foundations</span><span class="fmt56"> </span><span class="fmt56">of</span><span class="fmt56"> </span><span class="fmt56">the</span><span class="fmt56"> </span><span class="fmt56">Chinese</span><span class="fmt56"> </span><span class="fmt56">nation</span><span class="fmt56"> </span><span class="fmt56">state</span>} </pre>
+		<pre> </pre>
+		<pre>On 12 February 1912, millennia of tradition in the world’s longest continuously surviving civilisation came to a halt, as the child Emperor abdicated. An interregnum marked by instability, military domination by warlords and misery ceased upon communist victory on 1 October. Outwardly, the revolution took <span class="fmt38">the</span> form of a comprehensive movement away from ideals which dated back to the preceding millennium. This was, too, the case inwardly. Between 750,000 and 1,500,000 million were killed in a campaign of mass and popular depravity<span class="fmt19">\cite</span>{<span class="fmt52">puyi_autobio</span>}. </pre>
+		<pre> </pre>
+		<pre>The democratic aspirations of the Chinese people may have been illusory, limited merely to Western-connected intellectuals. Yet 12 February marked also a time in which the Chinese people threw off the shackles of imperial authority. The speed of change is striking. Nominally one of the world’s most powerful people in 1912, Puyi, the child-emperor of China in the last days of empire, spent a decade in Communist prison camps before retiring to write a pro-Mao memoir-cum-apologia, in which he wrote ``I covered up my crimes in order to protect myself”<span class="fmt19">\cite</span>{<span class="fmt52">cultural_revolution</span>}, in reference to his justifications for cooperation with the Japanese in Manchuria. </pre>
+		<pre> </pre>
+		<pre>Inwardly, however, one pressure remained - the need for legitimacy. The removal of millennia <span class="fmt38">of</span> institutional inertia presented the greatest opportunity for democratic renewal that China has ever faced. Although <span class="fmt39">democratic</span> systems occasionally suffer from legitimacy problems due to low turnout, inherent in democratically elected governments is at least some degree of popular support, and so there is a floor of legitimacy. Dictatorships' floor of legitimacy is such that they only are overthrown when a sufficient proportion of the people feel so incensed by regime incompetence or manevolence that they attempt to overthrow the government. </pre>
+		<pre> </pre>
+		<pre>First, we must ask ourselves where legitimacy is derived from, particularly in a Chinese context. </pre>
+		<pre> </pre>
+		<pre>China is not entirely alien to the rest of <span class="fmt38">the</span> world. Its people care about life, liberty (in a sort of collective sense, although perhaps not individually) and other basic needs. In this sense, Chinese regimes need, like other <span class="fmt39">regimes</span>, to ensure that people living under them are adequately fed, housed and clothed. The failure of <span class="fmt38">the</span> republican leadership to do this during the civil war can be said to have lead <span class="fmt38">to</span> their downfall, because it encouraged support for the communists. This need, however, is not absolute. Many Chinese dynasties limped on while their people languished in poverty, and the communists themselves. In that sense, legitimacy derived from living standards exists in China as it <span class="fmt39">exists</span> universally. </pre>
+		<pre> </pre>
+		<pre>There are also ideological concerns and ways of achieving legitimacy. For thousands of years, the idea of <span class="fmt38">the</span> Mandate <span class="fmt38">of</span> Heaven created loyalty to the emperor, at its basic heart. However, it was sufficiently flexible to allow new emperors or dynasties to take over, when ``Heaven'' decided that the emperor or a dynasty had become too venal and corrupt to deserve its mandate. In this way, it provided a useful tool by which to, somewhat external to material concerns, rule. As a result of its great and increasing age, it managed to survive for thousands of years as the basis of Chinese government; we conclude from this that it was quite successful in its aim.  </pre>
+		<pre> </pre>
+		<pre>The Mandate of Heaven is not the only way by which ideological legitimacy can be created. The communists attempted to replace this with a utopian vision of a Maoist society. The degree to which this was successful is quite difficult to ascertain. On the one hand, there was great enthusiasm in the campaign against ``intellectuals'' and other undesirables during the Cultural Revolution and Great Leap Forward. On the other hand, those same people who probably were around persecuting unfortunates quickly reversed their stance and displayed great flexibility in adapting to first ``Socialism with Chinese characteristics'' and then its true face, ie. some form of state capitalism, with all the rent-making opportunities that implied. Were all these hundreds of millions <span class="fmt38">of</span> people really genuinely convinced that Mao was a great visionary who had all the answers, but simultaneously able to adjust? Or, as is more likely, were they moulded by circumstance, perhaps to some degree motivated by genuine fervour, but really largely simulated by each other? One shout to ``kill 1000 intellectuals'' would likely have been followed by another hundred in a sort of collective inaction problem - what if one is the next to be deemed a reactionary for insufficient revolutionary fervour? </pre>
+		<pre> </pre>
+		<pre>How does this apply to the new regime? First, any new state will have problems in finding popular legitimacy. This is inevitable when revolution necessarily causes all the old institutions of government to, at the very least, lose power or fragment. As a result, many basic services which citizens rely on the government to provide and/or would expect of any <span class="fmt39">government</span>, including at the very least security, are likely not to be provided. This problem was compounded by a deliberate policy of repression <span class="fmt38">of</span> ``intellectuals'', ie. people who had a university education or vaguely had knowledge of how to run things which China needed, like power stations or transportation networks. Given this, the foundation of <span class="fmt38">the</span> Chinese state was not built on material concerns - indeed, it had to be actively shifted away from such concerns because initial administration was so poor. </pre>
+		<pre> </pre>
+		<pre>Second, the Chinese state was deprived of the idea <span class="fmt38">of</span> <span class="fmt38">the</span> Mandate <span class="fmt38">of</span> Heaven. Not only were they not monarchical, which meant that such ideas were already largely impossible, given that the Mandate of Heaven was given to an emperor and his/her descendants, collectively comprising a dynasty, they were also diametrically opposed to the intellectual fabric which gave credence to such ideas, in that they sought to destroy traditionalist ideas of God, religion and emperor. We can therefore discount divine legitimacy as a source of inspiration. </pre>
+		<pre> </pre>
+		<pre>Third, what is left <span class="fmt38">is</span> pure ideology. The sole mechanism by which the communists were able to gain legitimacy was ideological struggle, a mechanism which is hard to sustain in this solitary manner. Not only would it have, at some point, come into conflict with the necessity of preventing state collapse - legitimacy is a mechanism to stay in power, but if external factors mean that even with perceived legitimacy one collapses, it does not help, a reliance on ideological struggle fails because of its inherent idealism, which is incompatible with practical problems causing a failure to achieve utopia. </pre>
+		<pre> </pre>
+		<pre>Precipitately, the foundations upon which the Chinese state were built <span class="fmt38">were</span> entirely precarious, and especially ill-suited to China. </pre>
+		<pre> </pre>
+		<pre><span class="fmt20">\subsection</span>{<span class="fmt56">Normalisation</span>} </pre>
+		<pre> </pre>
+		<pre>This situation could not go on, and it did not. Many will be familiar with at least an outline of what happened under Deng Xiaoping. Economic liberalisation, and a decision to cease the continual shooting-oneself-in-the-foot policies which marked Maoism, meant that the state could refocus itself on achieving the first type of legitimacy, ie. that based on material concerns. </pre>
+		<pre> </pre>
+		<pre>This worked, for a while. China lifted 800 million people out of poverty and is now the largest economy in purchasing power terms in the world. Yet 10<span class="fmt19">\%</span> growth is barely sustainable. China has been growing at this rate for nearly four decades. It cannot continue for much longer - growth is now down to below 7<span class="fmt19">\%</span>, and may fall further. Independent sources of information which might tell us without government interference what the real economic situation is in China, but until then we are dependent on the government for such information. </pre>
+		<pre> </pre>
+		<pre>The Chinese leadership, however, recognises that it is very difficult to continue <span class="fmt38">to</span> use ideological fervour to sustain the legitimacy it has created based on economic growth. This puts it in a very dangerous situation, because the measure needed to ensure long term growth and hence long term stability are in conflict with measures which would simulate the economy in <span class="fmt38">the</span> short term in order to stave off loss of legitimacy. </pre>
+		<pre> </pre>
+		<pre>It is difficult to determine whether this is true. Government approval ratings in China are often above 90<span class="fmt19">\%</span>, but even if they are conducted impartially, it is possible and indeed quite likely in a nation which went through the trauma of <span class="fmt38">the</span> Cultural Revolution that these polls are affected by culturally ingrained reminders to toe the party line, both because it is correct in an objective sense, and <span class="fmt39">because</span> such toeing is in one's self-interest. </pre>
+		<pre> </pre>
+		<pre>More easily, one can analyse the measures that <span class="fmt38">the</span> Chinese government is taking to ensure that it retains control. This, as a first step, indicates that it is worried about its control of the country. </pre>
+		<pre> </pre>
+		<pre><span class="fmt20">\subsection</span>{<span class="fmt56">Increasing</span><span class="fmt56"> </span><span class="fmt56">dictatorship</span>} </pre>
+		<pre> </pre>
+		<pre>Liberalisation, and democratic stagnation/reversal, in China, largely took place on three tracks: first, internal party mechanisms of control, second, information <span class="fmt39">control</span>, and third, other civil liberties like freedom of movement and <span class="fmt39">freedom</span> from torture. </pre>
+		<pre> </pre>
+		<pre>After the excesses of Mao, the communists in China recognised that they too would have to face up <span class="fmt38">to</span> the ``bad emperor problem'': with a high level of state control, one can enrich oneself and the country with good policymaking, but should a bad ``emperor'' or ``paramount leader'' as the case may be come to power, the whole of China would face severe difficulties. Mao was their ``bad emperor'', and he taught the communists <span class="fmt38">the</span> virtue of true collective leadership. Although the <span class="fmt39">communists</span> have not become paragons of liberal or democratic virtue, it is notable that the infighting which characterised the Party under Mao significantly abated under the mechanism of collective leadership. The solution of <span class="fmt39">collective</span> leadership works by slowing down the acquisition and exercise of power by its diffusion. In doing so, one has fewer ``bad emperors'', even though progress is slowed. It <span class="fmt38">is</span> indubitably superior to the days of Mao or Stalin, and is superior in that it prevents massive shifts in Party power from one faction to another in the hope of achieving total poewr - instead one vies for positions within the Party and <span class="fmt38">the</span> individual powers they offer. </pre>
+		<pre> </pre>
+		<pre>As for information, after Mao, it was significantly freed up. This reached its peak under Zhao Ziyang, but still remained better throughout all of China than under Mao. Chinese media report on a number of social and environmental issues, including smog, contamination from industrial pollutants, and local government incompetence. Although this coverage is often scaled back or retrospectively deleted after censors become nervous, the Chinese people still remember articles after they are deleted. Similarly, somewhat liberal academics were, to some degree, free to debate, within their universities and <span class="fmt38">their</span> dormitories, with less government interference, compared with Mao-era detention and expulsion to the countryside of all academics. In mnay cases, this lead to a degree of introspection which was not present in Mao-era China. This provided great potential for a gradual and optimised transition to democracy and accountability, for it would not have occurred in a vacuum of knowledge. </pre>
+		<pre> </pre>
+		<pre>It cannot be pretended that China was at any point a state which respected certain basic rights of its citizens, like their bodily autonomy or property rights. At no point did the culture of state impunity which pervaded instituions like the ``People's Armed Police'' abate significantly - they were still free to oppress the people. However, what did change was that they were used less. There was less state violence post-Mao. Fewer properties were seized. Torture was used less, and in some cases the judiciary even admitted that it was wrong. This <span class="fmt38">was</span> real progress - certainly not enough for those who still are victimised by it, but still real. </pre>
+		<pre> </pre>
+		<pre>The 18th National Congress of the Communist Party of China marked the start of a turning point in this slow movement towards democratic legitimacy. It initially appeared to be the start of faster movement. Corruption trials of senior party officials finally went ahead. Chinese <span class="fmt39">officials</span> didn't stop mourners from flocking to the house of Zhao Ziyang, a reformist, to mourn his death. Xi was a new face, representing a new era. </pre>
+		<pre> </pre>
+		<pre>These illusions soon wore off. The corruption trials were really a tool to achieve greater power within the Communist party for Xi and his friends. Indeed, Xi himself is said to be suspiciously wealthy, and he <span class="fmt38">and</span> his family hold a number of properties outside China. Chinese officials probably didn't mind letting people mourn Zhao Ziyang because very few <span class="fmt39">people</span> remember him and they felt that their hold on power was greater than ever before, with their control of the main means of transmission <span class="fmt38">of</span> information, ie. the internet. When people posted pro-Zhao messages on internet message boards, they were deleted, but their posters were not rounded up and detained. </pre>
+		<pre> </pre>
+		<pre>Perhaps a new face, Xi is most certainly not doing anything other than shoring up the dictatorial powers of the party. </pre>
+		<pre> </pre>
+		<pre>Xi has been named the ``Core of <span class="fmt38">the</span> Party'', and many commentators suggest that he has more power than any leader since Deng Xiaoping. Some have even suggested that he may wish to continue after his customary pair of five year terms in positions <span class="fmt38">in</span> the Central Military Commission and Party, though he may resign as President <span class="fmt38">as</span> is constitutionally mandated. In his attempts to corral the paty into submission, it is feared that he may have alienated so many officials that the only way to ensure that he is not arrested just as he has <span class="fmt39">arrested</span> some former officials is to stay in power, and that means <span class="fmt38">that</span> we must wait until his death, not his retirement, to see the back of him. </pre>
+		<pre> </pre>
+		<pre>Information controls have been re-imposed. Liberal academics find themselves under increasing pressures to make universities conform as a tool for communism. No longer are the authorities content to leave them as bastions of ineffective and bourgeois liberalism, never seriously mounting a challenge to Communist leadership - they want them to actively participate in their programme of brainwashing the people. </pre>
+		<pre> </pre>
+		<pre>Repression continues unabated. Dissidents are denied access to their lawyers. An environmental documentary which observers initially thought would be permitted under a new censorship policy of tolerating environmental polemics was soon prohibited. Lawyers of dissidents are occasionally detained. Sometimes their <span class="fmt39">lawyers</span> are <span class="fmt39">detained.</span> The state appoints its own <span class="fmt39">lawyers</span> for them, who are often incompetent and fail to defend them at all - the reason why should be obvious. </pre>
+		<pre> </pre>
+		<pre>This is already bad. It indicates that the government of <span class="fmt38">the</span> most populous <span class="fmt39">government</span> in the world does not even pay lip service to ideals of human dignity and accountability, <span class="fmt38">and</span> that anyone who even suggests it ought to runs the risk of finding their lives turned upside down. Actual observance of these norms is out of the question. But it is also normal. Lots of governments have acted like this, and their peoples have still managed to recover <span class="fmt38">to</span> some degree. Many dictatorships have also ruled over large numbers of people. Part I is a reminder that <span class="fmt38">a</span> powerful nation is increasingly at odds with the values which not only the West but much of the world holds dear. Part II of this series will explore the ways in which China is spreading its influence across the world, and why China therefore presents a problem perhaps unprecedented in the history of humanity in its propagation of <span class="fmt38">its</span> own values, if they even exist as such and are not simply base interests. </pre>
+		<pre> </pre>
+		<pre><span class="fmt19">\bibliographystyle</span>{unsrt} </pre>
+		<pre><span class="fmt19">\bibliography</span>{citations.bib} </pre>
+		<pre> </pre>
+		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt48">document</span></span><span class="fmt20">}</span> </pre></body></html>

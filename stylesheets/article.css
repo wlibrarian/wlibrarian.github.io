@@ -1,0 +1,62 @@
+@media only screen and (max-width: 114ch) {
+    .meta, .provenance, .topics {
+        border: none!important;
+        margin: auto!important;
+        max-width: none!important;
+        margin: 0em 1em!important;
+        padding: 1em 0em!important;
+        text-align: left!important;
+    }
+    main {
+        width: auto!important;
+        padding: 1em!important;
+        margin: auto!important;
+    }
+    article, aside {
+        margin: auto!important;
+    }
+}
+
+article {
+    max-width: 18cm;
+    text-align: justify;
+    margin: 0em 1em;
+    width: 100%;
+}
+
+img {
+    width: 80%;
+    margin: 1em 10%;
+}
+
+main {
+    display: flex;
+}
+
+.issueembed {
+    padding: 1em 0em;
+}
+
+.meta {
+    min-width: 12ch;
+    max-width: 12ch;
+    word-wrap: break-word;
+    padding: 0em 1em;
+}
+
+.provenance {
+    margin-left: 0%;
+    border-right: 2px solid #000000;
+    text-align: right;
+}
+
+.topics {
+    margin-right: 0%;
+    border-left: 2px solid #000000;
+}
+
+figure {
+    margin: 1em 0em;
+    width: auto;
+    height: auto;
+}

@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>Librarian Online - 
+Adventures in Recreational Mathematics: Volume I.
+</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://librarian.cf/stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="https://librarian.cf/stylesheets/article.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id='top'>
+        <a href="https://librarian.cf" style="display: block;">
+        <div id='logo'>
+            <object style="pointer-events: none;" type="image/svg+xml" data="https://librarian.cf/media/logo.svg">Your browser does not support SVG</object>
+        </div>
+        </a>
+        <nav>
+            <a href="https://librarian.cf/" class="nav">Home</a> &vellip;
+            <a href="https://librarian.cf/d.html" class="nav">Dialectic</a> &vellip;
+            <a href="https://librarian.cf/r.html" class="nav">Review</a> &vellip;
+            <a href="https://librarian.cf/s.html" class="nav">Sciences and mathematics</a> &vellip;
+            <a href="https://librarian.cf/i.html" class="nav">Issues</a> &vellip;
+            <a href="https://librarian.cf/l.html" class="nav">Letters</a> &vellip;
+            <a href="https://librarian.cf/e.html" class="nav">Editorial</a>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <aside class="fill"></aside>
+        <aside class="meta provenance">
+<a class='nav' href='https://librarian.cf/authors/isky-mathews.html'>Isky Mathews</a>
+24.4.17
+
+        </aside>
+        <article>
+<h1 id="adventures-in-recreational-mathematics-volume-i.">Adventures in Recreational Mathematics: Volume I.</h1>
+
+<p>This is the first of a new series in <em>The Librarian</em> – each issue, we will discuss a different mathematical field or distinct problem chosen due to their great utility, their results being intriguing or, quite simply, they are enjoyable to play around with.</p>
+<p>Each article will be written by one of (or both of) <em>Isky Mathews &amp; Benedict Randall Shaw</em>, discussing subjects we believe that others will find stimulating as we do on a daily basis.</p>
+<p>Also, for those interested, at the end of each article we will leave a thematic problem of variable difficulty whose solutions should be emailed to either one of the authors. Mathematics can be confusing, it can be surprising but it can also be a lot of fun; this is what <em>Adventures in Recreational Mathematics</em> aims to tap into!</p>
+<p>For our first issue, we will be considering <em>tiling.</em> Tiling is the study of how sets of polygons fit together on <em>the plane,</em> to see whether they <em>tile</em> (i.e. can be placed together in such a way that there are no gaps left across the plane) and to learn if there are geometric principles which could allow us to determine whether these sets can tile the plane or not. Formally, we are concerned with covers of the Euclidean plane formed by countable sets of <em>closed sets</em> such that they intersect only on their boundaries. We begin with the simplest form of tiling, <em>regular</em> tessellations, where the tiling is <em>translationally similar</em> over arbitrary distances and uses only identical <em>regular polygons – monohedral</em> examples of this (ones using only a single <em>prototile</em>) are very well known.</p>
+<div class="figure">
+<img src="image_0.png" />
+
+</div>
+<div class="figure">
+<img src="image_1.png" />
+
+</div>
+<div class="figure">
+<img src="image_2.png" />
+
+</div>
+<p>We would also say that these tilings are <em>isogonal</em> or <em>vertex-transitive,</em> i.e. every vertex has an identical arrangement of tiles around it, and also that they are <em>edge-to-edge</em> tilings, since a given edge of each tile touches no more than one edge from another tile.</p>
+<p>Perhaps unsurprisingly, it is trivial to prove that for <br /><span class="math display">∀<em>n</em> ∈ <em>R</em>, <em>n</em> &lt; 2</span><br /> there is an irregular <br /><span class="math display"><em>n</em></span><br />-gon which tessellates. This can be seen by constructing the shapes below:</p>
+<div class="figure">
+<img src="image_3.jpg" />
+
+</div>
+<div class="figure">
+<img src="image_4.jpg" />
+
+</div>
+<div class="figure">
+<img src="image_5.jpg" />
+
+</div>
+<p>The leftmost figure displays a tessellating hexagon and by adding another pair of sides on top, we get the second figure (a tessellating octagon). We can continue adding pairs like this to get tessellating -gons for even. The third figure shows a way of making these figures odd sided, while retaining tessellation (the forked parts can interlock with two forked parts of other tiles). Thus, you can construct all even and odd numbered -gons for using this method!</p>
+<p>There are, as you can imagine, many other ways of constructing tessellating -gons and in fact many ways of tiling them. If we allow ourselves to tile on a plane with <em>negative curvature</em> (commonly known as the <em>hyperbolic plane</em>), then you can have significantly more tilings – for example, in the Euclidean plane we tile 6 equilateral triangles around a point but in the hyperbolic plane you can have all the way to an infinite number of triangles around a point! This geometry requires greater examination on its own, but that is not the focus of the article.</p>
+<p>There are also <em>semiregular tilings</em>, those that are made up of more than one tile but are still periodic, such as this lovely tiling using squares, hexagons and dodecagons:</p>
+<div class="figure">
+<img src="image_6.png" />
+
+</div>
+<p>However, these are all quite trivial examples and concepts. There are numerous, seriously difficult problems: the so-called <em>tiling problem,</em> the <em>five-fold symmetry problem</em> and understanding <em>Heesch’s Problem</em> are just a few.</p>
+<p>The <em>tiling problem</em> is to create an algorithm or set of principles to determine whether a <em>prototile set</em> tiles, in finite time. A form of this was first proposed by the philosopher and mathematician Hao Wang in 1961, after discovering sets of <em>aperiodic</em> tiles called <em>Wang tiles.</em> An <em>aperiodic tiling</em> is one that has no arbitrary distance <em>translational symmetry</em> and <em>aperiodic tiles</em> are those that can <em>only</em> tile the plane aperiodically. The colours on each side of a Wang tile are a visual way of representing rules for placing them next to each other – here only same-coloured edges can touch but the same rules could just as easily be shown as indents and projections on the edges of each tile. Due to these “matching rules”, these tiles have become colloquially known as <em>Wang dominoes</em> and the problem of determining whether a set of Wang tiles can tile the plane is often called the <em>Domino Problem.</em></p>
+<div class="figure">
+<img src="image_7.png" />
+
+</div>
+<p>In 1966, Wang’s student <em>Berger</em> showed that there is no <em>general</em> algorithm for the Domino Problem. More formally, he showed that the problem is <em>undecidable</em> by showing that it is computationally <em>isomorphic</em> to the <em>halting problem</em> (the first problem ever shown to be undecidable, by Turing). However, there could be tiling-problem algorithms for subsets of the <em>set of all tile sets</em> (for example, the* Conway criterion*) and some still search for them today.</p>
+<p>Heesch’s Problem and <em>Heesch numbers</em> were devised to help with the creation of such an algorithm for single tiles and to give a quantitative indication of the extent to which a tile does or doesn’t tessellate. The Heesch number of a tile is the maximum number of layers of clones that can completely surround the previous layer’s perimeter and the eponymous problem is to determine precisely the set of numbers that <em>can be Heesch numbers.</em> To illustrate what this means, consider a regular pentagon’s Heesch number: 1.</p>
+<div class="figure">
+<img src="image_8.gif" />
+
+</div>
+<p>This is because the 2nd layer would have to touch the sides inside the cracks between the pentagons of the first layer (commonly referred to as the first <em>corona</em>), which is clearly impossible. Also, the tessellating regular polygons first mentioned in this article trivially have a Heesch number of .</p>
+<p>Can we have a tile of finite Heesch number? It appears so: in 1995, Robert Ammann found a tile of Heesch number 3 and also constructed a tile, using indentations and projections on sides of hexagons, of Heesch number 4 and subsequently Casey Mann found an infinite family of tiles of Heesch number <em>5</em>, which is the highest finite number known to date.</p>
+<div class="figure">
+<img src="image_9.png" />
+
+</div>
+<p>You can see in the image that in the outermost layer there are four cases where indents in the hexagons “touch” each other – these parts of the perimeter cannot be covered in the next layer, giving the adjusted hexagon a Heesch number of 4.</p>
+<p>The idea of the Heesch problem is to see whether there is a maximum Heesch number . If this was true then you could construct a finite tiling-problem algorithm: simply attempt to surround it by itself times and if you can clearly continue then its Heesch number must be infinite, thus proving that it tessellates. This algorithm wouldn’t be particularly efficient (at minimum, it would be an EXPTIME, potentially even EXPTIME-complete, algorithm for those who are of the <em>computational complexity</em> persuasion) but it would represent a great step forward.</p>
+<p>This demonstrates one of the remarkable facts about tiling as a subject to study: it is so simple to explain &amp; to think about and yet its problems are apparently so difficult. Beyond using rational thought, having a good understanding of geometry and perhaps studying others’ work, there are no generally accepted tools or techniques used to solve tiling problems. The majority of those who have moved the subject forward have been individuals looking into the topic as a hobby.</p>
+<p>If you’ve found this article interesting (or you just enjoy gazing at beautiful tilings), we suggest these topics for further reading:</p>
+<ul>
+<li><p>Roger Penrose’s contribution to aperiodic tilings</p></li>
+<li><p>Wikipedia’s wonderful catalog of <em>Euclidean tilings by convex regular polygons</em></p></li>
+<li><p>Golden Triangles</p></li>
+<li><p><em>The trouble with five</em> by Cambridge’s <em>Plus Magazine.</em></p></li>
+<li><p>Voronoi tesselations</p></li>
+</ul>
+<h2 id="challenge-i.">Challenge I.:</h2>
+<p><strong>a)</strong> The <em>five-fold symmetry problem</em> is to find a tile set that consists of polygons with exactly five-fold symmetry or to show that such a set cannot exist. Your goal is much simpler, though themed on that basis: <strong>Find one or more irregular pentagons that tile.</strong></p>
+<p><strong>b) Find a prototile/shape of Heesch number 3.</strong> This is much harder, and we don’t have the answer to this, so for the purposes of Westminster, this is an open problem!</p>
+<p>This article was written by <em>Isky Mathews</em> but feel free to send your solutions to either columnist!</p>
+
+
+        </article>
+        <aside class="meta topics">
+
+
+
+<h3><a class='nav' href='https://librarian.cf/s.html'>Sciences and Mathematics</a></h3><figure>
+<a href=https://librarian.cf/articles/3/3.html
+ class='nav'>
+<h4 id="church-of-england-research-youth-views-on-technology-in-survey-of-chaplains-breakfast-joshua-loo">Church of England research youth views on technology in survey of Chaplain's Breakfast / <strong>Joshua Loo</strong></h4>
+</a>
+</figure><figure>
+<a href=https://librarian.cf/articles/5/5.html
+ class='nav'>
+<h4 id="how-to-write-a-librarian-article-joshua-loo">How to write a Librarian article / <strong>Joshua Loo</strong></h4>
+</a>
+</figure>
+
+        </aside>
+        <aside class="fill"></aside>
+    </main>
+</body>
+
+</html>
+

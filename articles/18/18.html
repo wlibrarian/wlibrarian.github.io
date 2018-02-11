@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>Librarian Online - 
+Adventures in Recreational Mathematics IV: Big-O notation
+</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://librarian.cf/stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="https://librarian.cf/stylesheets/article.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id='top'>
+        <a href="https://librarian.cf" style="display: block;">
+        <div id='logo'>
+            <object style="pointer-events: none;" type="image/svg+xml" data="https://librarian.cf/media/logo.svg">Your browser does not support SVG</object>
+        </div>
+        </a>
+        <nav>
+            <a href="https://librarian.cf/" class="nav">Home</a> &vellip;
+            <a href="https://librarian.cf/d.html" class="nav">Dialectic</a> &vellip;
+            <a href="https://librarian.cf/r.html" class="nav">Review</a> &vellip;
+            <a href="https://librarian.cf/s.html" class="nav">Sciences and mathematics</a> &vellip;
+            <a href="https://librarian.cf/i.html" class="nav">Issues</a> &vellip;
+            <a href="https://librarian.cf/l.html" class="nav">Letters</a> &vellip;
+            <a href="https://librarian.cf/e.html" class="nav">Editorial</a>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <aside class="fill"></aside>
+        <aside class="meta provenance">
+<a class='nav' href='https://librarian.cf/authors/benedict-randall-shaw.html'>Benedict Randall Shaw</a>
+4.9.17
+
+        </aside>
+        <article>
+<h1 id="adventures-in-recreational-mathematics-iv-big-o-notation">Adventures in Recreational Mathematics IV: Big-O notation</h1>
+
+<p>This article was also published under the following title.</p>
+<h2 id="adventures-in-informatically-simulated-recreational-mathematics-an-introduction-to-big-o-notation-and-these-plural-heresies-with-which-to-conduct-multiplication-with-increasingly-full-vigour">Adventures in (informatically simulated) recreational mathematics: An introduction to big-O notation, and these plural heresies with which to conduct multiplication with increasingly full vigour</h2>
+<p>DISCLAIMER: this edition of ARM contains neither traditional maths nor any pretty pictures; rather, we are stepping out into the related field of computer science, and are stuck with graphs. We apologise for any inconvenience caused.</p>
+<h1 id="big-o-notation">Big-O Notation</h1>
+<p>In computer science, one seeks to write efficient algorithms, so as not to waste valuable processing time. However, as counterintuitive as it sounds, what we care about most is not how well a program performs on a given value, but rather how well it scales to more complex situations.</p>
+<p>Consider three programs which sort a list of length <br /><span class="math display">1</span><br />, which we’ll call the red, blue, and green programs. We now graph the worst-case (longest) period of time required for each of these programs against the lengths of list, shown at different scales in Figures 1, 2, and 3. From Figure 1, it would seem that the green program is the quickest; however, for most values it turns out to be by far the worst. We don’t usually care about comparing the time taken to sort short lists, as this can be done very quickly either way, and the differences in time taken aren’t actually that large. What we care about are cases where the list is long, as shown on the far right of Figure 3, as the slowest programs can take many times to longer to run than the fastest. In fact, in many such problems, even algorithms which both look at the small scale to be similar (e.g. the blue and green programs) grow to be have very different performances eventually. Computer scientists describe the rate of growth of running times using <em>big-O notation</em>.</p>
+<p>We say that <br /><span class="math display">1</span><br /> are functions on the real numbers, if there exist positive real numbers <br /><span class="math display">1</span><br /> such that for all values of <br /><span class="math display">1</span><br />. At face value, it may seem that by making <br /><span class="math display">1</span><br /> very large, any program must take less than <br /><span class="math display">1</span><br /> units of time to run. This is not the case, as can be illustrated with <br /><span class="math display">1</span><br />, for all values of <br /><span class="math display">1</span><br /> eventually for all values of <br /><span class="math display">1</span><br />. What we really mean in a nutshell by <br /><span class="math display">1</span><br /><a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>. There are a variety of other pieces of big-O notation. For example, we say <br /><span class="math display">1</span><br /> such that for all values of <br /><span class="math display">1</span><br />; this essentially means that <br /><span class="math display">1</span><br />. We also say that <br /><span class="math display">1</span><br /> and <br /><span class="math display">1</span><br /> grows roughly as quickly as <br /><span class="math display">1</span><br />).</p>
+<p>Interestingly, if a function <br /><span class="math display">1</span><br /> grows at least as quickly as <br /><span class="math display">1</span><br />, then as past a certain point <br /><span class="math display">1</span><br />, and past said point <br /><span class="math display">1</span><br /> too (as <br /><span class="math display">1</span><br /> is a constant real number). What this really means is that a function grows as quickly as its fastest growing term; for example, if <br /><span class="math display">1</span><br /> as <br /><span class="math display">1</span><br /> grows more quickly than the other terms. For this, it is helpful to have some idea about which functions grow more quickly than others; a chart of such functions is given at the end of this section.</p>
+<p>In computer science, we care predominantly about the worst-case running time; it (usually) causes no problems if a program runs quickly, but a program taking ages to run is to be avoided if the program is to be usable. We therefore tend to prioritise <br /><span class="math display">1</span><br />. We say a program has <em>time complexity</em> of <br /><span class="math display">1</span><br /> (or sometimes we just say that it is <br /><span class="math display">1</span><br />) if its worst case running time in arbitrary time units is <br /><span class="math display">1</span><br />; for example, the red program in Figures 1–3 is linear and so has time complexity <br /><span class="math display">1</span><br />. (It is also technically <br /><span class="math display">1</span><br /> grows faster than a linear function, but this is unhelpful, so the time complexity uses the slowest growing function we can possibly place inside the brackets of <br /><span class="math display">1</span><br />.) We have names for some time complexities; for example, we say the red program has linear time complexity, for obvious reasons. Below is a chart of common time complexities and their names, ordered from slowest to fastest growing.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><br /><span class="math display">1</span><br /></th>
+<th align="center">constant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><br /><span class="math display">1</span><br /></td>
+<td align="center">log-star</td>
+</tr>
+<tr class="even">
+<td align="center"><br /><span class="math display">1</span><br /> double l</td>
+<td align="center">ogarithmic</td>
+</tr>
+<tr class="odd">
+<td align="center"><br /><span class="math display">1</span><br /></td>
+<td align="center">logarithmic</td>
+</tr>
+<tr class="even">
+<td align="center"><br /><span class="math display">1</span><br /> is a constant fractional</td>
+<td align="center">power</td>
+</tr>
+<tr class="odd">
+<td align="center"><br /><span class="math display">1</span><br /></td>
+<td align="center">linear</td>
+</tr>
+<tr class="even">
+<td align="center"><br /><span class="math display">1</span><br /></td>
+<td align="center">linearithmic</td>
+</tr>
+<tr class="odd">
+<td align="center"><br /><span class="math display">1</span><br /> is a constant polynomi</td>
+<td align="center">al</td>
+</tr>
+<tr class="even">
+<td align="center"><br /><span class="math display">1</span><br /> qu</td>
+<td align="center">adratic (also polynomial)</td>
+</tr>
+<tr class="odd">
+<td align="center"><br /><span class="math display">1</span><br /> is a constant polynomi</td>
+<td align="center">al</td>
+</tr>
+<tr class="even">
+<td align="center"><br /><span class="math display">1</span><br /></td>
+<td align="center">cubic (also polynomial)</td>
+</tr>
+<tr class="odd">
+<td align="center"><br /><span class="math display">1</span><br /> is a constant polyno</td>
+<td align="center">mial</td>
+</tr>
+<tr class="even">
+<td align="center"><br /><span class="math display">1</span><br /> is a constant expone</td>
+<td align="center">ntial</td>
+</tr>
+<tr class="odd">
+<td align="center"><br /><span class="math display">1</span><br /></td>
+<td align="center">factorial</td>
+</tr>
+</tbody>
+</table>
+<h1 id="long-multiplication">Long multiplication</h1>
+<p>It is necessary for a computer to be able to carry out arithmetic operations as quickly as possible, as these are the building blocks of most programs. We can add two <br /><span class="math display">1</span><br />-bit<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> numbers (those less than <br /><span class="math display">1</span><br /> time complexity on a sequential circuit through the usual method that one is taught in school; one simply goes through the two numbers bit by bit, starting with the least significant, and adds them, carrying over into the next column if one needs to. One must only ever add a maximum of three bits (two from the numbers and one from carrying) each time, each individual bit addition has constant time complexity. Because one goes through <br /><span class="math display">1</span><br /> such sets of bits, addition has <br /><span class="math display">1</span><br /> time complexity.</p>
+<p>Multiplication is trickier. However, in the same way that we find it very easy to multiply by powers of 10 by adding zeroes, modern computers are able to multiply by powers of two with <br /><span class="math display">1</span><br /> time complexity (using a circuit called a barrel shifter which will not be explained here). This is called a bit shift, and is very helpful. It means that the long multiplication algorithm, which probably we have all used at some point or other, can be done fairly quickly on a computer. For two <br /><span class="math display">1</span><br />-bit numbers, long multiplication gives us an intermediate term for each “1” bit of the first of the numbers to be multiplied. In the worst case scenario, there are <br /><span class="math display">1</span><br /> of these terms, and as each is produced in constant time from bit shifts, the production of these has <br /><span class="math display">1</span><br /> time complexity.</p>
+<p>As they are all the product of an <br /><span class="math display">1</span><br />-bit number and a power of two that fits in <br /><span class="math display">1</span><br /> <br /><span class="math display">1</span><br /> addition operations. As addition is <br /><span class="math display">1</span><br />, this means that the summation of the intermediate terms has <br /><span class="math display">1</span><br /> time complexity. The production of the terms is <br /><span class="math display">1</span><br />, so the time complexity of long multiplication is <br /><span class="math display">1</span><br />. This is pretty bad. If we wanted to multiply two ten-million-digit numbers (33 million bits), and we were able to perform a billion single-bit additions a second, this algorithm would take nearly a fortnight.</p>
+<h1 id="karatsubas-algorithm">Karatsuba’s algorithm</h1>
+<p>It was conjectured by Andrey Kolmogorov, a notable Soviet mathematician, that the quadratic time complexity of long multiplication could not be improved upon. In 1960, he held a seminar at which he mentioned this, among other computational complexity problems. A week later, Anatoly Karatsuba, a 23-year-old student, found this algorithm, which runs with <br /><span class="math display">1</span><br /> time complexity.</p>
+<p>It belongs to a class of algorithms known as “divide and conquer” algorithms. These work by splitting problems into smaller instances of the same type of problem, until they can be solved easily, and then recombining the solutions to solve the initial problem.</p>
+<p>Consider multiplying two <br /><span class="math display">1</span><br /> be <br /><span class="math display">1</span><br /> down the middle, we can obtain <br /><span class="math display">1</span><br /> such that <br /><span class="math display">1</span><br /> Then it follows that <br /><span class="math display">1</span><br /> There are 4 multiplications to be performed here, and one method of multiplication has you do them all individually; then one does those multiplications by the same technique, and so on until the multiplications are all single-bit, upon which you do them by the usual method. Suppose it takes <br /><span class="math display">1</span><br /> basic operations (single-bit additions and multiplications) to multiply two <br /><span class="math display">1</span><br />-bit numbers by this method; then this method gives <br /><span class="math display">1</span><br />, as we have to add 4 <br /><span class="math display">1</span><br /> basic operations in total).</p>
+<p>This is called a recurrence relation, and can be solved by through a variety of means. For the sake of brevity, we shall use the master theorem, which tells us that, where <br /><span class="math display">1</span><br />, and <br /><span class="math display">1</span><br /> for some <br /><span class="math display">1</span><br /> (i.e. the work to split and recombine a problem is far less than that of the subproblems), <br /><span class="math display">1</span><br />; when <br /><span class="math display">1</span><br /> (i.e. the work to split and recombine a problem is comparable to that of the subproblems), <br /><span class="math display">1</span><br /> for some <br /><span class="math display">1</span><br /> (i.e. the work to split and recombine a problem is far greater than that of the subproblems), <br /><span class="math display">1</span><br />.</p>
+<p>In the case of the algorithm we are currently considering, <br /><span class="math display">1</span><br /> (we have dropped the ceiling signs, as they make a tiny change in the grand scheme of things to <br /><span class="math display">1</span><br /> which does not affect the time taken significantly). Thus <br /><span class="math display">1</span><br />. The master theorem then tells us that <br /><span class="math display">1</span><br />, which is no better than long multiplication.</p>
+<p>What Karatsuba hit upon was that <br /><span class="math display">1</span><br /> could be calculated with only 3 subproblems. We calculate <br /><span class="math display">1</span><br />. Then we calculate <br /><span class="math display">1</span><br />, which is equal to <br /><span class="math display">1</span><br />. Thus we have only made three multiplications, and a couple of additions and subtractions, both of which have linear time complexity. Thus Karatsuba’s algorithm gives us <br /><span class="math display">1</span><br />, where <br /><span class="math display">1</span><br />, so as <br /><span class="math display">1</span><br />, and <br /><span class="math display">1</span><br />.</p>
+<p>This means that in our previous example of two ten-million-digit numbers, we would be done in a couple of hours. This is a marked improvement, but we can still do better.</p>
+<h1 id="toom-cook">Toom-Cook</h1>
+<p>In 1963, Andrei Toom described a generalisation of the Karatsuba algorithm, which Stephen Cook improved as his PhD in 1966. It uses the technique of splitting numbers up (as in Karatsuba) and treating them as polynomials, which is also used in the Schönhage-Strassen algorithm, which is faster still.</p>
+<p>Long multiplication is Toom-1, and has time complexity <br /><span class="math display">1</span><br />. The Karatsuba algorithm is Toom-2, and has time complexity <br /><span class="math display">1</span><br />. In general, Toom-<br /><span class="math display">1</span><br /> has time complexity <br /><span class="math display">1</span><br /> is the time spent on addition and multiplication by small constants. Unfortunately, the function <br /><span class="math display">1</span><br /> grows very quickly. Through use of a variety of values of <br /><span class="math display">1</span><br />, Donald Knuth has made a Toom-Cook implementation that runs in <br /><span class="math display">1</span><br /> Due to overhead, Toom-Cook is slower than long multiplication for small numbers. We shall consider Toom-3 as an example; however, we shall give the general algorithm of Toom-<br /><span class="math display">1</span><br />.</p>
+<p>Given <br /><span class="math display">1</span><br /> and <br /><span class="math display">1</span><br /> digits in some base <br /><span class="math display">1</span><br />. Let these <br /><span class="math display">1</span><br />, and those of <br /><span class="math display">1</span><br />. These polynomials have degree <br /><span class="math display">1</span><br /> <br /><span class="math display">1</span><br />. Similarly, call the coefficients of <br /><span class="math display">1</span><br />. If we let <br /><span class="math display">1</span><br /> in our example:</p>
+<p>We then want to find the product polynomial <br /><span class="math display">1</span><br />, which will be of the form <br /><span class="math display">1</span><br />, as we will then be able to easily evaluate <br /><span class="math display">1</span><br />, as the terms will be easy to calculate using the bit shift mentioned in the section on long multiplication. We do this by interpolation; we find <br /><span class="math display">1</span><br /> values of <br /><span class="math display">1</span><br /> are small, the values of <br /><span class="math display">1</span><br /> are easy to calculate. We abuse notation by saying that <br /><span class="math display">1</span><br /> is the value of the highest-degree coefficient of <br /><span class="math display">1</span><br />. For Toom-3, we shall therefore use <br /><span class="math display">1</span><br /> <br /><span class="math display">1</span><br /> <br /><span class="math display">1</span><br /> We can calculate all of these values by multiplying <br /><span class="math display">1</span><br />; this uses five multiplications of numbers of length <br /><span class="math display">1</span><br /> can be figured out from the five values of <br /><span class="math display">1</span><br /> <br /><span class="math display">1</span><br /> <br /><span class="math display">1</span><br /> <br /><span class="math display">1</span><br /> <br /><span class="math display">1</span><br /> <br /><span class="math display">1</span><br /> <br /><span class="math display">1</span><br /> <br /><span class="math display">1</span><br /> From this we have found the coefficients of <br /><span class="math display">1</span><br />; we can now easily use bit shifts to evaluate <br /><span class="math display">1</span><br />. Thus we have only used 5 multiplications of length <br /><span class="math display">1</span><br /> to calculate a multiplication of length <br /><span class="math display">1</span><br />, with some linear time complexity calculations in between. This means that by the master theorem from earlier, Toom-3 is <br /><span class="math display">1</span><br />.</p>
+<h1 id="faster-algorithms">Faster algorithms</h1>
+<p>In 1971, Arnold Schönhage and Volker Strassen created the Schönhage-Strassen algorithm, which has time complexity <br /><span class="math display">1</span><br />. It is faster than Toom-Cook for integers greater than <br /><span class="math display">1</span><br />, that is to say, those with 40,000 decimal digits. It essentially splits the numbers into digits in some base, takes the discrete Fourier transform or them, multiplies the remaining vectors element by element, and then takes the inverse discrete Fourier transform, and conducts carrying.</p>
+<p>The Fürer algorithm was discovered in 2007; it has time complexity <br /><span class="math display">1</span><br />, and is better than Schönhage-Strassen for integers above <br /><span class="math display">1</span><br />. An implementation was made in 2015 with running time <br /><span class="math display">1</span><br />, thus removing the nested big-O notation.</p>
+<h1 id="problems">Problems</h1>
+<ol style="list-style-type: decimal">
+<li><p>Design a sorting algorithm and work out its time complexity. Try to find the most efficient one you can!</p></li>
+<li><p>Arnold Schönhage and Volker Strassen conjecture that the lower bound of time complexity for multiplication is <br /><span class="math display">1</span><br />. Prove this.</p></li>
+</ol>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>This phrasing is a slight oversimplification, but helpful to consider in order to understand the concept.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>binary digit<a href="#fnref2">↩</a></p></li>
+</ol>
+</div>
+
+
+        </article>
+        <aside class="meta topics">
+
+
+
+
+<h3><a class='nav' href='https://librarian.cf/s.html'>Sciences and Mathematics</a></h3><figure>
+<a href=https://librarian.cf/articles/3/3.html
+ class='nav'>
+<h4 id="church-of-england-research-youth-views-on-technology-in-survey-of-chaplains-breakfast-joshua-loo">Church of England research youth views on technology in survey of Chaplain's Breakfast / <strong>Joshua Loo</strong></h4>
+</a>
+</figure><figure>
+<a href=https://librarian.cf/articles/5/5.html
+ class='nav'>
+<h4 id="how-to-write-a-librarian-article-joshua-loo">How to write a Librarian article / <strong>Joshua Loo</strong></h4>
+</a>
+</figure>
+
+        </aside>
+        <aside class="fill"></aside>
+    </main>
+</body>
+
+</html>
+

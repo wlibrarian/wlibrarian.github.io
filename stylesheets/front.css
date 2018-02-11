@@ -1,0 +1,56 @@
+@media only screen and (max-width: 114ch){
+  section{
+    display: block!important;
+  }
+
+  figure{
+    width: auto!important;
+    max-width: none!important;
+    min-height: 0em!important;
+    height: auto!important;
+		padding:0em!important;
+  }
+
+  .heading{
+    min-height: 0em!important;
+  }
+}
+
+section{
+  display: flex;
+}
+
+strong{
+  font-weight: 700;
+  font-size: 0.95em;
+}
+
+h3{
+  padding: 0.5em;
+}
+
+figure{
+  min-height: 8.5em;
+  margin: 1ch;
+  width: 25ch;
+  height: auto;
+  background-color: #FFC0CB;
+}
+
+
+.heading{
+  padding: 0.2em 0.5em;
+  font-size: 1.5em;
+  background-color: #FFFFFF;
+  height: auto;
+  min-height: 1.2em;
+}
+
+.blank{
+  background-color: #FFFFFF;
+  flex-grow: 1;
+}
+
+.container{
+  display: block;
+}

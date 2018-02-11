@@ -1,0 +1,150 @@
+
+@book{puyi_autobio,
+  title = {From {{Emperor}} to {{Citizen}}: {{The Autobiography}} of {{Aisin}}-{{Gioro Pu Yi}}},
+  isbn = {978-0-19-282099-0},
+  shorttitle = {From {{Emperor}} to {{Citizen}}},
+  abstract = {First published in Chinese in 1964 and then banned by the revolutionaries ten years later, this remarkable autobiography presents the story of a man who served twice as emperor of China, once as emperor of the Japanese puppet state in Manchuria, and then underwent a complete re-education in the prisons of the Communist Chinese government, finally leading a life as an ordinary citizen. Placed on the throne in 1908 at the age of two, Aisin-Gioro Pu Yi became the tenth ruler of the Ch'ing Dynasty and the last emperor of China. Forced to abdicate four years later but permitted to remain in the Forbidden City until the Ch'ing court lost power in 1924, Pu Yi spent his youth surrounded by eunuchs, princes, cooks, consorts, tutors, and the decadent, often wild excesses of the Imperial Palace. During this time, Reginald Johnston, a Scottish district officer and magistrate of the British-leased territory of Weihaiwei in Shantung, became Pu Yi's tutor and established a bond with the young emperor that both remembered fondly in their writings. Recounting those early days, Pu Yi then describes his installation by the Japanese as puppet emperor in Manchuria, the defeat of Japan by the Allies in World War II, his imprisonment in the Soviet Union, and his eventual forced return to the People's Republic of China in 1950. Re-educated in Chinese prisons, Pu Yi learned how to dress himself, work on an assembly line, and criticize his former uselessness and pride. Pu Yi ends the account with his release from prison--pardoned by the Communist Party--and the beginning of his new life as a gardener and then as a researcher of literary and historical materials. This fascinating account not only depicts an empire in the throes of death and the zeal of a new-born regime, but also reveals the tragic story of a man who was a helpless subject of family and government turmoils and not really a ruler at all. W.J. Jenner has written a general introduction and individual introductions to each chapter, giving the history of the book and its political background. Simon Winchester has contributed an afterword on Chinese reactions to the empire and to the making of Bernardo Bertolucci's film about Pu Yi, due to release in November.},
+  pagetotal = {544},
+  timestamp = {2017-05-26T20:30:09Z},
+  langid = {english},
+  publisher = {{Oxford University Press}},
+  author = {Puyi and Jenner, William John Francis},
+  date = {1987-12-01},
+  note = {Google-Books-ID: RZNxAAAAMAAJ},
+  keywords = {Biography & Autobiography / General,Biography & Autobiography / Historical,History / General,Language Arts & Disciplines / Linguistics / General}
+}
+
+@book{cultural_revolution,
+  title = {The {{Chinese}} Cultural Revolution as History},
+  isbn = {978-0-8047-5350-0},
+  abstract = {Based on a wide variety of unusual and only recently available sources, this book covers the entire Cultural Revolution decade (1966-76) and shows how the Cultural Revolution was experienced by ordinary Chinese at the base of urban and rural society. The contributors emphasize the complex interaction of state and society during this tumultuous period, exploring the way events originating at the center of political power changed people's lives and how, in turn, people's responses took the Cultural Revolution in unplanned and unanticipated directions. This approach offers a more fruitful way to understand the Cultural Revolution and its historical legacies.The book provides a new look at the student Red Guard movements, the effort to identify and cultivate potential “revolutionary” leaders in outlying provinces, stubborn resistance to campaigns to destroy the old culture, and the violence and mass killings in rural China.},
+  pagetotal = {396},
+  timestamp = {2017-05-26T20:29:58Z},
+  langid = {english},
+  publisher = {{Stanford University Press}},
+  author = {Esherick, Joseph and Pickowicz, Paul and Walder, Andrew George},
+  date = {2006},
+  note = {Google-Books-ID: W\_4NAQAAMAAJ},
+  keywords = {China,China - History - Cultural Revolution; 1966-1976,History / Asia / China,History / General,History / Social History}
+}
+
+@article{largest_trade,
+  entrysubtype = {newspaper},
+  title = {China Surpasses {{US}} as World's Largest Trading Nation},
+  issn = {0261-3077},
+  url = {https://www.theguardian.com/business/2014/jan/10/china-surpasses-us-world-largest-trading-nation},
+  abstract = {Beijing describes 2013 figures as 'a landmark milestone' as annual trade in goods passes the \$4tn mark for the first time},
+  timestamp = {2017-05-26T20:47:09Z},
+  langid = {british},
+  journaltitle = {The Guardian},
+  journalsubtitle = {Business},
+  author = {Monaghan, Angela},
+  urldate = {2017-05-26},
+  date = {2014-01-10},
+  keywords = {Asia Pacific,Business,China,Economics,Global economy,International trade,US economy,US news,World news},
+  file = {Guardian Snapshot:/home/chair/.zotero/zotero/t3jot1ef.default/zotero/storage/S3IQFNA5/china-surpasses-us-world-largest-trading-nation.html:text/html}
+}
+
+@online{_chinese_2017,
+  title = {Chinese Student Who Praised {{US}} Air, Freedom Apologises after Backlash},
+  url = {http://www.scmp.com/news/china/society/article/2095319/chinese-student-who-praised-us-freedoms-apologizes-after-backlash},
+  abstract = {Yang Shuping’s graduate speech at the University of Maryland drew vitriol from Chinese internet users},
+  timestamp = {2017-05-26T21:13:34Z},
+  journaltitle = {South China Morning Post},
+  urldate = {2017-05-26},
+  year = {2017-05-23T12:30:00+08:00},
+  file = {Snapshot:/home/chair/.zotero/zotero/t3jot1ef.default/zotero/storage/9Z7BTDEI/chinese-student-who-praised-us-freedoms-apologizes-after-backlash.html:text/html}
+}
+
+@article{yang,
+  entrysubtype = {newspaper},
+  title = {Chinese Student Sorry after Uproar at {{US}} 'Fresh Air' Speech},
+  url = {http://www.bbc.co.uk/news/world-asia-china-40013486},
+  abstract = {Yang Shuping's US university graduation address praising democracy caused uproar in China.},
+  timestamp = {2017-05-26T21:15:07Z},
+  langid = {british},
+  journaltitle = {BBC News},
+  journalsubtitle = {China},
+  author = {Gracie, Carrie},
+  urldate = {2017-05-26},
+  year = {2017-05-23T16:50:25+01:00},
+  file = {Snapshot:/home/chair/.zotero/zotero/t3jot1ef.default/zotero/storage/5D3RH9U4/world-asia-china-40013486.html:text/html}
+}
+
+@online{press,
+  title = {2017 {{World Press Freedom Index}} | {{Reporters Without Borders}}},
+  url = {https://rsf.org/en/ranking},
+  abstract = {Reporters Without Borders (RSF) presents the 2017 World Press Freedom Index.},
+  timestamp = {2017-05-26T21:19:25Z},
+  journaltitle = {RSF},
+  urldate = {2017-05-26},
+  file = {Snapshot:/home/chair/.zotero/zotero/t3jot1ef.default/zotero/storage/538QSNIU/ranking.html:text/html}
+}
+
+@online{freedomhouse,
+  title = {United {{States}} | {{Country}} Report | {{Freedom}} in the {{World}} | 2016},
+  url = {https://freedomhouse.org/report/freedom-world/2016/united-states},
+  timestamp = {2017-05-26T21:20:54Z},
+  urldate = {2017-05-26},
+  file = {United States | Country report | Freedom in the World | 2016:/home/chair/.zotero/zotero/t3jot1ef.default/zotero/storage/8MHHMJ2T/united-states.html:text/html}
+}
+
+@online{umd,
+  title = {\#{{Proud}} of {{China UMD}}},
+  url = {https://www.youtube.com/watch?v=MG-s9nenvcw},
+  abstract = {We encourage everyone to think critically and rationally regarding this incident. The purposes of this video are to clear the wrong stereotypes and to show our courage to speak up.
+
+Shuping Yang spoke as the 2017 University of Maryland commencement student speaker. Her remarks included false statements and rumor about multiple China-related issues. We are deeply concerned about some of the stereotypical comments in her speech. And we, Chinese students at UMD, decided to reply with the following videos.
+
+拒绝沉默！马里兰中国留学生24小时内发声：我们不是你们心中的刻板印象。 我们为自己的祖国自己的家乡感到骄傲与自豪。请更多中国人\#Proud of China， 说出你们对中国的热爱与赤忱！},
+  timestamp = {2017-05-27T09:19:46Z},
+  author = {{Esme Jiang}},
+  urldate = {2017-05-27}
+}
+
+@online{beltroad,
+  title = {{{PM Lee}} Not Invited to {{Belt}} and {{Road}} Forum, Is {{S}}’pore in Trouble? | {{Mothership}}.{{SG}}},
+  url = {http://mothership.sg/2017/05/pm-lee-not-invited-to-belt-and-road-forum-is-spore-in-trouble/},
+  shorttitle = {{{PM Lee}} Not Invited to {{Belt}} and {{Road}} Forum, Is {{S}}’pore in Trouble?},
+  abstract = {We think that the glass is half full.},
+  timestamp = {2017-05-27T09:24:00Z},
+  urldate = {2017-05-27},
+  file = {Snapshot:/home/chair/.zotero/zotero/t3jot1ef.default/zotero/storage/8NR4ZJG2/pm-lee-not-invited-to-belt-and-road-forum-is-spore-in-trouble.html:text/html}
+}
+
+@online{foreignjudge,
+  title = {Mainland Legal Expert Questions {{Hong Kong}}’s Foreign Judges},
+  url = {http://www.scmp.com/news/hong-kong/article/2076267/how-many-foreign-judges-too-many-mainland-legal-expert-suggests-hong},
+  abstract = {Basic Law Committee member Rao Geping declines to comment directly on judge who jailed policemen for assaulting Occupy activist.},
+  timestamp = {2017-05-27T09:27:45Z},
+  journaltitle = {South China Morning Post},
+  urldate = {2017-05-27},
+  year = {2017-03-06T07:00:12+08:00},
+  file = {Snapshot:/home/chair/.zotero/zotero/t3jot1ef.default/zotero/storage/9EHFARFI/how-many-foreign-judges-too-many-mainland-legal-expert-suggests-hong.html:text/html}
+}
+
+@article{hinkley,
+  entrysubtype = {newspaper},
+  title = {China Plans Central Role in {{UK}} Nuclear Industry after {{Hinkley Point}} Approval},
+  issn = {0261-3077},
+  url = {https://www.theguardian.com/business/2016/sep/15/hinkley-point-chinese-firm-to-submit-essex-nuclear-plant-plans},
+  abstract = {China General Nuclear aims to submit designs for Bradwell power station in Essex within weeks of Somerset approval, sources say},
+  timestamp = {2017-06-01T21:18:54Z},
+  langid = {british},
+  journaltitle = {The Guardian},
+  journalsubtitle = {Business},
+  author = {Ruddick, Graham},
+  date = {2016-09-15},
+  keywords = {Business,China,Energy,Energy industry,Environment,Essex,Hinkley Point C,Nuclear power,UK news},
+  file = {Guardian Snapshot:/home/chair/.zotero/zotero/t3jot1ef.default/zotero/storage/BRVWMUX8/hinkley-point-chinese-firm-to-submit-essex-nuclear-plant-plans.html:text/html}
+}
+
+@online{ifrica,
+  title = {China Pledged to Invest \$60 Billion in {{Africa}}. {{Here}}’s What That Means. - {{The Washington Post}}},
+  url = {https://www.washingtonpost.com/news/monkey-cage/wp/2016/01/07/china-pledged-to-invest-60-billion-in-africa-heres-what-that-means/},
+  timestamp = {2017-06-01T21:23:23Z},
+  urldate = {2017-06-01},
+  file = {China pledged to invest $60 billion in Africa. Here’s what that means. - The Washington Post:/home/chair/.zotero/zotero/t3jot1ef.default/zotero/storage/95IA3TP2/china-pledged-to-invest-60-billion-in-africa-heres-what-that-means.html:text/html}
+}
+
+
