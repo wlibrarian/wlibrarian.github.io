@@ -56,6 +56,10 @@ header {
     margin: auto;
 }
 
+#logoimg {
+	max-width: 100%;
+}
+
 object {
     max-width: 80%;
     max-height: 3em;
