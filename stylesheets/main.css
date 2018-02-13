@@ -59,6 +59,7 @@ header {
 #logoimg {
 	max-width: 100%;
 	width: auto!important;
+	margin: auto!important;
 }
 
 object {
