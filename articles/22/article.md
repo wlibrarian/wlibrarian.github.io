@@ -1,6 +1,6 @@
 # Library News, Issue 30
 
-{'Author': 'Joshua Loo', 'Date': '5.6.17', 'Category': 'Notes', 'Tags': ('The Library',)}
+{'Author': 'Joshua Loo', 'Date': '5.6.17', 'Category': 'Notes', 'Tags': ('The Library',), "Issue": 30}
 
 Agreement has been reached over editorial control of *The Librarian*,
 confirming editorial independence and a new format of *The Librarian*.

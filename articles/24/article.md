@@ -1,6 +1,6 @@
 #Library News, Issue 32
 
-{'Author': 'Joshua Loo', 'Date': '4.9.17', 'Category': 'Notes', 'Tags': ('The Library',)}
+{'Author': 'Joshua Loo', 'Date': '4.9.17', 'Category': 'Notes', 'Tags': ('The Library',), "Issue": 32}
 
 Welcome to our first edition of The Librarian this year, and we hope you
 enjoy it! The Librarian is The Library Committee’s monthly magazine,

@@ -1,6 +1,6 @@
 # Library News, Issue 31
 
-{'Author': 'Joshua Loo', 'Date': '27.6.17', 'Category': 'Notes', 'Tags': ('The Library',)}
+{'Author': 'Joshua Loo', 'Date': '27.6.17', 'Category': 'Notes', 'Tags': ('The Library',), "Issue": 31}
 
 **Compiled by Jonny Heywood, Chairperson, and edited by Joshua Loo**
 

@@ -1,6 +1,6 @@
 #Editor's note
 
-{'Author': 'Joshua Loo', 'Date': '27.06.17', 'Category': 'Notes', 'Tags': ('The Library',)}
+{'Author': 'Joshua Loo', 'Date': '27.06.17', 'Category': 'Notes', 'Tags': ('The Library',), "Issue": 32}
 
 First, I should like to reiterate everything in the Chair’s welcome. The
 Chair works very hard in his work with the Committee and the library as

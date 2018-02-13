@@ -1,6 +1,6 @@
 # **Chaim Potok’s** *The Chosen*
 
-{"Author": "Joshua Loo", "Date": "28.4.17", "Category": "Review", "Tags": ("Chaim Potok", "Literature")}
+{"Author": "Joshua Loo", "Date": "28.4.17", "Category": "Review", "Tags": ("Chaim Potok", "Literature"), "Issue": 28}
 
 The story of the friendship of a Hasid and Modernist, set in the dying years of World War II and the genesis of the Israeli nation-state is not simply a story of the ability of people ostensibly divided by faith to become friends - it is a book which is, fundamentally, about the paradoxes which strong faith inevitably precipitates. It is about the anger of a "liberal" Jew that his son rejected a Hasid, and the softening of a “conservative” Jew whose son breaks with tradition. Yet it is also about their synthesis - the application of traditions of Jewish scholarship to scientific study, and scientific study to Jewish scholarship, and it is from this combination of synthesis and conflict which the magic of this book stems.
 

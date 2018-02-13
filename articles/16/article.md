@@ -1,6 +1,6 @@
 #On common institutions and dialectic speech
 
-{"Author": "Joshua Loo", "Date": "4.9.17", "Category": "Ought", "Tags": ("Freedom of speech","Education")}
+{"Author": "Joshua Loo", "Date": "4.9.17", "Category": "Ought", "Tags": ("Freedom of speech","Education"), "Issue": 32}
 
 The following note has been added for clarity.
 

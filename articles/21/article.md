@@ -1,6 +1,6 @@
 #Terror and colonialism in the Middle East
 
-{'Author': 'Luke Dunne', 'Date': '27.6.17', 'Category': 'Ought', 'Tags': ('Middle East', 'Terrorism', 'Colonialism', 'Islam')}
+{'Author': 'Luke Dunne', 'Date': '27.6.17', 'Category': 'Ought', 'Tags': ('Middle East', 'Terrorism', 'Colonialism', 'Islam'), "Issue": 31}
 
 If we were to choose one image to describe the last 15 years, what would it be? Perhaps it would be planes colliding with the Twin Towers, a bomb blast in the center of a Middle Eastern city or an ISIS flag hoisted above an armored car pounding across a desert road. Terrorism, or more specifically, Islamic terrorism, has entered the Western consciousness to a greater degree than ever before, and the consequent ‘debate’ has essentially consisted of trying to answer binary questions. Is Islam good or bad? Are Muslims inherently more prone to terrorism? Are terrorists ‘real Muslims’? Reducing our understanding of fundamentalism to these questions is unhelpful as not only is the issue too complex to answer with a simple yes or no, but seeking to pass blame onto either the Islamic faith or Muslims generally rather than actually consider the problem in any detail is unproductive. Instead, we could consider three things; the historical context for fundamentalism (a movement within Islam to return to its roots through theocratic government and religious conservatism), the reasons for the recent growth of terror and framing possible solutions to it in terms of its causes.
 

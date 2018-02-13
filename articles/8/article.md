@@ -1,6 +1,6 @@
 # Reality *may* not be what it seems: **Lee Smolin**'s *The Trouble with Physics*
 
-{"Author": "Isky Mathews", "Category": "Review", "Date": "25.5.17", "Tags": ("Physics", "String theory", "Sciences and Mathematics")}
+{"Author": "Isky Mathews", "Category": "Review", "Date": "25.5.17", "Tags": ("Physics", "String theory", "Sciences and Mathematics"), "Issue": 30}
 
 In 1905, Albert Einstein wrote three immensely influential papers: one
 showing irrefutably the existence of the atom and its rough size, one

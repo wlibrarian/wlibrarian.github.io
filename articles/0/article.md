@@ -1,6 +1,6 @@
 # **History Society:** **Benedict Mee** on "Ruling the Seas: Pirates and Roman expansionism"
 
-{"Author": "Jonny Heywood", "Date": "28.4.17", "Category": "Review", "Tags": ("Romans", "Piracy")}
+{"Author": "Jonny Heywood", "Date": "28.4.17", "Category": "Review", "Tags": ("Romans", "Piracy"), "Issue": 28}
 
 The turnout was more than a little surprising. Given Ian Duncan-Smith’s talk on ‘Social Justice and Europe’, that 20 people attended was something of a surprise.
 

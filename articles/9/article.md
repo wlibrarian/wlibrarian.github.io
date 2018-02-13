@@ -1,6 +1,6 @@
 #The Death of Chinese Pluralism
 
-{"Author": "Joshua Loo", "Category": "Ought", "Date": "5.5.17", "Tags": ("China","Hong Kong","Communism")}
+{"Author": "Joshua Loo", "Category": "Ought", "Date": "5.5.17", "Tags": ("China","Hong Kong","Communism"), "Issue": 30}
 
 ##Introductory
 

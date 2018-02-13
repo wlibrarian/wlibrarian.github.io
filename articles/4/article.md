@@ -1,6 +1,6 @@
 # In Defence of offence and offence
 
-{"Author": "Joshua Loo", "Date": "28.4.17", "Category": "Ought", "Tags": ("Freedom of speech", "Offence")}
+{"Author": "Joshua Loo", "Date": "28.4.17", "Category": "Ought", "Tags": ("Freedom of speech", "Offence"), "Issue": 28}
 
 Freedom exists in several different ways. Perhaps the two most important dimensions of freedom of speech are first, the freedom to make certain claims without restriction, and second, the ability to make these claims where and when one wishes. As a reaction to tragedy, some choose to close themselves off. This is entirely legitimate insofar as it only affects the individuals who choose to do so. At the point at which it begins to affect others, it often becomes illegitimate, counter-productive and coercive itself.  This article contains two defences: first, one of offensive material, not in an intellectual sense but rather an attack on state or communal attempts at censorship, and second, a defence of the offence which is taken when such statements are made, and measures to restrict where and when speech acts take place.
 

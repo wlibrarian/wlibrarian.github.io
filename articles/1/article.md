@@ -1,6 +1,6 @@
 #**Middle East Society:** **Christopher de Bellaigue** on *The Islamic Enlightenment*
 
-{"Author": "Joshua Loo", "Date": "28.4.17", "Category": "Review", "Tags": ("Christopher de Bellaigue", "Literature")}
+{"Author": "Joshua Loo", "Date": "28.4.17", "Category": "Review", "Tags": ("Christopher de Bellaigue", "Literature"), "Issue": 28}
 
 Claims that one has located the "Islamic Enlightenment", that “the” Islamic Enlightenment is a useful concept or other broad claims of religious equivalence are often highly intellectually questionable, more the product of an inflated sense of academic worth than real inquiry. De Bellaigue makes a somewhat different claim - one which partly inoculated his work to this ailment, which was that the period before the Great War marked a period of intellectual flourishing within the Ottoman and Persian Empires.
 
