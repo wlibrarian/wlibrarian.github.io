@@ -14,11 +14,11 @@ DISCLAIMER: this edition of ARM contains neither traditional maths nor any prett
 
 In computer science, one seeks to write efficient algorithms, so as not to waste valuable processing time. However, as counterintuitive as it sounds, what we care about most is not how well a program performs on a given value, but rather how well it scales to more complex situations.\\
 
-\includegraphics{smallgraph}
+\includegraphics{smallgraph.png}
 
-\includegraphics{mediumgraph}
+\includegraphics{mediumgraph.png}
 
-\includegraphics{largegraph}
+\includegraphics{largegraph.png}
 
 Consider three programs which sort a list of length \(n\), which we'll call the red, blue, and green programs. We now graph the worst-case (longest) period of time required for each of these programs against the lengths of list, shown at different scales in Figures 1, 2, and 3. From Figure 1, it would seem that the green program is the quickest; however, for most values it turns out to be by far the worst. We don't usually care about comparing the time taken to sort short lists, as this can be done very quickly either way, and the differences in time taken aren't actually that large. What we care about are cases where the list is long, as shown on the far right of Figure 3, as the slowest programs can take many times to longer to run than the fastest. In fact, in many such problems, even algorithms which both look at the small scale to be similar (e.g. the blue and green programs) grow to be have very different performances eventually. Computer scientists describe the rate of growth of running times using \textit{big-O notation}.
 
