@@ -1,6 +1,6 @@
 #Crooke's *Resistance*
 
-{"Author": "Joshua Loo", "Date": "4.9.17", "Category": "Review", "Tags": ("Islam","Dialectic","Alistair Crooke")}
+{"Author": "Joshua Loo", "Date": "4.9.17", "Category": "Review", "Tags": ("Islam","Ought","Alistair Crooke")}
 
 Discourse about Islam often blithely assumes Islamic inferiority,
 whether in overtly advocating its suppression or appeasement.

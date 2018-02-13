@@ -1,6 +1,6 @@
 # What happens if there is a hung parliament?
 
-{"Author": "Jonny Heywood", "Category": "Dialectic", "Date": "25.5.17", "Tags": ("General Election", "Jeremy Corbyn")}
+{"Author": "Jonny Heywood", "Category": "Is", "Date": "25.5.17", "Tags": ("General Election", "Jeremy Corbyn")}
 
 A few days ago, YouGov shook the political world by releasing a forecast for seats one by each party, today this [model](https://yougov.co.uk/uk-general-election-2017) forecasts Labour on 257, but crucially the Conservatives on 313. Whilst obviously polls can be inaccurate, and YouGov in particular is known to use a polling model more friendly to Labour, taking this tool at face value, we might well be looking at a hung parliament on Friday – and so we have to begin considering what could happen, come June 9th, if we are left with a hung parliament.
 

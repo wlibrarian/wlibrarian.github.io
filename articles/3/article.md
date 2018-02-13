@@ -1,6 +1,6 @@
 # Church of England research youth views on technology in survey of Chaplain's Breakfast
 
-{"Author": "Joshua Loo", "Date": "28.4.17", "Category": "Sciences and Mathematics", "Tags": ("Chaplain's Breakfast", "Church of England")}
+{"Author": "Joshua Loo", "Date": "28.4.17", "Category": "Is", "Tags": ("Chaplain's Breakfast", "Church of England")}
 
 In its perennial struggle for relevance since the end of the nineteenth century, the CofE’s latest attempt is a study of "excarnation". Its latest attempt is its joining of the panic about the internet. “Could technology become God?” asked Anne Richards. The CofE’s “National Adviser on New Religious Movements and Alternative Spiritualities”’s latest project is on “Excarnation”, described in an Intranet notice as “living life through ‘smart’ devices and social media. It is perhaps ironic that the institution which once fought for a vernacularisation which would make God a book for many millions more is now worried about digitisation.
 

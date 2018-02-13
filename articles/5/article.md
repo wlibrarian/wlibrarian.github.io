@@ -1,6 +1,6 @@
 # How to write a Librarian article
 
-{"Author": "Joshua Loo", "Date": "21.5.17", "Category": "Sciences and Mathematics", "Tags": ("Meta", "Computer Science")}
+{"Author": "Joshua Loo", "Date": "21.5.17", "Category": "Is", "Tags": ("Meta", "Computer Science")}
 
 This is a guide about writing documents in Google Docs. We accept submissions not only in Google Docs, but also in HTML, LaTeX and Markdown. However, because Google Docs documents are different to those formats, you must write your documents in line with a strict set of guidelines, to ensure that we can automatically upload them to our website. To write an article in *The Librarian*, you must:
 
