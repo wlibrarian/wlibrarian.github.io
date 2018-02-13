@@ -1,6 +1,6 @@
 #Editor's Note
 
-{'Author': 'Joshua Loo', 'Date': '9.10.17', 'Category': 'Notes', 'Tags': ('The Library',), "Issue": 33}
+{'Author': 'Joshua Loo', 'Date': '9.10.17', 'Category': 'Notes', 'Tags': ('The Library',), "Issue": "Supplementary Issue 1"}
 
 These longer editions are now to be referred to as “Supplementary
 Issues”, as many pieces are only tangentially related to the library.
