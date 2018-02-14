@@ -1,6 +1,6 @@
 #Editorial
 
-{'Author': 'Joshua Loo', 'Date': '15.1.18', 'Category': 'Editorial', 'Tags': ('The Elizabethan',), "Issue": "Supplementary Issue 3"}
+{'Author': 'Joshua Loo', 'Date': '15.1.18', 'Category': 'Editorial', 'Tags': ('The Elizabethan',), "Issue": "Volume II, Supplementary 1"}
 
 The New Year has prompted a little æsthetic reflexion, culminating in
 the various changes present in this supplementary. It is desired that
