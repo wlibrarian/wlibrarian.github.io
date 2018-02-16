@@ -15,10 +15,12 @@ h1,
 h2,
 h3 {
 	line-height: 1.2;
+	text-align: left;
 }
 
 a {
-	color: #82c4e0
+	text-decoration: none;
+	color: #808080;
 	/* These are technically the same, but use both */
   overflow-wrap: break-word;
   word-wrap: break-word;

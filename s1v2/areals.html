@@ -1,586 +1,77 @@
+
 <!DOCTYPE html>
+
 <html lang="en-GB">
- <head>
-  <title>
-   Librarian Online
-  </title>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet"/>
-  <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
-  </script>
-  <script type="text/x-mathjax-config">
-   MathJax.Hub.Config({
+<head>
+<title>Librarian Online</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet"/>
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
   CommonHTML: { linebreaks: { automatic: true } },
   "HTML-CSS": { linebreaks: { automatic: true } },
          SVG: { linebreaks: { automatic: true } }
 });
-  </script>
-  <link href="../main.css" rel="stylesheet"/>
- </head>
- <body>
-  <header>
-   <a href="../index.html">
-    <h1>
-     <b>
-      The Librarian
-     </b>
-    </h1>
-   </a>
-   <hr/>
-   <main>
-    <a href="issue.html">
-     <h1>
-      Supplementary 1, Volume 2
-     </h1>
-    </a>
-    <hr/>
-    <h1>
-     A reintroduction to areal coördinates
-    </h1>
-    <p>
-     <b>
-      Benedict Randall Shaw
-     </b>
-    </p>
-    <p>
-     Several issues ago, an article was published in this publication with the title . Regrettably, having revisited this article, it seems to have been below the usual standard, and worryingly cursory. However, the topic itself is of use and interest; thus, this article is intended to do that which the original failed to, viz. introduce the reader to areal coördinates.
-    </p>
-    <p>
-     This article is aimed at those who wish to do vaguely well in olympiads, but find themselves unable to do geometry by Euclidean (normal) methods. While most olympiad questions are designed to be done by such methods, there exist other ways of doing geometry problems. Areal coördinates are an example of such a method; they constitute a coördinate system, in the same way that Cartesian coördinates (those with which most people are most familiar) are a coördinate system. They are not always successful, but tend to be useful in problems where a triangle is the central object involved.
-    </p>
-    <p>
-     In order to become competent with mathematic concepts, it is helpful to practise; so, throughout this article I shall leave questions that can be done by those wishing to become competent.
-    </p>
-    <h2 id="definitions">
-     Definitions
-    </h2>
-    <p>
-     We say that a point anywhere in the plane
-     <span class="math inline">
-      \(P\)
-     </span>
-     has coördinates
-     <span class="math inline">
-      \((x,y,z)\)
-     </span>
-     with respect to a triangle
-     <span class="math inline">
-      \(\triangle{}ABC\)
-     </span>
-     iff
-     <span class="math display">
-      \[(x,y,z)=\left(\frac{[PBC]}{[ABC]},\frac{[APC]}{[ABC]},\frac{[ABP]}{[ABC]}\right)\]
-     </span>
-     where
-     <span class="math inline">
-      \([DEF]\)
-     </span>
-     , for some triangle
-     <span class="math inline">
-      \(DEF\)
-     </span>
-     , is the area of
-     <span class="math inline">
-      \(\triangle{}DEF\)
-     </span>
-     .
-    </p>
-    <div class="figure">
-     <img alt="A point P, with respect to \triangle{}ABC." src="def-areas.png"/>
-     <p class="caption">
-      Figure 1:
-      A point
-      <span class="math inline">
-       \(P\)
-      </span>
-      , with respect to
-      <span class="math inline">
-       \(\triangle{}ABC\)
-      </span>
-      .
-      <span data-label="def-areas">
-      </span>
-     </p>
-    </div>
-    <p>
-     Note that
-     <span class="math inline">
-      \(x+y+z=1\)
-     </span>
-     is thus always true, as clearly
-     <span class="math inline">
-      \([PBC]+[APC]+[ABP]\)
-     </span>
-     . We thus have a rigorously defined unique set of coördinates for all points within the triangle. But what about those outside the triangle? First, we must define directed areas. When we name a triangle, convention says that we label its points anticlockwise. We therefore say that
-     <span class="math inline">
-      \([ABC]\)
-     </span>
-     is positive if
-     <span class="math inline">
-      \(A,B,C\)
-     </span>
-     are in order going anticlockwise around
-     <span class="math inline">
-      \(\triangle{}ABC\)
-     </span>
-     , and negative if the points are in order going clockwise. (If the points
-     <span class="math inline">
-      \(A,B,C\)
-     </span>
-     are in a straight line, then
-     <span class="math inline">
-      \([ABC]\)
-     </span>
-     is obviously zero.) We now have a distinct set of coördinate for all points in the plane.
-    </p>
-    <p>
-     An equivalent definition exists with vectors. For any arbitrary point
-     <span class="math inline">
-      \(O\)
-     </span>
-     in the plane, point
-     <span class="math inline">
-      \(P\)
-     </span>
-     has coördinates
-     <span class="math inline">
-      \((x,y,z)\)
-     </span>
-     with respect to
-     <span class="math inline">
-      \(\triangle{}ABC\)
-     </span>
-     iff
-     <span class="math inline">
-      \(\overrightarrow{OP}=x\overrightarrow{OA}+y\overrightarrow{OB}+z\overrightarrow{OC}\)
-     </span>
-     and
-     <span class="math inline">
-      \(x+y+z=1\)
-     </span>
-     . It does not matter where we choose
-     <span class="math inline">
-      \(O\)
-     </span>
-     ; we get the same set of coördinates for
-     <span class="math inline">
-      \(P\)
-     </span>
-     whereever
-     <span class="math inline">
-      \(O\)
-     </span>
-     is.
-    </p>
-    <p>
-     <br/>
-    </p>
-    <p>
-     For the physically minded, there is also yet another definition;
-     <span class="math inline">
-      \((x,y,z)\)
-     </span>
-     is the point that is the centre of mass when one places masses
-     <span class="math inline">
-      \(x,y,z\)
-     </span>
-     at points
-     <span class="math inline">
-      \(A,B,C\)
-     </span>
-     respectively, such that
-     <span class="math inline">
-      \(x+y+z=1\)
-     </span>
-     . Note that we allow negative masses.
-    </p>
-    <p>
-     It is clear that
-     <span class="math inline">
-      \(A,B,C\)
-     </span>
-     have coördinates
-     <span class="math inline">
-      \((1,0,0),(0,1,0),(0,0,1)\)
-     </span>
-     respectively; from consideration of the definition involving areas, one can see that a point is within the triangle if and only iff all its coördinates are positive.
-    </p>
-    <p>
-     Often we don’t care about the constraint
-     <span class="math inline">
-      \(x+y+z=1\)
-     </span>
-     , and so we relax it; there is no single standard notation for this of which this correspondent is aware, so in this article, we shall use
-     <span class="math inline">
-      \((x,y,z)^*\)
-     </span>
-     to denote
-     <span class="math inline">
-      \((\frac{x}{x+y+z},\frac{y}{x+y+z},\frac{z}{x+y+z})\)
-     </span>
-     . These are sometimes referred to as unnormalised coördinates.
-    </p>
-    <h2 id="triangle-centres">
-     Triangle centres
-    </h2>
-    <p>
-     Triangles do not have an obviously defined centre; as a result, there are numerous points known as
-     <em>
-      triangle centres
-     </em>
-     , to the point where they have an encyclopædia, which at time of writing contains 15888 centres, and is imaginatively named the
-     <em>
-      Encyclopedia of Triangle Centers
-     </em>
-     (it is admittedly American). Needless to say, most of these are completely useless; however, the centres are loosely sorted by importance, and the encyclopædia gives the areal coördinates of the earlier centres, although it calls them barycentrics. Here are some important centres, and their coördinates with respect to
-     <span class="math inline">
-      \(\triangle{}ABC\)
-     </span>
-     (when they are the centres of the
-     <span class="math inline">
-      \(\triangle{}ABC\)
-     </span>
-     ).
-     <span class="math inline">
-      \(a,b,c\)
-     </span>
-     refer to the lengths of sides
-     <span class="math inline">
-      \(BC,CA,AB\)
-     </span>
-     respectively, and
-     <span class="math inline">
-      \(A,B,C\)
-     </span>
-     refer to angles
-     <span class="math inline">
-      \(\angle{}CAB,\angle{}ABC,\angle{}BCA\)
-     </span>
-     respectively.
-    </p>
-    <h3 id="incentre">
-     Incentre
-    </h3>
-    <p>
-     This is the centre of the incircle (the circle within the triangle tangent to all three sides) and also the intersection of the internal angle bisectors of the triangle; it has coördinates
-     <span class="math inline">
-      \((a,b,c)^*\)
-     </span>
-     .
-    </p>
-    <h3 id="centroid">
-     Centroid
-    </h3>
-    <p>
-     This is the intersection of the medians of the triangle (the lines from vertices of the triangle to midpoints of the opposing sides); it has coördinates
-     <span class="math inline">
-      \((1,1,1)^*\)
-     </span>
-     .
-    </p>
-    <h3 id="circumcentre">
-     Circumcentre
-    </h3>
-    <p>
-     This is the centre of the circle passing through all three vertices of the triangle, and the intersection of the perpendicular bisectors of the sides; it has coördinates
-     <span class="math inline">
-      \((\sin{}2A,\sin{}2B,\sin{}2C)^*\)
-     </span>
-     .
-    </p>
-    <h3 id="orthocentre">
-     Orthocentre
-    </h3>
-    <p>
-     This is the intersection of the altitudes of the triangle (the perpendiculars from the vertices to the opposing sides); it has coördinates
-     <span class="math inline">
-      \((\tan{}A,\tan{}B,\tan{}C)^*\)
-     </span>
-     .
-    </p>
-    <p>
-     These four points are often sufficient; there are many theorems involving them, and they appear frequently in olympiads. Other points, and their coördinates, can be found in the
-     <em>
-      Encyclopedia of Triangle Centers
-     </em>
-     .
-    </p>
-    <h2 id="lines">
-     Lines
-    </h2>
-    <p>
-     In the same way that the general equation for a line in Cartesian coördinates is
-     <span class="math inline">
-      \(lx+my+c=0\)
-     </span>
-     (where
-     <span class="math inline">
-      \(l,m,c\)
-     </span>
-     are constants that are not all zero), the general equation for a line in areal coördinates is
-     <span class="math inline">
-      \(lx+my+nz=0\)
-     </span>
-     (where
-     <span class="math inline">
-      \(l,m,n\)
-     </span>
-     are constants that are not all zero), in addition to the standard
-     <span class="math inline">
-      \(x+y+z=1\)
-     </span>
-     required by areals. Note that this equation still works if we relax the
-     <span class="math inline">
-      \(x+y+z=1\)
-     </span>
-     constraint and use unnormalised coördinates, as scaling
-     <span class="math inline">
-      \(lx+my+nz\)
-     </span>
-     by a constant still gives 0 for a point that is on the line.
-    </p>
-    <p>
-     The equation of a line through two points
-     <span class="math inline">
-      \((x_p,y_p,z_p)\)
-     </span>
-     and
-     <span class="math inline">
-      \((x_q,y_q,z_q)\)
-     </span>
-     is expressed most readably with a matrix determinant. For those unaware of them, matrices are rectangular arrays of numbers. We define the determinant (written with vertical lines around a matrix) of a two by two matrix thus—
-     <span class="math display">
-      \[\begin{vmatrix}a&amp;b\\c&amp;d\end{vmatrix}\equiv{}ad-bc\]
-     </span>
-    </p>
-    <p>
-     We define the determinant of a three by three matrix thus—
-     <span class="math display">
-      \[\begin{vmatrix}a&amp;b&amp;c\\d&amp;e&amp;f\\g&amp;h&amp;i\end{vmatrix}\equiv{}g\begin{vmatrix}b&amp;c\\e&amp;f\end{vmatrix}+h\begin{vmatrix}c&amp;a\\f&amp;d\end{vmatrix}+i\begin{vmatrix}a&amp;b\\d&amp;e\end{vmatrix}\]
-     </span>
-    </p>
-    <p>
-     The equation for a line through points
-     <span class="math inline">
-      \((x_p,y_p,z_p)\)
-     </span>
-     and
-     <span class="math inline">
-      \((x_q,y_q,z_q)\)
-     </span>
-     is given by this equation—
-     <span class="math display">
-      \[\begin{vmatrix}x_p&amp;y_p&amp;z_p\\x_q&amp;y_q&amp;z_q\\x&amp;y&amp;z\end{vmatrix}=0\]
-     </span>
-    </p>
-    <p>
-     Note that a line
-     <span class="math inline">
-      \(lx+my+nz=0\)
-     </span>
-     passes through
-     <span class="math inline">
-      \(A\)
-     </span>
-     iff
-     <span class="math inline">
-      \(l=0\)
-     </span>
-     ,
-     <span class="math inline">
-      \(B\)
-     </span>
-     iff
-     <span class="math inline">
-      \(m=0\)
-     </span>
-     , and
-     <span class="math inline">
-      \(C\)
-     </span>
-     iff
-     <span class="math inline">
-      \(n=0\)
-     </span>
-     . This is fairly apparent from consideration of the coördinates of the vertices. Note that if two of the coëfficients are zero, then the line must be one of the sides of
-     <span class="math inline">
-      \(\triangle{}ABC\)
-     </span>
-     .
-    </p>
-    <h2 id="areas">
-     Areas
-    </h2>
-    <p>
-     For points
-     <span class="math inline">
-      \(P,Q,R\)
-     </span>
-     with coördinates
-     <span class="math inline">
-      \((x_p,y_p,z_p),(x_q,y_q,z_q),\\(x_r,y_r,z_r)\)
-     </span>
-     , the area of
-     <span class="math inline">
-      \(\triangle{}PQR\)
-     </span>
-     (which we denote
-     <span class="math inline">
-      \([PQR]\)
-     </span>
-     ) is given by this formula—
-    </p>
-    <p>
-     <span class="math display">
-      \[[PQR]=[ABC]\begin{vmatrix}x_p&amp;y_p&amp;z_p\\x_q&amp;y_q&amp;z_q\\x_r&amp;y_r&amp;z_r\end{vmatrix}\]
-     </span>
-    </p>
-    <p>
-     This should sound reasonable, based on the determinant definition of a line through two points; it is clear that
-     <span class="math inline">
-      \([PQR]=0\)
-     </span>
-     iff
-     <span class="math inline">
-      \(P,Q,R\)
-     </span>
-     are collinear, so
-     <span class="math inline">
-      \(R\)
-     </span>
-     lies on line
-     <span class="math inline">
-      \(PQ\)
-     </span>
-     iff the determinant has value zero.
-    </p>
-    <p>
-     Note that this formula clearly does not work for unnormalised coördinates.
-    </p>
-    <p>
-     This is often enough to solve olympiad problems, along with some trigonometric competence.
-    </p>
-    <h2 id="circles">
-     Circles
-    </h2>
-    <p>
-     Where
-     <span class="math inline">
-      \(a,b,c=|BC|,|CA|,|AB|\)
-     </span>
-     , the
-     <em>
-      circumcircle
-     </em>
-     of
-     <span class="math inline">
-      \(\triangle{}ABC\)
-     </span>
-     (the circle going through all three points
-     <span class="math inline">
-      \(A,B,C\)
-     </span>
-     ) is given by the equation
-     <span class="math inline">
-      \(a^2yz+b^2zx+c^2xy=0\)
-     </span>
-     . In fact, the general equation for a circle is given by
-     <span class="math inline">
-      \(a^2yz+b^2zx+c^2xy+lx+my+nz=0\)
-     </span>
-     , when we are using the constraint
-     <span class="math inline">
-      \(x+y+z=1\)
-     </span>
-     . If we relax that and use unnormalised coördinates, we have the slightly more complex equation
-     <span class="math inline">
-      \(a^2yz+b^2zx+c^2xy+(x+y+z)(lx+my+nz)=0\)
-     </span>
-     .
-    </p>
-    <p>
-     For a circle in the plane passing through three points, we can find its equation by substituting the three points into the general equation and finding
-     <span class="math inline">
-      \(l,m,n\)
-     </span>
-     .
-    </p>
-    <h2 id="vectors-distances">
-     Vectors &amp; Distances
-    </h2>
-    <p>
-     For those who are unaware of what a vector is, a vector denotes a specific geometric translation; that is to say, it denotes a way to move a point to another. For example, in Cartesian coördinates,
-     <span class="math display">
-      \[\begin{bmatrix}3\\-2\end{bmatrix}\]
-     </span>
-     is the vector that denotes moving a point or other object to the right by three units and down by two units; that is to say, it is the vector that would move
-     <span class="math inline">
-      \((0,0)\)
-     </span>
-     to
-     <span class="math inline">
-      \((3,-2)\)
-     </span>
-     . In Cartesian coördinates, the vector that would take
-     <span class="math inline">
-      \((x_p,y_p)\)
-     </span>
-     to
-     <span class="math inline">
-      \((x_q,y_q)\)
-     </span>
-     is
-     <span class="math display">
-      \[\begin{bmatrix}x_q-x_p\\y_q-y_p\end{bmatrix}\]
-     </span>
-     <em>
-     </em>
-     In Cartesian coördinates, we notate vectors differently to points, as there is no way to tell them apart if we write them the same way. In areals, this is not necessary, as will become clear. The vector taking
-     <span class="math inline">
-      \((x_p,y_p,z_p)\)
-     </span>
-     to
-     <span class="math inline">
-      \((x_q,y_q,z_q)\)
-     </span>
-     is
-     <span class="math inline">
-      \((x_q-x_p,y_q-y_p,z_q-z_p)\)
-     </span>
-     . We need not write the vector as a column, because the sum of the values in a vector is 0, as it is the sum of the coördinates of one point minus the sum of those of another. It is thus easy to differentiate vectors and points. Note that when working with vectors in areals, we cannot use unnormalised coördinates.
-    </p>
-    <p>
-     The length of a given line segment
-     <span class="math inline">
-      \(PQ\)
-     </span>
-     , where the vector taking
-     <span class="math inline">
-      \(P\)
-     </span>
-     to
-     <span class="math inline">
-      \(Q\)
-     </span>
-     (or vice versa) is
-     <span class="math inline">
-      \((u,v,w)\)
-     </span>
-     , can be found from this equation—
-     <span class="math display">
-      \[-PQ^2=a^2vw+b^2wu+c^2uv\]
-     </span>
-     which is reminiscent of the formula for circles, which should seem fairly natural given the usual definition of a circle as the set of all points which are a given distance from the centre.
-    </p>
-    <h2 id="disclaimer">
-     Disclaimer
-    </h2>
-    <p>
-     Ideally, one ought not to use areals, as the vast majority of geometric problems have neater, more satisfying, and easier solutions using standard Euclidean methods. However, if one is unable to use those effectively for some reason, and has tried and failed to rectify this, then areals are a possible alternative; one must, however, practise using them if one wishes to use them properly and efficiently. Note that there exist other ways of doing geometry aside from areals and Euclidean methods, including but not limited to vectors, trigonometry, complex numbers, and (although this is not recommended, and is usually unhelpful) origami.
-    </p>
-   </main>
-  </header>
- </body>
+</script>
+<link href="../main.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<a href="../index.html"><h1><b>The Librarian</b></h1></a><hr/>
+<main>
+<a href="issue.html"><h1>Supplementary 1, Volume 2</h1></a><hr/><h1>A reintroduction to areal coördinates</h1><p><b>Benedict Randall Shaw</b></p>
+<p>Several issues ago, an article was published in this publication with the title . Regrettably, having revisited this article, it seems to have been below the usual standard, and worryingly cursory. However, the topic itself is of use and interest; thus, this article is intended to do that which the original failed to, viz. introduce the reader to areal coördinates.</p>
+<p>This article is aimed at those who wish to do vaguely well in olympiads, but find themselves unable to do geometry by Euclidean (normal) methods. While most olympiad questions are designed to be done by such methods, there exist other ways of doing geometry problems. Areal coördinates are an example of such a method; they constitute a coördinate system, in the same way that Cartesian coördinates (those with which most people are most familiar) are a coördinate system. They are not always successful, but tend to be useful in problems where a triangle is the central object involved.</p>
+<p>In order to become competent with mathematic concepts, it is helpful to practise; so, throughout this article I shall leave questions that can be done by those wishing to become competent.</p>
+<h2 id="definitions">Definitions</h2>
+<p>We say that a point anywhere in the plane <span class="math inline">\(P\)</span> has coördinates <span class="math inline">\((x,y,z)\)</span> with respect to a triangle <span class="math inline">\(\triangle{}ABC\)</span> iff <span class="math display">\[(x,y,z)=\left(\frac{[PBC]}{[ABC]},\frac{[APC]}{[ABC]},\frac{[ABP]}{[ABC]}\right)\]</span> where <span class="math inline">\([DEF]\)</span>, for some triangle <span class="math inline">\(DEF\)</span>, is the area of <span class="math inline">\(\triangle{}DEF\)</span>.</p>
+<div class="figure">
+<img alt="A point P, with respect to \triangle{}ABC." src="def-areas.png"/>
+<p class="caption">Figure 1: A point <span class="math inline">\(P\)</span>, with respect to <span class="math inline">\(\triangle{}ABC\)</span>.<span data-label="def-areas"></span></p>
+</div>
+<p>Note that <span class="math inline">\(x+y+z=1\)</span> is thus always true, as clearly <span class="math inline">\([PBC]+[APC]+[ABP]\)</span>. We thus have a rigorously defined unique set of coördinates for all points within the triangle. But what about those outside the triangle? First, we must define directed areas. When we name a triangle, convention says that we label its points anticlockwise. We therefore say that <span class="math inline">\([ABC]\)</span> is positive if <span class="math inline">\(A,B,C\)</span> are in order going anticlockwise around <span class="math inline">\(\triangle{}ABC\)</span>, and negative if the points are in order going clockwise. (If the points <span class="math inline">\(A,B,C\)</span> are in a straight line, then <span class="math inline">\([ABC]\)</span> is obviously zero.) We now have a distinct set of coördinate for all points in the plane.</p>
+<p>An equivalent definition exists with vectors. For any arbitrary point <span class="math inline">\(O\)</span> in the plane, point <span class="math inline">\(P\)</span> has coördinates <span class="math inline">\((x,y,z)\)</span> with respect to <span class="math inline">\(\triangle{}ABC\)</span> iff <span class="math inline">\(\overrightarrow{OP}=x\overrightarrow{OA}+y\overrightarrow{OB}+z\overrightarrow{OC}\)</span> and <span class="math inline">\(x+y+z=1\)</span>. It does not matter where we choose <span class="math inline">\(O\)</span>; we get the same set of coördinates for <span class="math inline">\(P\)</span> whereever <span class="math inline">\(O\)</span> is.</p>
+<p><br/>
+</p>
+<p>For the physically minded, there is also yet another definition; <span class="math inline">\((x,y,z)\)</span> is the point that is the centre of mass when one places masses <span class="math inline">\(x,y,z\)</span> at points <span class="math inline">\(A,B,C\)</span> respectively, such that <span class="math inline">\(x+y+z=1\)</span>. Note that we allow negative masses.</p>
+<p>It is clear that <span class="math inline">\(A,B,C\)</span> have coördinates <span class="math inline">\((1,0,0),(0,1,0),(0,0,1)\)</span> respectively; from consideration of the definition involving areas, one can see that a point is within the triangle if and only iff all its coördinates are positive.</p>
+<p>Often we don’t care about the constraint <span class="math inline">\(x+y+z=1\)</span>, and so we relax it; there is no single standard notation for this of which this correspondent is aware, so in this article, we shall use <span class="math inline">\((x,y,z)^*\)</span> to denote <span class="math inline">\((\frac{x}{x+y+z},\frac{y}{x+y+z},\frac{z}{x+y+z})\)</span>. These are sometimes referred to as unnormalised coördinates.</p>
+<h2 id="triangle-centres">Triangle centres</h2>
+<p>Triangles do not have an obviously defined centre; as a result, there are numerous points known as <em>triangle centres</em>, to the point where they have an encyclopædia, which at time of writing contains 15888 centres, and is imaginatively named the <em>Encyclopedia of Triangle Centers</em> (it is admittedly American). Needless to say, most of these are completely useless; however, the centres are loosely sorted by importance, and the encyclopædia gives the areal coördinates of the earlier centres, although it calls them barycentrics. Here are some important centres, and their coördinates with respect to <span class="math inline">\(\triangle{}ABC\)</span> (when they are the centres of the <span class="math inline">\(\triangle{}ABC\)</span>). <span class="math inline">\(a,b,c\)</span> refer to the lengths of sides <span class="math inline">\(BC,CA,AB\)</span> respectively, and <span class="math inline">\(A,B,C\)</span> refer to angles <span class="math inline">\(\angle{}CAB,\angle{}ABC,\angle{}BCA\)</span> respectively.</p>
+<h3 id="incentre">Incentre</h3>
+<p>This is the centre of the incircle (the circle within the triangle tangent to all three sides) and also the intersection of the internal angle bisectors of the triangle; it has coördinates <span class="math inline">\((a,b,c)^*\)</span>.</p>
+<h3 id="centroid">Centroid</h3>
+<p>This is the intersection of the medians of the triangle (the lines from vertices of the triangle to midpoints of the opposing sides); it has coördinates <span class="math inline">\((1,1,1)^*\)</span>.</p>
+<h3 id="circumcentre">Circumcentre</h3>
+<p>This is the centre of the circle passing through all three vertices of the triangle, and the intersection of the perpendicular bisectors of the sides; it has coördinates <span class="math inline">\((\sin{}2A,\sin{}2B,\sin{}2C)^*\)</span>.</p>
+<h3 id="orthocentre">Orthocentre</h3>
+<p>This is the intersection of the altitudes of the triangle (the perpendiculars from the vertices to the opposing sides); it has coördinates <span class="math inline">\((\tan{}A,\tan{}B,\tan{}C)^*\)</span>.</p>
+<p>These four points are often sufficient; there are many theorems involving them, and they appear frequently in olympiads. Other points, and their coördinates, can be found in the <em>Encyclopedia of Triangle Centers</em>.</p>
+<h2 id="lines">Lines</h2>
+<p>In the same way that the general equation for a line in Cartesian coördinates is <span class="math inline">\(lx+my+c=0\)</span> (where <span class="math inline">\(l,m,c\)</span> are constants that are not all zero), the general equation for a line in areal coördinates is <span class="math inline">\(lx+my+nz=0\)</span> (where <span class="math inline">\(l,m,n\)</span> are constants that are not all zero), in addition to the standard <span class="math inline">\(x+y+z=1\)</span> required by areals. Note that this equation still works if we relax the <span class="math inline">\(x+y+z=1\)</span> constraint and use unnormalised coördinates, as scaling <span class="math inline">\(lx+my+nz\)</span> by a constant still gives 0 for a point that is on the line.</p>
+<p>The equation of a line through two points <span class="math inline">\((x_p,y_p,z_p)\)</span> and <span class="math inline">\((x_q,y_q,z_q)\)</span> is expressed most readably with a matrix determinant. For those unaware of them, matrices are rectangular arrays of numbers. We define the determinant (written with vertical lines around a matrix) of a two by two matrix thus— <span class="math display">\[\begin{vmatrix}a&amp;b\\c&amp;d\end{vmatrix}\equiv{}ad-bc\]</span></p>
+<p>We define the determinant of a three by three matrix thus— <span class="math display">\[\begin{vmatrix}a&amp;b&amp;c\\d&amp;e&amp;f\\g&amp;h&amp;i\end{vmatrix}\equiv{}g\begin{vmatrix}b&amp;c\\e&amp;f\end{vmatrix}+h\begin{vmatrix}c&amp;a\\f&amp;d\end{vmatrix}+i\begin{vmatrix}a&amp;b\\d&amp;e\end{vmatrix}\]</span></p>
+<p>The equation for a line through points <span class="math inline">\((x_p,y_p,z_p)\)</span> and <span class="math inline">\((x_q,y_q,z_q)\)</span> is given by this equation— <span class="math display">\[\begin{vmatrix}x_p&amp;y_p&amp;z_p\\x_q&amp;y_q&amp;z_q\\x&amp;y&amp;z\end{vmatrix}=0\]</span></p>
+<p>Note that a line <span class="math inline">\(lx+my+nz=0\)</span> passes through <span class="math inline">\(A\)</span> iff <span class="math inline">\(l=0\)</span>, <span class="math inline">\(B\)</span> iff <span class="math inline">\(m=0\)</span>, and <span class="math inline">\(C\)</span> iff <span class="math inline">\(n=0\)</span>. This is fairly apparent from consideration of the coördinates of the vertices. Note that if two of the coëfficients are zero, then the line must be one of the sides of <span class="math inline">\(\triangle{}ABC\)</span>.</p>
+<h2 id="areas">Areas</h2>
+<p>For points <span class="math inline">\(P,Q,R\)</span> with coördinates <span class="math inline">\((x_p,y_p,z_p),(x_q,y_q,z_q),\\(x_r,y_r,z_r)\)</span>, the area of <span class="math inline">\(\triangle{}PQR\)</span> (which we denote <span class="math inline">\([PQR]\)</span>) is given by this formula—</p>
+<p><span class="math display">\[[PQR]=[ABC]\begin{vmatrix}x_p&amp;y_p&amp;z_p\\x_q&amp;y_q&amp;z_q\\x_r&amp;y_r&amp;z_r\end{vmatrix}\]</span></p>
+<p>This should sound reasonable, based on the determinant definition of a line through two points; it is clear that <span class="math inline">\([PQR]=0\)</span> iff <span class="math inline">\(P,Q,R\)</span> are collinear, so <span class="math inline">\(R\)</span> lies on line <span class="math inline">\(PQ\)</span> iff the determinant has value zero.</p>
+<p>Note that this formula clearly does not work for unnormalised coördinates.</p>
+<p>This is often enough to solve olympiad problems, along with some trigonometric competence.</p>
+<h2 id="circles">Circles</h2>
+<p>Where <span class="math inline">\(a,b,c=|BC|,|CA|,|AB|\)</span>, the <em>circumcircle</em> of <span class="math inline">\(\triangle{}ABC\)</span> (the circle going through all three points <span class="math inline">\(A,B,C\)</span>) is given by the equation <span class="math inline">\(a^2yz+b^2zx+c^2xy=0\)</span>. In fact, the general equation for a circle is given by <span class="math inline">\(a^2yz+b^2zx+c^2xy+lx+my+nz=0\)</span>, when we are using the constraint <span class="math inline">\(x+y+z=1\)</span>. If we relax that and use unnormalised coördinates, we have the slightly more complex equation <span class="math inline">\(a^2yz+b^2zx+c^2xy+(x+y+z)(lx+my+nz)=0\)</span>.</p>
+<p>For a circle in the plane passing through three points, we can find its equation by substituting the three points into the general equation and finding <span class="math inline">\(l,m,n\)</span>.</p>
+<h2 id="vectors-distances">Vectors &amp; Distances</h2>
+<p>For those who are unaware of what a vector is, a vector denotes a specific geometric translation; that is to say, it denotes a way to move a point to another. For example, in Cartesian coördinates, <span class="math display">\[\begin{bmatrix}3\\-2\end{bmatrix}\]</span> is the vector that denotes moving a point or other object to the right by three units and down by two units; that is to say, it is the vector that would move <span class="math inline">\((0,0)\)</span> to <span class="math inline">\((3,-2)\)</span>. In Cartesian coördinates, the vector that would take <span class="math inline">\((x_p,y_p)\)</span> to <span class="math inline">\((x_q,y_q)\)</span> is <span class="math display">\[\begin{bmatrix}x_q-x_p\\y_q-y_p\end{bmatrix}\]</span> <em></em> In Cartesian coördinates, we notate vectors differently to points, as there is no way to tell them apart if we write them the same way. In areals, this is not necessary, as will become clear. The vector taking <span class="math inline">\((x_p,y_p,z_p)\)</span> to <span class="math inline">\((x_q,y_q,z_q)\)</span> is <span class="math inline">\((x_q-x_p,y_q-y_p,z_q-z_p)\)</span>. We need not write the vector as a column, because the sum of the values in a vector is 0, as it is the sum of the coördinates of one point minus the sum of those of another. It is thus easy to differentiate vectors and points. Note that when working with vectors in areals, we cannot use unnormalised coördinates.</p>
+<p>The length of a given line segment <span class="math inline">\(PQ\)</span>, where the vector taking <span class="math inline">\(P\)</span> to <span class="math inline">\(Q\)</span> (or vice versa) is <span class="math inline">\((u,v,w)\)</span>, can be found from this equation— <span class="math display">\[-PQ^2=a^2vw+b^2wu+c^2uv\]</span> which is reminiscent of the formula for circles, which should seem fairly natural given the usual definition of a circle as the set of all points which are a given distance from the centre.</p>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>Ideally, one ought not to use areals, as the vast majority of geometric problems have neater, more satisfying, and easier solutions using standard Euclidean methods. However, if one is unable to use those effectively for some reason, and has tried and failed to rectify this, then areals are a possible alternative; one must, however, practise using them if one wishes to use them properly and efficiently. Note that there exist other ways of doing geometry aside from areals and Euclidean methods, including but not limited to vectors, trigonometry, complex numbers, and (although this is not recommended, and is usually unhelpful) origami.</p>
+
+</main>
+</header></body>
 </html>
 
