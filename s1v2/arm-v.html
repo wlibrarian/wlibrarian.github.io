@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+ <head>
+  <title>
+   Librarian Online
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet"/>
+  <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+  </script>
+  <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+  CommonHTML: { linebreaks: { automatic: true } },
+  "HTML-CSS": { linebreaks: { automatic: true } },
+         SVG: { linebreaks: { automatic: true } }
+});
+  </script>
+  <link href="../main.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <a href="../index.html">
+    <h1>
+     <b>
+      The Librarian
+     </b>
+    </h1>
+   </a>
+   <hr/>
+   <main>
+    <a href="issue.html">
+     <h1>
+      Supplementary 1, Volume 2
+     </h1>
+    </a>
+    <hr/>
+    <h1>
+     Adventures in Recreational Mathematics V: Mathematicians in Wonderland
+    </h1>
+    <p>
+     <b>
+      Isky Mathews
+     </b>
+    </p>
+    <p>
+     Geometry problems are a staple of modern day maths tests, qualifications and olympiads—indeed, Euclid is considered perhaps the first modern mathematician, and his
+     <em>
+      Elements
+     </em>
+     , used as a textbook for hundreds of years, predominantly focusses on geometric constructions on the plane. In fact, for many mathematicians in the 19th century, geometry in many dimensions was almost considered “solved”, in that there were methods which could eventually given enough time understand all but a few objects. In some sense, geometry was the mathematical realisation of the real world for them and thus was a tool for physicists to describe and predict various aspects of it—they could never have predicted that there wasn’t just
+     <strong>
+      one geometry
+     </strong>
+     and that many of these other geometries would have remarkable properties completely unlike that of Euclidean space. This article will mention the profound discovery of non-Euclidean geometries and focus on one particularly, known as
+     <em>
+      hyperbolic geometry
+     </em>
+     , with some showcasing of even wilder beasts such as the quintic 3-folds of the complex projective space near the end...
+    </p>
+    <h2 id="journeys-to-the-hyperbolic">
+     Journeys to the Hyperbolic
+    </h2>
+    <p>
+     Numerous people discovered hyperbolic geometry at around the same time, though interestingly in quite different contexts. One of the main trends of the era was to look into building a proper and rigorous foundation for contemporary mathematics, for it had been discovered that without exact definitions, clear axioms, and systematic work of this sort, one would soon find that mathematical questions could be asked that had no answer, simply because the concepts were too vague and so were not well-defined in all circumstances. The Hungarian mathematics student János Bolyai was also interested in just this, looking particularly at Euclid’s foundations of geometry. As many scholars of the time would tell you, Euclid put forth 5 main axioms:
+    </p>
+    <ul>
+     <li>
+      <p>
+       Given any two points, a straight line can be drawn connecting them.
+      </p>
+     </li>
+     <li>
+      <p>
+       A straight line can be continuously extended in either direction unboundedly.
+      </p>
+     </li>
+     <li>
+      <p>
+       All right angles are equivalent to each other.
+      </p>
+     </li>
+     <li>
+      <p>
+       Given a centre and a distance, a circle with that centre and with a radius of the given distance can be constructed.
+      </p>
+     </li>
+     <li>
+      <p>
+       Given a line
+       <span class="math inline">
+        \(A\)
+       </span>
+       and a point
+       <span class="math inline">
+        \(B\)
+       </span>
+       not on the line, there is exactly one new line
+       <span class="math inline">
+        \(C\)
+       </span>
+       that can be drawn through the point so that
+       <span class="math inline">
+        \(C\)
+       </span>
+       does not ever intersect
+       <span class="math inline">
+        \(A\)
+       </span>
+       .
+      </p>
+     </li>
+    </ul>
+    <p>
+     If any of the above seems quite obvious to you, then that’s good news! An
+     <em>
+      axiom
+     </em>
+     is supposed to be a principle or truth that is considered so obvious that it does not require any proof; as such, mathematical theories or objects are typically begun with a list of such axioms making clear what is the topic of discussion. Euclid then went on in his book to describe various different geometric situations on the plane and prove various fundamental theorems used in geometry today, such as the fact that the interior angles of a triangle sum to 180
+     <span class="math inline">
+      \(^\circ\)
+     </span>
+     . However, what became clear to many reading this prized document was that in some sense, the fifth axiom or
+     <em>
+      parallel postulate
+     </em>
+     , as it has come to be known, was significantly detached from the first four. This is because Euclid’s first 25 or so theorems never used the fifth axiom whereas the others were used extensively—many wondered if it was actually possible to prove the fifth from the first four. When Bolyai read about this, he realised its importance and decided instead to attempt to prove that fifth axiom
+     <em>
+      had
+     </em>
+     to be how it was because if it was any different, one would get an inconsistent (and thus, invalid) geometry; in other words, he tried a proof by contradiction. Amongst other things, he used this replacement of the parallel postulate, which appears at first glance to be faintly ridiculous:
+    </p>
+    <ul>
+     <li>
+      <p>
+       Given a line
+       <span class="math inline">
+        \(A\)
+       </span>
+       and a point
+       <span class="math inline">
+        \(B\)
+       </span>
+       not on the line, there are two lines
+       <span class="math inline">
+        \(C_1\)
+       </span>
+       and
+       <span class="math inline">
+        \(C_2\)
+       </span>
+       that can be drawn through the point so that neither ever intersect with
+       <span class="math inline">
+        \(A\)
+       </span>
+       .
+      </p>
+     </li>
+    </ul>
+    <p>
+     So, Bolyai decided to start investigation this “non-geometry” and noticed amongst other things that triangles in this odd world can only have a sum of internal angles less than or equal to 180
+     <span class="math inline">
+      \(^\circ\)
+     </span>
+     . After this, he showed that in a quadrilateral with two equal-length sides
+     <span class="math inline">
+      \(A\)
+     </span>
+     and
+     <span class="math inline">
+      \(B\)
+     </span>
+     perpendicular to another side
+     <span class="math inline">
+      \(C\)
+     </span>
+     , the other two angles would be acute. As he went on proving theorem after theorem, it eventually occurred to Bolyai that in fact there was not a contradiction to be found—he and others after him succeeded in proving, astoundingly, that this new “hyperbolic” geometry was consistent if and only if Euclidean geometry was consistent (a belief commonly held by contemporary mathematicians).
+    </p>
+    <p>
+     Some of his other founding work included the description of the trigonometric functions for right-angled hyperbolic triangles (
+     <span class="math inline">
+      \(sinh(x), cosh(x)\)
+     </span>
+     and
+     <span class="math inline">
+      \(tanh(x)\)
+     </span>
+     ) and proved some elementary identities concerning these. Furthermore, he showed that the “opposite” of his replacement of the parallel postulate, namely
+    </p>
+    <ul>
+     <li>
+      <p>
+       Given a line
+       <span class="math inline">
+        \(A\)
+       </span>
+       and a point
+       <span class="math inline">
+        \(B\)
+       </span>
+       not on the line, there are no lines that can be drawn through the point so that they never intersect with
+       <span class="math inline">
+        \(A\)
+       </span>
+       .
+      </p>
+     </li>
+    </ul>
+    <p>
+     also defines a consistent geometry, called “elliptic geometry”. On the elliptic plane, triangles always have
+     <strong>
+      more
+     </strong>
+     than 180
+     <span class="math inline">
+      \(^\circ\)
+     </span>
+     as their sum of internal angles and tilings can be made such that a finite number of tiles cover the entire plane. It turns out that the elliptic plane is easily describable as the geometry on the surface of a sphere, where we represent a “point” as two opposite points (known as
+     <em>
+      antipodal
+     </em>
+     points) on it and a line as a great circle of the sphere
+     <a class="footnoteRef" href="#fn1" id="fnref1">
+      <sup>
+       1
+      </sup>
+     </a>
+     —so one of the tilings I mentioned can be seen as in
+     <strong>
+      Fig. 3.1
+     </strong>
+     , which is, by the way, analagous to the icosahedron.
+    </p>
+    <p>
+     Contemporaries of Bolyai, such as Lobachevsky and even Gauss himself, similarly independently discovered hyperbolic planes and geometry but through a different series of thoughts. It had occurred to them that on different surfaces from the flat plane one could also have a different geometry but classifying it was not as simple as it might appear. For example, a cylinder appears different from the plane; however, its surface has no distinct geometric properties; this can be seen by the fact that any figure or diagram on a Euclidean plane can be put on a cylinder, preserving angles and lengths. by picking up the plane and wrapping it around the cylinder like wallpaper (for example, toilet paper being on a roll). However, it is
+     <em>
+      not
+     </em>
+     true that one can easily wrap a piece of paper around a sphere—one always finds wrinkles when doing so. Why is this? Gauss formulated the concept of Gaussian curvature to understand this and to aid his cartography of the Austrian Alps.
+    </p>
+    <div class="figure">
+     <img alt="A tiling of the elliptic plane." src="Fig11.png"/>
+     <p class="caption">
+      Figure 1:
+      A tiling of the elliptic plane.
+     </p>
+    </div>
+    <div class="figure">
+     <img alt="A diagram of curvature at a point P with its approximation circle of radius r." src="Fig21.png" style="width:50.0%"/>
+     <p class="caption">
+      Figure 2:
+      A diagram of curvature at a point
+      <span class="math inline">
+       \(P\)
+      </span>
+      with its “approximation circle” of radius
+      <span class="math inline">
+       \(r\)
+      </span>
+      .
+     </p>
+    </div>
+    <p>
+     The curvature of a plane curve
+     <a class="footnoteRef" href="#fn2" id="fnref2">
+      <sup>
+       2
+      </sup>
+     </a>
+     at a specific point
+     <span class="math inline">
+      \(A\)
+     </span>
+     can be considered intuitively as a measure of how effectively a tangent at
+     <span class="math inline">
+      \(A\)
+     </span>
+     can be used to approximate the location of points just around
+     <span class="math inline">
+      \(A\)
+     </span>
+     or how fast the tangent diverges from the actual curve as one moves away from
+     <span class="math inline">
+      \(A\)
+     </span>
+     . More rigourously, given any curve and a point
+     <span class="math inline">
+      \(A\)
+     </span>
+     somewhere along it, there is a circle with a centre
+     <span class="math inline">
+      \(O\)
+     </span>
+     on the line perpendicular to the tangent at
+     <span class="math inline">
+      \(A\)
+     </span>
+     (called the
+     <em>
+      normal
+     </em>
+     ) with
+     <span class="math inline">
+      \(|OA| = r\)
+     </span>
+     for some
+     <span class="math inline">
+      \(r\)
+     </span>
+     (
+     <span class="math inline">
+      \(r\)
+     </span>
+     is the radius). This is the best circle which approximates the curve for points close to
+     <span class="math inline">
+      \(A\)
+     </span>
+     —an illustration of this concept can be seen in
+     <strong>
+      Fig. 3.2
+     </strong>
+     . We define
+     <span class="math inline">
+      \(\kappa\)
+     </span>
+     to be the curvature, where
+     <span class="math inline">
+      \(\kappa = \frac{1}{r}\)
+     </span>
+     .
+    </p>
+    <p>
+     Using this, we can define Gaussian curvature, which is a way of measuring the intrinsic curvature of surfaces. Given a point
+     <span class="math inline">
+      \(A\)
+     </span>
+     on a surface, consider the normal at
+     <span class="math inline">
+      \(A\)
+     </span>
+     (here this is the perpendicular line to the
+     <em>
+      tangent plane
+     </em>
+     at
+     <span class="math inline">
+      \(A\)
+     </span>
+     ) and then, further, consider all the planes that contain that normal. Each of the planes will intersect with a 1-dimensional cross-section of our surface, and so for each intersecting plane
+     <span class="math inline">
+      \(P_n\)
+     </span>
+     , we calculate the curvature of the corresponding 1-dimensional plane curve at
+     <span class="math inline">
+      \(A\)
+     </span>
+     , denoted
+     <span class="math inline">
+      \(\kappa_n\)
+     </span>
+     . Now, the
+     <em>
+      Gaussian curvature
+     </em>
+     of
+     <span class="math inline">
+      \(A\)
+     </span>
+     is defined to be the product of the maximum and minimum such
+     <span class="math inline">
+      \(\kappa_n\)
+     </span>
+     (known as the
+     <em>
+      principal curvatures
+     </em>
+     at the point
+     <span class="math inline">
+      \(A\)
+     </span>
+     ). So, let’s stop to consider what the Gaussian curvature of various well-known surfaces looks like:
+    </p>
+    <ul>
+     <li>
+      <p>
+       with a point on a plane, the curvature of a point on any plane-cross-section is 0, since the best circle which approximates a straight line has an infinitely large radius
+       <a class="footnoteRef" href="#fn3" id="fnref3">
+        <sup>
+         3
+        </sup>
+       </a>
+       , so
+       <span class="math inline">
+        \(\kappa_{max}, \kappa_{min} = 0\)
+       </span>
+       , so the Gaussian curvature is 0;
+      </p>
+     </li>
+     <li>
+      <p>
+       with a point on a cylinder, the curvature of the long straight axis is
+       <span class="math inline">
+        \(\kappa_{min}\)
+       </span>
+       which is 0 for the same reason as on the plane and so regardless of
+       <span class="math inline">
+        \(\kappa_{max}\)
+       </span>
+       , its G. curvature is 0;
+      </p>
+     </li>
+     <li>
+      <p>
+       with a point on a sphere, every plane-cross-section will be a circle of radius
+       <span class="math inline">
+        \(R\)
+       </span>
+       , meaning that
+       <span class="math inline">
+        \(\kappa_{min}, \kappa_{max} = \frac{1}{R}\)
+       </span>
+       and so the G. curvature is
+       <span class="math inline">
+        \(\frac{1}{R^2}\)
+       </span>
+       at every point.
+      </p>
+     </li>
+    </ul>
+    <div class="figure">
+     <img alt="A saddle-surface." src="Fig31.png" style="width:50.0%"/>
+     <p class="caption">
+      Figure 3:
+      A “saddle-surface”.
+     </p>
+    </div>
+    <div class="figure">
+     <img alt="A hyperboloid and a pseudosphere." src="Fig41.png"/>
+    </div>
+    <div class="figure">
+     <img alt="A hyperboloid and a pseudosphere." src="Fig42.png"/>
+     <p class="caption">
+      Figure 4:
+      A hyperboloid and a pseudosphere.
+     </p>
+    </div>
+    <p>
+     What would a point of negative curvature on a surface look like? Consider
+     <strong>
+      Fig. 3.3
+     </strong>
+     , displaying a so-called “saddle-surface”. At the centre of the saddle, the diagram displays the planes which intersect the surface at its principal curvatures—one of the cross-sections curves upwards in the direction of the normal and the other, 90
+     <span class="math inline">
+      \(^\circ\)
+     </span>
+     to the first, curves downwards against the direction of the normal. The former would have some positive
+     <span class="math inline">
+      \(\kappa_{max}\)
+     </span>
+     but since the other curves downwards from the normal, Gauss said it would be natural to assign the downwards curve a negative
+     <span class="math inline">
+      \(\kappa_{min}\)
+     </span>
+     and so the Gaussian curvature (their product) would also be negative. The interesting question that Gauss asked after considering this was: what would a surface with constant negative curvature look like? After giving the problem some thought, one might come up with the surfaces shown in
+     <strong>
+      Fig. 3.4
+     </strong>
+     ; one is a
+     <em>
+      hyperboloid
+     </em>
+     (the surface of revolution of a hyperbola) and the other is called a
+     <em>
+      pseudosphere
+     </em>
+     , discovered by Bolyai. Both have negative curvature at almost all of their points but neither have constant negative curvature.
+    </p>
+    <p>
+     In trying to understand the problem better, one can examine the geometric properties of such a surface, and what one discovers is that triangles have less than or equal to 180
+     <span class="math inline">
+      \(^\circ\)
+     </span>
+     as their summed internal angles etc.—this is just a different description of the hyperbolic plane! Although Gauss never did gain much better insight into the nature of such a surface, he did prove the important
+     <em>
+      Theorema Egregium
+     </em>
+     which says that by performing cutting, rotating, translating or bending operations on a surface, one sustains the same Gaussian curvature at every point; thus, Gaussian curvature is a defining “unalterable” property of a surface, showing clearly why one can’t wrap a piece of paper around a sphere as easily as around a cylinder—the piece of paper has constant zero curvature, and the sphere has
+     <span class="math inline">
+      \(\frac{1}{R^2}\)
+     </span>
+     , and so to cover the sphere with paper, one would have to be able to stretch or otherwise fundamentally alter its nature. It also shows why rolling up a piece of paper into a cylinder makes it so much more rigid than when it was just flat: when you’ve rolled it up, you have created a positive curvature in one direction and so for the paper to retain its constant zero Gaussian curvature, it has to stay straight in the other direction...
+    </p>
+    <p>
+     The final piece of the puzzle came from the work of the prolific David Hilbert with
+     <em>
+      Hilbert’s Theorem
+     </em>
+     <a class="footnoteRef" href="#fn4" id="fnref4">
+      <sup>
+       4
+      </sup>
+     </a>
+     , which essentially proved that given an
+     <span class="math inline">
+      \(n\)
+     </span>
+     -dimensional hyperbolic geometric space (as in, an
+     <span class="math inline">
+      \(n\)
+     </span>
+     -space of constant negative curvature) there is no distance and angle-preserving way of putting it into an
+     <span class="math inline">
+      \(n\)
+     </span>
+     -dimensional Euclidean space, certifying that this is a consistent and fundamentally distinct geometry.
+    </p>
+    <h2 id="schläfli-notation-and-tilings">
+     Schläfli notation and tilings
+    </h2>
+    <p>
+     For those who read the first article in this series, you would have seen an introduction to some of the many combinatorial and geometric problems and properties of tilings of the Euclidean plane. It was suggested then that hyperbolic geometry sported a much greater collection of such tilings and now we shall see that such comments are quite justified and that, in some sense, most tilings are in fact hyperbolic.
+    </p>
+    <p>
+     The
+     <em>
+      Schläfli symbol
+     </em>
+     <span class="math inline">
+      \(\{x_2, x_1\}\)
+     </span>
+     is a notation used to denote a tiling where there are
+     <span class="math inline">
+      \(x_1\)
+     </span>
+     <span class="math inline">
+      \(x_2\)
+     </span>
+     -gons around a point. So, for example, the Schläfli symbol
+     <span class="math inline">
+      \(\{4,4\}\)
+     </span>
+     describes the classic square-lattice tiling on the Euclidean plane and
+     <span class="math inline">
+      \(\{3,5\}\)
+     </span>
+     describes the tiling in
+     <strong>
+      Fig. 3.1
+     </strong>
+     . You might notice that this notation severely limits the number of tilings one can describe, since one can only notate those which use only 1 shape, and in which each vertex has the same number of polygons around it (these are known as the
+     <em>
+      regular tilings
+     </em>
+     ), but it is still useful. What symbols
+     <span class="math inline">
+      \(\{p,q\}\)
+     </span>
+     are Euclidean?
+    </p>
+    <p>
+     Well, it can only be Euclidean if the sum of
+     <span class="math inline">
+      \(q\)
+     </span>
+     of the internal angles of
+     <span class="math inline">
+      \(p\)
+     </span>
+     -gons is 360
+     <span class="math inline">
+      \(^\circ\)
+     </span>
+     —that is
+     <span class="math inline">
+      \(q(180^\circ-\frac{360^\circ}{p}) = 360^\circ\)
+     </span>
+     . This is equivalent to the statement that
+     <span class="math inline">
+      \((p-2)(q-2) = 4\)
+     </span>
+     . By graphing this line with one axis being
+     <span class="math inline">
+      \(p\)
+     </span>
+     and the other
+     <span class="math inline">
+      \(q\)
+     </span>
+     , we get
+     <strong>
+      Fig. 3.5
+     </strong>
+     .
+    </p>
+    <div class="figure">
+     <img alt="A graph of the Euclidean tilings." src="Fig51.png" style="width:50.0%"/>
+     <p class="caption">
+      Figure 5:
+      A graph of the Euclidean tilings.
+     </p>
+    </div>
+    <p>
+     This diagram is quite powerful in that it shows clearly the space of regular tilings in each geometry. Those on the line are Euclidean such as
+     <span class="math inline">
+      \(\{3,6\}\)
+     </span>
+     , those below the line are elliptic such as
+     <span class="math inline">
+      \(\{3,4\}\)
+     </span>
+     , and the infinity of those above it are
+     <em>
+      all
+     </em>
+     hyperbolic! With so many, one would hope that there would be a way of visualising or creating images of these tilings—thanks to the work of Henri Poincaré and Felix Klein, you can look at visualisations of the hyperbolic plane.
+    </p>
+    <p>
+     Both of them act as a projection of the hyperbolic plane to the unit disk
+     <a class="footnoteRef" href="#fn5" id="fnref5">
+      <sup>
+       5
+      </sup>
+     </a>
+     where the edge of the disk can be seen as the “edge at infinity” of the hyperbolic plane—although I will not mention the specifics of geometric constructions or calculations with them in this article, it should be clear that distances in the disk going out from the centre become increasingly large for the corresponding hyperbolic figures. In the Poincaré disk model, lines are represented by circle arcs drawn in the disk which are orthogonal to the disk’s edge and the model represents angles accurately (this property of a mapping from one space to another is known as
+     <em>
+      conformality
+     </em>
+     ). In the Klein model, conformality is lost with the benefit that lines are drawn straight here. The same
+     <span class="math inline">
+      \(\{7,3\}\)
+     </span>
+     tiling is represented using the two models in
+     <strong>
+      Fig. 3.6
+     </strong>
+     —though in general the images I will use in this article and any articles involving hyperbolic space in the future will use the Poincaré disk model due to its angle preserving nature.
+    </p>
+    <p>
+     Another incredible object that can exist in hyperbolic tilings is the
+     <em>
+      apeirogon
+     </em>
+     or
+     <span class="math inline">
+      \(\infty\)
+     </span>
+     -gon (a polygon with an infinite number of sides). In Euclidean tilings the only way it can be represented is in “degenerate”
+     <a class="footnoteRef" href="#fn6" id="fnref6">
+      <sup>
+       6
+      </sup>
+     </a>
+     tilings, such as can be found in
+     <strong>
+      Fig. 3.7
+     </strong>
+     , where the “sides” of the polygon are just an infinitely long line separated by dots denoting vertices at regular intervals. The image can be seen as a tiling of the Euclidean plane by 2 apeirogons.
+    </p>
+    <p>
+     However, hyperbolic space is sufficiently curved and “large” that apeirogons can exist as discrete shapes surrounded by other polygons and that, equally, there can be tilings with an infinite number of polygons around each vertex, such as those shown in
+     <strong>
+      Fig. 3.8
+     </strong>
+     ! In this case, all the vertices of the tiling are actually points at the edge of the disk and thus at infinity, known as
+     <em>
+      ideal points
+     </em>
+     .
+    </p>
+    <div class="figure">
+     <img alt="A \{7,3\} tiling projected into the Klein Model and the Poincare Model." src="Fig61.png" style="width:30.0%"/>
+    </div>
+    <div class="figure">
+     <img alt="A \{7,3\} tiling projected into the Klein Model and the Poincare Model." src="Fig62.png" style="width:30.0%"/>
+     <p class="caption">
+      Figure 6:
+      A
+      <span class="math inline">
+       \(\{7,3\}\)
+      </span>
+      tiling projected into the Klein Model and the Poincare Model.
+     </p>
+    </div>
+    <div class="figure">
+     <img alt="A \{\infty,2\} tiling." src="Fig71.png" style="width:50.0%"/>
+     <p class="caption">
+      Figure 7:
+      A
+      <span class="math inline">
+       \(\{\infty,2\}\)
+      </span>
+      tiling.
+     </p>
+    </div>
+    <div class="figure">
+     <img alt="A tiling of apeirogons with squares and hexagons, the \{3,\infty\} tiling and the \{\infty,\infty\} tiling." src="Fig81.png" style="width:25.0%"/>
+    </div>
+    <div class="figure">
+     <img alt="A tiling of apeirogons with squares and hexagons, the \{3,\infty\} tiling and the \{\infty,\infty\} tiling." src="Fig82.png" style="width:25.0%"/>
+    </div>
+    <div class="figure">
+     <img alt="A tiling of apeirogons with squares and hexagons, the \{3,\infty\} tiling and the \{\infty,\infty\} tiling." src="Fig83.png" style="width:25.0%"/>
+     <p class="caption">
+      Figure 8:
+      A tiling of apeirogons with squares and hexagons, the
+      <span class="math inline">
+       \(\{3,\infty\}\)
+      </span>
+      tiling and the
+      <span class="math inline">
+       \(\{\infty,\infty\}\)
+      </span>
+      tiling.
+     </p>
+    </div>
+    <h2 id="higher-dimensional-hyperbolic-space-horocycles-and-beyond...">
+     Higher-dimensional Hyperbolic Space, Horocycles and beyond...
+    </h2>
+    <p>
+     Hyperbolic geometry becomes even more complicated in 3-space, or 4 or further! In order to investigate these spaces we need to understand the extended definition of the Schläfli symbol and learn about
+     <em>
+      horocycles
+     </em>
+     . In general, the Schläfli symbol
+     <span class="math inline">
+      \(\{x_n, x_{n-1},...,x_2,x_1\}\)
+     </span>
+     denotes
+     <span class="math inline">
+      \(x_1\)
+     </span>
+     copies of
+     <span class="math inline">
+      \(\{x_n, x_{n-1},...,x_2\}\)
+     </span>
+     around each vertex—this allows us to talk about regular
+     <em>
+      honeycombs
+     </em>
+     of arbitrary dimensions! You can see some examples of different cube-based polyhedron packings in
+     <strong>
+      Fig. 3.9
+     </strong>
+     , going from the elliptic to the hyperbolic (represented here by the Poincaré
+     <em>
+      sphere
+     </em>
+     model).
+    </p>
+    <p>
+     Most interesting, however, is the next in the series, namely
+     <span class="math inline">
+      \(\{4,3,6\}\)
+     </span>
+     , whose vertices are purely ideal. To see why
+     <span class="math inline">
+      \(\{4,3,6\}\)
+     </span>
+     would suddenly have only ideal vertices while all its predecessors have none, we can look at its
+     <em>
+      dual honeycomb
+     </em>
+     . The dual of a honeycomb is formed by taking the geometric centres of every face of every polyhedron involved and drawing lines between those that are adjacent to each other (as in, those which are part of a common polyhedron). 2D examples are easier to visualise at first, so let’s take a look at some: in
+     <strong>
+      Fig. 3.10
+     </strong>
+     , we see two diagrams, one showing how the square tiling
+     <span class="math inline">
+      \(\{4,4\}\)
+     </span>
+     is self-dual, where the original tiling is in blue and the dual is in red, the second showing how the dual of the cube (corresponding to the Schläfli symbol
+     <span class="math inline">
+      \(\{4,3\}\)
+     </span>
+     ) is the octahedron (with symbol
+     <span class="math inline">
+      \(\{3,4\}\)
+     </span>
+     . Can you spot a pattern here?
+    </p>
+    <p>
+     The dual of a geometric structure defined by the symbol
+     <span class="math inline">
+      \(\{x_n, x_{n-1},...,x_2,x_1\}\)
+     </span>
+     is
+     <span class="math inline">
+      \(\{x_1, x_2,...,x_{n-1},x_n\}\)
+     </span>
+     ! Can you think why this is?
+    </p>
+    <p>
+     It allows us to see that the dual of
+     <span class="math inline">
+      \(\{4,3,6\}\)
+     </span>
+     is
+     <span class="math inline">
+      \(\{6,3,4\}\)
+     </span>
+     , which can be interpreted as having 4 of the polyhedron
+     <span class="math inline">
+      \(\{6,3\}\)
+     </span>
+     around a point... except that
+     <span class="math inline">
+      \(\{6,3\}\)
+     </span>
+     defines the normal Euclidean hexagonal tiling of hexagons... Remarkably, hyperbolic space is so curved that it permits Euclidean tilings as infinite-sided polyhedra where the plane curves in on itself and becomes a form of hyperbolic ball—such an object is known as a
+     <em>
+      horocycle
+     </em>
+     <a class="footnoteRef" href="#fn7" id="fnref7">
+      <sup>
+       7
+      </sup>
+     </a>
+     and to me it’s simply astounding that such an object could exist. Consequently, since the definition of a dual honeycomb
+     <span class="math inline">
+      \(B\)
+     </span>
+     of a honeycomb
+     <span class="math inline">
+      \(A\)
+     </span>
+     requires that the number of faces of the polyhedra in
+     <span class="math inline">
+      \(B\)
+     </span>
+     is the same as the number of the edges going into the vertices of
+     <span class="math inline">
+      \(A\)
+     </span>
+     , it follows that there are infinite number of lines going into the vertices of
+     <span class="math inline">
+      \(\{4,3,6\}\)
+     </span>
+     and thus its vertices are ideal.
+    </p>
+    <div class="figure">
+     <img alt="A series of three poyhedron packings in different spaces with their respective Schläfli symbols." src="Fig91.png" style="width:50.0%"/>
+     <p class="caption">
+      Figure 9:
+      A series of three poyhedron packings in different spaces with their respective Schläfli symbols.
+     </p>
+    </div>
+    <div class="figure">
+     <img alt="The duals of \{4,4\} and \{4,3\}." src="Fig101.png" style="width:40.0%"/>
+    </div>
+    <div class="figure">
+     <img alt="The duals of \{4,4\} and \{4,3\}." src="Fig102.png" style="width:40.0%"/>
+     <p class="caption">
+      Figure 10:
+      The duals of
+      <span class="math inline">
+       \(\{4,4\}\)
+      </span>
+      and
+      <span class="math inline">
+       \(\{4,3\}\)
+      </span>
+      .
+     </p>
+    </div>
+    <p>
+     Modern-day geometry is even stranger than much of what we have talked about here. Instead of studying simply the Euclidean plane, one studies general
+     <em>
+      affine planes
+     </em>
+     , for which Euclid’s first and fifth axiom hold along with the requirement:
+    </p>
+    <ul>
+     <li>
+      <p>
+       There are four points such that no line is incident with more than two of them.
+      </p>
+     </li>
+    </ul>
+    <p>
+     and instead of studying the elliptic plane, mathematicians examine
+     <em>
+      projective planes
+     </em>
+     , in which Euclid’s first axiom holds, there are no parallel lines and the above requirement holds. Further, both of the planes just mentioned can be realised using any number system (or for those who know some abstract algebra, any
+     <em>
+      field
+     </em>
+     )—for example, one can create the affamed Complex Projective Plane by considering
+     <span class="math inline">
+      \(\mathbb{C}^3\)
+     </span>
+     and then calling the set of lines going through the origin “points” or, equivalently, saying that two points
+     <span class="math inline">
+      \((x_1,x_2,x_3)\)
+     </span>
+     and
+     <span class="math inline">
+      \((y_1,y_2,y_3)\)
+     </span>
+     , with
+     <span class="math inline">
+      \(x_n,y_n \in \mathbb{C}\)
+     </span>
+     , are “the same” if there is some complex number
+     <span class="math inline">
+      \(z\)
+     </span>
+     so that
+     <span class="math inline">
+      \((zx_1,zx_2,zx_3) = (y_1,y_2,y_3)\)
+     </span>
+     . In this odd world where points’ coordinates are described using complex numbers and lines are planes intersecting the origin, one can have many objects that we could never have in our own geometries such as the 3-dimensional surfaces known as
+     <em>
+      3-folds
+     </em>
+     —these exist in Complex Projective 4-space and often have so many rotational or complex symmetries that they simply have no analogue in our universe.
+    </p>
+    <p>
+     For those of you that have enjoyed this article, you may wish to read up on
+     <em>
+      differential geometry
+     </em>
+     , in which
+     <em>
+      Riemannian manifolds
+     </em>
+     , a generalisation of traditional geometric surfaces to any number of dimensions and which only have the requirement that areas “near” each point act analogously to Euclidean space
+     <a class="footnoteRef" href="#fn8" id="fnref8">
+      <sup>
+       8
+      </sup>
+     </a>
+     —it has really allowed mathematicians to better grasp what “spaces”
+     <em>
+      are
+     </em>
+     and the various properties that they could have... Riemann himself was the top student of Gauss and formulated the above concepts after being introduced to Gaussian curvature by his mentor! So, for further reading, look up:
+    </p>
+    <ul>
+     <li>
+      <p>
+       The notion of a
+       <em>
+        field
+       </em>
+       in abstract algebra and how they are used in the definitions of
+       <em>
+        projective
+       </em>
+       and
+       <em>
+        affine planes
+       </em>
+       .
+      </p>
+     </li>
+     <li>
+      <p>
+       <em>
+        Topological
+       </em>
+       spaces.
+      </p>
+     </li>
+     <li>
+      <p>
+       <em>
+        Uniform tilings
+       </em>
+       of the hyperbolic plane; there’s an excellent Wikipedia page on this that contains many more images than in this article!
+      </p>
+     </li>
+     <li>
+      <p>
+       <em>
+        Riemannian
+       </em>
+       geometry; although you shouldn’t expect to pick this up immediately, since it is a complex subject, true understanding of this should make General Relativity easy to read!
+      </p>
+     </li>
+     <li>
+      <p>
+       Hypercycles and the actual definition of horocycles
+      </p>
+     </li>
+     <li>
+      <p>
+       <strong>
+        Definitely
+       </strong>
+       , if nothing else, go to “h3.hypernom.com” and try and use your arrow keys and WASD to move around—it’s a simulator of hyperbolic 3-space from within the Poincaré sphere.
+      </p>
+     </li>
+    </ul>
+    <h2 id="challenge-v">
+     Challenge V
+    </h2>
+    <p>
+     And now, as per usual the challenge with a relatively simple first part and a second part that I know
+     <em>
+      no
+     </em>
+     good solutions to—if you have solutions to either of these, please email either
+     <strong>
+      Isky Mathews
+     </strong>
+     or
+     <strong>
+      Benedict Randall Shaw
+     </strong>
+     with them!
+    </p>
+    <ul>
+     <li>
+      <p>
+       What structure does the symbol
+       <span class="math inline">
+        \(\{5,3,4\}\)
+       </span>
+       describe?
+      </p>
+     </li>
+     <li>
+      <p>
+       Can you come up with a notation for tilings, polyhedra and honeycombs which works for
+       <em>
+        non-regular
+       </em>
+       ,
+       <em>
+        non-vertex transitive
+       </em>
+       structures?
+      </p>
+     </li>
+    </ul>
+    <div class="footnotes">
+     <hr>
+      <ol>
+       <li id="fn1">
+        <p>
+         A great circle on a sphere is one of the circles that one could draw on its surface such that the radius of the circle is equal to the radius of the sphere.
+         <a href="#fnref1">
+          ↩
+         </a>
+        </p>
+       </li>
+       <li id="fn2">
+        <p>
+         A plane curve can for our purposes be considered any line, wiggly or straight, drawn continuously on a surface.
+         <a href="#fnref2">
+          ↩
+         </a>
+        </p>
+       </li>
+       <li id="fn3">
+        <p>
+         In other words,
+         <span class="math inline">
+          \( \lim_{R \to \infty} \frac{1}{R} = 0\)
+         </span>
+         <a href="#fnref3">
+          ↩
+         </a>
+        </p>
+       </li>
+       <li id="fn4">
+        <p>
+         It should be noted that this name, just like
+         <em>
+          Euler’s Theorem
+         </em>
+         in modular arithmetic, is completely ridiculous since the individual it’s named after proved many hundreds of theorems and is commonly considered to be amongst the most important of mathematicians of the 19th and 20th centuries.
+         <a href="#fnref4">
+          ↩
+         </a>
+        </p>
+       </li>
+       <li id="fn5">
+        <p>
+         The set of points on the Euclidean plane of distance less than or equal to 1 from
+         <span class="math inline">
+          \((0,0)\)
+         </span>
+         .
+         <a href="#fnref5">
+          ↩
+         </a>
+        </p>
+       </li>
+       <li id="fn6">
+        <p>
+         The word
+         <em>
+          degenerate
+         </em>
+         is used in mathematics to describe objects or situations which technically fulfill specific requirements but are so devoid of structure or meaning that they are worthless to study. Another example of a degenerate object would be the 2-sided or 1-sided polygons (which, on the Euclidean plane, are just straight lines).
+         <a href="#fnref6">
+          ↩
+         </a>
+        </p>
+       </li>
+       <li id="fn7">
+        <p>
+         The official definition of a horocycle is a curve in hyperbolic space with the property that all lines intersecting it orthogonally tend to the same ideal point, but for our purposes the above commentary will suffice.
+         <a href="#fnref7">
+          ↩
+         </a>
+        </p>
+       </li>
+       <li id="fn8">
+        <p>
+         The official definition is a
+         <em>
+          topological space
+         </em>
+         which has a neighbourhood associated with every point that is
+         <em>
+          homeomorphic
+         </em>
+         to some Euclidean
+         <span class="math inline">
+          \(n\)
+         </span>
+         -space equipped with a useful object for measuring distances known as a
+         <em>
+          Riemannian metric
+         </em>
+         , but that’s for extra reading!
+         <a href="#fnref8">
+          ↩
+         </a>
+        </p>
+       </li>
+      </ol>
+     </hr>
+    </div>
+   </main>
+  </header>
+ </body>
+</html>
+
