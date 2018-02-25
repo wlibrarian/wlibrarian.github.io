@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+
+<html lang="en-GB">
+<head>
+<title>Librarian Online</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet"/>
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  CommonHTML: { linebreaks: { automatic: true } },
+  "HTML-CSS": { linebreaks: { automatic: true } },
+         SVG: { linebreaks: { automatic: true } }
+});
+</script>
+<link href="../main.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<a href="../index.html"><h1><b>The Librarian</b></h1></a><hr/>
+<main>
+<a href="issue.html"><h1>Supplementary 2, Volume I</h1></a><hr/><h1>Adventures in Recreational Mathematics V: Cantor's Attic</h1><p><b>Isky Mathews</b></p>
+<p>This article examines four integer sequences which have very interesting properties, beginning with a self-referential sequence described by William Kolakoski in 1965. Its first few terms are <span class="math inline">\(1, 2, 2, 1, 1, 2, 1, 2, 2, 1, 2, 2, 1, 1, 2, 1, 1, 2, 2, 1, 2, 1, 1, 2, 1, 2, 2, 1, 1,\ldots\)</span>.</p>
+<p>Now look at the Kolakoski sequence and construct a new sequence by recording the lengths of the “runs” of consecutive identical integers. For example at the beginning there is a single <span class="math inline">\(1\)</span>, so we write down <span class="math inline">\(1\)</span>. Then there are two <span class="math inline">\(2\)</span>s, so we write down another <span class="math inline">\(2\)</span>. If you continue this process, you will generate the same sequence!</p>
+<p>There are many questions that arise when discovering something like this: firstly, does this infinite sequence only contain <span class="math inline">\(1\)</span>s and <span class="math inline">\(2\)</span>s? Yes, which can be seen from the fact that new terms of the sequence are generated from the runs of previous parts of the sequence and since no runs of a length greater than two appear in the segment above, we can deduce that no numbers higher than <span class="math inline">\(1\)</span> or <span class="math inline">\(2\)</span> will ever appear. Secondly, is this sequence unique in this recursive property?</p>
+<p>No. The sequence works if you omit the first term but, more strongly, we can say that there is an infinite family of these sequences which use different integer sets. For example:</p>
+<p><span class="math inline">\(\{1, 2, 3\}\)</span> generates <span class="math inline">\(1, 2, 2, 3, 3, 1, 1, 1, 2, 2, 2, 3, 1, 2, 3, 3, 1, 1, 2, 2, 3, 3, 3, 1, 2,\ldots\)</span></p>
+<p><span class="math inline">\(\{1, 3\}\)</span> generates <span class="math inline">\(1, 3, 3, 3, 1, 1, 1, 3, 3, 3, 1, 3, 1, 3, 3, 3, 1, 1, 1, 3, 3, 3, 1, 3, 3,\ldots\)</span></p>
+<p>We can also have infinite sets of integers as “generators”:</p>
+<p><span class="math inline">\(\{2, 3, 5, 7, 11,\ldots\}\)</span> (primes) generates <span class="math inline">\(2, 2, 3, 3, 5, 5, 5, 7, 7, 7, 11, 11, 11, 11, 11, 13, 13, 13, 13, 13, 17, 17, 17, 17, 17, \ldots\)</span></p>
+<p>This sequence has the property that the <span class="math inline">\(n^{th}\)</span> term is the number of times <span class="math inline">\(n\)</span> appears in the sequence:</p>
+<p><span class="math inline">\(\{1, 2, 3, 4, 5,\ldots\}\)</span> generates <span class="math inline">\(1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, \ldots\)</span></p>
+<p>Furthermore, permutations of these sets of integers can create different Kolakoski sequences, which you could check on a notepad. In fact, a great and perhaps unintuitive result is that any sequence of integers, countable in length, in which no two consecutive terms are the same can generate a Kolakoski sequence!</p>
+<p>So, a relatively simple logical concept has borne all this brilliant fruit and so I present another—what if a sequence that generates itself through run-lengths could be seen as a <span class="math inline">\(1\)</span>-periodic point under the function of “run-length encoding”? Describing the Kolakoski sequences we have looked at so far in this manner allows to wonder if there could be <span class="math inline">\(2\)</span>-periodic sequences or higher…</p>
+<p>Once again, it is amazingly possible to find examples of this: a sequence whose run-lengths generate a new sequence whose run-lengths generate the first! Examples include—</p>
+<ol>
+<li><p>a pair which generate each other, viz.—</p>
+<ol>
+<li><p><span class="math inline">\(1, 1, 2, 1, 1, 2, 2, 1, 2, 2, 1, 2, 1, 1, 2, 2, 1, 2, 2, 1, 1, 2, 1, 2, 2, \ldots\)</span></p></li>
+<li><p><span class="math inline">\(2, 1, 2, 2, 1, 2, 1, 1, 2, 2, 1, 2, 2, 1, 1, 2, 1, 1, 2, 1, 2, 2, 1, 1, 2, \ldots\)</span>, and</p></li>
+</ol></li>
+<li><p>a miraculous cyclical quintuplet where each sequence in the list generates the one below it, viz.—</p>
+<ol>
+<li><p><span class="math inline">\(1, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, \ldots\)</span></p></li>
+<li><p><span class="math inline">\(2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, \ldots\)</span></p></li>
+<li><p><span class="math inline">\(3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, \ldots\)</span></p></li>
+<li><p><span class="math inline">\(4, 4, 4, 4, 4, 5, 1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 1, 1, 1, 1, 2, \ldots\)</span></p></li>
+<li><p><span class="math inline">\(5, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, \ldots\)</span>.</p></li>
+</ol></li>
+</ol>
+<p>Try them!</p>
+<p>To my knowledge, it is not known but conjectured that there exist <span class="math inline">\(n\)</span>-tuplets of sequences that generate each other as above out of any countable sequence of integers that can be made into a <span class="math inline">\(1\)</span>-periodic Kolakoski sequence for any natural <span class="math inline">\(n\)</span>.</p>
+<p>Self-description can be encoded mathematically in many ways, often leading to complex or chaotic behaviour and the Kolakoski sequence (the original version) is a good example: it is conjectured that the sequence is aperiodic i.e. it never repeats. Gijswijt’s sequence, named after the mathematician Dion Gijswijt, is another such encoding.</p>
+<p>To explain the process of determining the <span class="math inline">\((n+1)^{th}\)</span> term of the sequence, one needs to understand strings and basic string notation. A string is simply a series of characters (not limited to numbers) written next to each as if the letters of a word. The process of taking an ordered collection of such characters and writing them together in this manner is referred to as concatenation (this word generally means the combination of any strings <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> into <span class="math inline">\(XY\)</span>). If <span class="math inline">\(Y\)</span> is a string, then we denote <span class="math inline">\(Y\)</span> repeated <span class="math inline">\(k\)</span> times as <span class="math inline">\(Y^k\)</span>.</p>
+<p>Thus, given the first <span class="math inline">\(n\)</span> terms of Gijswijt’s sequence, consider concatenating them into a string which can be denoted as <span class="math inline">\(XY^k\)</span>, where <span class="math inline">\(Y\)</span> is the largest “block” within the string that is repeated at the end and <span class="math inline">\(X\)</span> is the rest of the string. The <span class="math inline">\((n+1)^{th}\)</span> term is <span class="math inline">\(k\)</span>. To illustrate, let us go through the creation of the first few terms together.</p>
+<div class="figure">
+<img alt="Graph of the first few terms of Gijswijt’s Sequence." src="Gijswijt.JPG" style="width:80.0%"/>
+<p class="caption">Figure 1: Graph of the first few terms of Gijswijt’s Sequence.</p>
+</div>
+<p>Originally, we have nothing and since that nothing is “repeated once” (it is the <span class="math inline">\(Y\)</span> for this string), we write <span class="math inline">\(1\)</span> as the first term. Since 1 is repeated only once so far, we write another <span class="math inline">\(1\)</span>. Now, as there are two <span class="math inline">\(1\)</span>s in succession, we write down <span class="math inline">\(3\)</span>. See if you can understand the rest here:</p>
+<p><span class="math display">\[1, 1, 2, 1, 1, 2, 2, 2, 3, 1, 1, 2, 1, 1, 2, 2, 2, 3, 2, 1, 1, 2, 1, 1, 2, \ldots\]</span></p>
+<p>Reasoning about it isn’t simple at first—for example, you see how <span class="math inline">\(1,1,2\)</span> appears twice and then is followed by a <span class="math inline">\(2\)</span> to represent the repetition of that entire block, then by another 2 to represent the two <span class="math inline">\(2\)</span>s next to each other… In fact, it is this nontrivial “block and glue” structure that is key to its understanding:</p>
+<p>Let’s refer to Gijswijt’s Sequence as <span class="math inline">\(G_1\)</span> and then observe that the entire sequence is made up of “blocks” that are doubled and then are ended with some sort of “glue” sequence, for example the first block <span class="math inline">\(B_1\)</span> is <span class="math inline">\(1\)</span> and the first glue <span class="math inline">\(E_1\)</span> is <span class="math inline">\(2\)</span> since we begin with <span class="math inline">\(1,1,2\)</span>. The next block, <span class="math inline">\(B_2\)</span>, is <span class="math inline">\(1,1,2\)</span> (or <span class="math inline">\(B_1B_1E_1\)</span>) and the next glue sequence is 2,2,3. We can generalise this to larger blocks and glue sequences: <span class="math inline">\(B_{n+1} = B_nB_nS_n\)</span> where <span class="math inline">\(S_n\)</span> is simply defined to be the sequence of numbers starting at the end of <span class="math inline">\(B_nB_n\)</span> and ending at the first <span class="math inline">\(1\)</span> reached.</p>
+<p>What’s interesting about this analysis is that one can combine all the glue sequences into a new infinite sequence, <span class="math inline">\(G_2\)</span>, which follows the same <span class="math inline">\((n+1)^{th}\)</span> term rule as <span class="math inline">\(G_1\)</span> except instead of writing the <span class="math inline">\(k\)</span> from <span class="math inline">\(XY^k\)</span>, we write <span class="math inline">\(max\{k, 2\}\)</span>. Here are the first <span class="math inline">\(25\)</span> terms:</p>
+<p><span class="math display">\[2,2,2,3,2,2,2,3,2,2,2,3,3,2,2,2,3,2,2,2,3,2,2,2,3, \ldots\]</span></p>
+<p>One can perform similar structural analysis on <span class="math inline">\(G_2\)</span> as above and further construct a <span class="math inline">\(G_3\)</span> and more generally, <span class="math inline">\(G_n\)</span>. We can observe that every <span class="math inline">\(G_n\)</span> starts with <span class="math inline">\(n\)</span> and so, perhaps surprisingly, prove that Gijswijt’s Sequence is unbounded (that is, there is no finite positive integer that does not appear at some point in the sequence). However, it should be noted that the sequence grows exceptionally slowly, with <span class="math inline">\(n\)</span> believed to generally appear at roughly the</p>
+<p><span class="math display">\[2^{3^{4^{5^{\ldots^{n}}}}}\textrm{th}\]</span></p>
+<p>term and thus, despite its unboundedness, is conjectured to have a finite average!</p>
+<p>Our next phantasmagorical sequence was first investigated by the lesser known (and yet important) combinatoricist and number theorist James Joseph Sylvester. It begins</p>
+<p><span class="math display">\[2,3,7,43,1807,3263443,10650056950807,113423713055421844361000443, \ldots\]</span></p>
+<p>One constructs the <span class="math inline">\((n+1)^{th}\)</span> term by taking the product of the first <span class="math inline">\(n\)</span> terms and adding one—you can see this above. Equivalently, one can define it, where <span class="math inline">\(s_n\)</span> is the <span class="math inline">\(n^{th}\)</span> term of the sequence, as</p>
+<p><span class="math display">\[s_n = s_{n-1}*(s_{n-1}-1)+1 \textrm{ with } s_0 = 2\]</span></p>
+<div class="figure">
+<img alt="Graph of the first few terms of Sylvester’s Sequence." src="Sylvester.JPG" style="width:80.0%"/>
+<p class="caption">Figure 2: Graph of the first few terms of Sylvester’s Sequence.</p>
+</div>
+<p>The fact that these two definitions are equivalent can be seen given some quick thought. Let us consider the sum of the reciprocals of the terms in Sylvester’s sequence. We can first see definitionally that</p>
+<p><span class="math display">\[\frac{1}{s_i-1}-\frac{1}{s_{i+1}-1} = \frac{1}{s_i-1}-\frac{1}{s_i(s_i-1)} = \frac{(s_i-1)}{s_i(s_i-1)} = \frac{1}{s_i}\]</span></p>
+<p>Thus, we can use the concept of telescoping (described by Euler as the “method of differences”) to see that</p>
+<p><span class="math display">\[\sum^{j-1}_{i=0} \frac{1}{s_i} = \sum^{j-1}_{i=0} (\frac{1}{s_i-1} -\frac{1}{s_{i+1}-1}) = (\frac{1}{s_0-1} -\frac{1}{s_{j}-1}) = 1 - \frac{1}{s_{j}-1} = \frac{s_j-2}{s_{j}-1}\]</span></p>
+<p>We can deduce from the last two equivalences an impressive result: since Sylvester’s sequence obviously tends to infinity, the sum of the reciprocals of its terms tends to <span class="math inline">\(1\)</span>! Furthermore, the last equivalence in particular tells us that if we were to sum up to the <span class="math inline">\(j^{th}\)</span> term in the sequence and subtract one from the last denominator, we would also get one, since</p>
+<p><span class="math display">\[\frac{s_j-2}{(s_{j}-1)-1} = 1\]</span></p>
+<p>Thus, we can see that:</p>
+<p><span class="math display">\[1 = \frac{1}{2}+\frac{1}{3}+\frac{1}{6}\]</span> <span class="math display">\[1 = \frac{1}{2}+\frac{1}{3}+\frac{1}{7}+\frac{1}{42}\]</span> <span class="math display">\[1 = \frac{1}{2}+\frac{1}{3}+\frac{1}{7}+\frac{1}{43}+\frac{1}{1806}\]</span></p>
+<p>This allows us to have a different interpretation of Sylvester’s sequence: a “greedy algorithm” which at each stage, chooses the smallest <span class="math inline">\(n\)</span> such that <span class="math inline">\(\frac{1}{n}\)</span> plus the partial sum of the reciprocals of all the terms so far is less than one. This allows us to see that it is the fastest converging-to-one series of unit fractions and also allows us to consider other Sylvester-esque sequences. For example, what about the greedy algorithm series formed from <span class="math inline">\(s_0 = \frac{1}{4}\)</span> and the limit being <span class="math inline">\(2\)</span>? I was able to compute these six terms on my computer:</p>
+<p><span class="math display">\[2,2,5,21,421,176821, \ldots\]</span></p>
+<p>You can see that the recurrence relation that held with Sylvester’s sequence also holds here! Furthermore, if one tries to derive similar convergent sequences to rational numbers using the greedy algorithm, one will often observe a “Sylvestrine” relation. This is all due to a result obtained by modern mathematician, Badea, which states that if one has a sequence of integers <span class="math inline">\(a_n\)</span> such that <span class="math inline">\(a_n \geq a_{n-1}^2-a_{n-1}+1\)</span> and the sum of its reciprocals converges to some rational number, then after some finitely reachable point in the sequence the terms will follow the recurrence relation that defines Sylvester’s sequence—there is something fundamental about it to doubly exponential series…</p>
+<p>Investigations into its closed-form (non-recursive) representation have led to the surprising discovery that there exists what we shall name the Sylvester Constant <span class="math inline">\(E\)</span> such that <span class="math inline">\(s_n = \left \lceil{E^{2^{n+1}}+\frac{1}{2}}\right \rceil\)</span> with <span class="math inline">\(E = 1.26408\ldots\)</span>.</p>
+<p>We finish off with a fun sequence investigated by the British mathematical jack-of-all-trades, John Horton Conway. He recalls that a student once excitedly thrust a sheet of paper under his nose with these five terms on it:</p>
+<p><span class="math display">\[1,11,21,1211,111221, \ldots\]</span></p>
+<p>and he was asked to guess the next number in the sequence. He wasn’t able to do this, however, and after some guesses and deliberation the student revealed to him the rule for constructing the rest of the sequence. What he called the Look and Say numbers were made by reading through the previous term, counting those groups of consecutive numbers which are the same. For example, starting with <span class="math inline">\(1\)</span>, we would say that there is one <span class="math inline">\(1\)</span> and thus the next term <span class="math inline">\(11\)</span>. For something more complicated like <span class="math inline">\(1211\)</span>, we say there is <span class="math inline">\(1\)</span>, followed by one <span class="math inline">\(2\)</span> and then a final grouping of two <span class="math inline">\(1\)</span>s: thus <span class="math inline">\(11 12 21\)</span> concatenated, or <span class="math inline">\(111221\)</span>.</p>
+<div class="figure">
+<img alt="Graph of the first few terms of Look and Say." src="LookAndSay.JPG" style="width:80.0%"/>
+<p class="caption">Figure 3: Graph of the first few terms of Look and Say.</p>
+</div>
+<p>Conway took some time later to investigate the properties of this seemingly arbitrary recurrence relation and the many sequences that one could generate from different starting integers. What was immediately apparent was that any sequence apart from the anomalous <span class="math inline">\(22,22,22, \ldots\)</span> would be divergent (tend to infinity) and that for any digit <span class="math inline">\(n \neq 1\)</span>, the sequence would be</p>
+<p><span class="math display">\[n,1n,111n,311n,13211n, \ldots\]</span></p>
+<p>with <span class="math inline">\(n\)</span> forever staying at the end. He then came upon and proved two remarkable results, which he published in his brilliantly titled paper The Weird and Wonderful Chemistry of Audioactive Decay. The first was the celebrated Cosmological Theorem, which states that after some finite point, any look-and-say sequence splits into a discrete grouping of strings, whose dynamics are independent beyond this point. It turns out that there are only 92 of such strings that only involve <span class="math inline">\(1\)</span>s, <span class="math inline">\(2\)</span>s &amp; <span class="math inline">\(3\)</span>s, so he called them “elements” (after all, how many naturally occur?) and referred to this process of sequence bifurcation as “audioactive decay”. The elements involving digits other than just <span class="math inline">\(1\)</span>, <span class="math inline">\(2\)</span> or <span class="math inline">\(3\)</span> were called “transuranic” since their abundance in a given <span class="math inline">\(n\)</span>-length string tends to zero as <span class="math inline">\(n\)</span> tends to infinity (they don’t change beyond just appearing as <span class="math inline">\(1n\)</span>). Transuranic elements in real life have an extremely short half-life, so this further extends the wit of the nomenclature!</p>
+<p>The table of elements is too large to be shown here (having <span class="math inline">\(92\)</span> rows!) but I urge you to look it up! After all, the mechanics of any look-and-say sequence is after a point (maximally, the <span class="math inline">\(8^{th}\)</span> term) completely determined by these elements and furthermore, by examining the lengths of all the elements, we can precisely predict the change in the length of the term.</p>
+<p>Suppose we construct a <span class="math inline">\(92\)</span> by <span class="math inline">\(92\)</span> matrix in which entry <span class="math inline">\((x, y)\)</span> is equivalent to the product of the number of times the <span class="math inline">\(x^{th}\)</span> “element” appears in the decay-successor to the <span class="math inline">\(y^{th}\)</span> “element” and the ratio of the lengths of the <span class="math inline">\(x^{th}\)</span> and <span class="math inline">\(y^{th}\)</span> “element”s. Then, consider representing the length of a given term <span class="math inline">\(T\)</span> in a look-and-say sequence as a vector whose <span class="math inline">\(n^th\)</span> item is the length of the <span class="math inline">\(n^{th}\)</span> “element” multiplied by the number of times it appears in <span class="math inline">\(T\)</span>.</p>
+<p>By multiplying the “length vector” by the matrix, we get a new vector which encodes the length of what would be the next term in the look-and-say sequence. From this, Conway was able to calculate an invariant of the matrix known as its characteristic polynomial. This allowed him to deduce a new theorem…</p>
+<p>If one looks at look-and-say sequence terms’ lengths, you can see that they increase exponentially. Below is a logarithmically-scaled graph of the length of terms in the traditional look-and-say sequence starting with <span class="math inline">\(1\)</span>.</p>
+<div class="figure">
+<img alt="Logarithmic graph of length of Look and Say terms." src="LookAndSayLength.JPG" style="width:80.0%"/>
+<p class="caption">Figure 4: Logarithmic graph of length of Look and Say terms.</p>
+</div>
+<p>The amazingly straight line means that the length of terms scales by an almost constant value, due to the logarithmic scale on the y-axis, across the sequence. This is intriguing—basic investigation reveals that it is roughly <span class="math inline">\(30\%\)</span> increase each term. What Conway deduced from the characteristic polynomial of the aforementioned matrix was the precise value of this scale factor, <span class="math inline">\(1.303577269\ldots\)</span>, which is its only positive real root!</p>
+<p>This astounding result suggests that the look-and-say generation rule, far from being arbitrary, is apparently very ordered. It led to Conway proclaiming that this investigation was the “most complicated solution to the simplest problem” that he had ever seen.</p>
+<p>To conclude, I wanted to mention an amazing resource which slips beneath the radars of full-time and recreational mathematicians alike at our age: the Online Encyclopaedia of Integer Sequences. Nearly all the terms and sequences mentioned in this article I only found out due to the OEIS; most of the graphs in this article were taken from the OEIS’s graph tool for sequences. The OEIS was set up in the 2000s as the result of a 40-year project that had been run by Neil Sloane, a number theorist particularly interested in integer sequences—indeed, the title of this article is taken from a talk of the same name given to a computer science group at Princeton University this year.</p>
+<p>The OEIS has reference codes for all its sequences in the form “AXXXXXX”, which allow you to easily what you are looking for on their website. For further reading or your own investigations, here are the OEIS codes for the sequences mentioned in this article:</p>
+<ul>
+<li><p><span><em>Kolakoski Sequence</em>, A000002</span></p></li>
+<li><p><span><em>Gijswijt’s Sequence</em>, A090822</span></p></li>
+<li><p><span><em>Sylvester’s Sequence</em>, A000058</span></p></li>
+<li><p><span><em>Look-and-say Sequence</em> (starting with <span class="math inline">\(1\)</span>), A005150</span></p></li>
+</ul>
+<p>Finally, we couldn’t finish an ARM article without challenges. As per usual, this article was written by Isky Mathews but feel free to email your answers to the other author Benedict Randall Shaw.</p>
+<p>Challenge IV:</p>
+<ol>
+<li><p><span>Investigate other “Sylvestrine” greedy sequences as mentioned—can you create an infinite number of different representations of the number they converge to as finite sums of unit fractions like above?</span></p></li>
+<li><p><span>Create a formula for the <span class="math inline">\(n^{th}\)</span> term of the traditional Kolakoski Sequence (it can be recursive!). Using this, record the relative frequency of <span class="math inline">\(1\)</span>s and <span class="math inline">\(2\)</span>s in the sequence up to some large <span class="math inline">\(n\)</span> via a computer program implementation. Make a conjecture of what fraction of the sequence’s terms are <span class="math inline">\(1\)</span>s based on this.</span></p></li>
+</ol>
+
+</main>
+</header></body>
+</html>
+
