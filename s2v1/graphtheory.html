@@ -7,14 +7,14 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet"/>
-<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
-</script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   CommonHTML: { linebreaks: { automatic: true } },
   "HTML-CSS": { linebreaks: { automatic: true } },
          SVG: { linebreaks: { automatic: true } }
 });
+</script>
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
 </script>
 <link href="../main.css" rel="stylesheet"/>
 </head>
@@ -40,7 +40,7 @@ MathJax.Hub.Config({
 <img alt="A directed graph" src="directedgraph.png" style="width:50.0%"/>
 <p class="caption">Figure 2: A directed graph<span data-label="directedgraph"></span></p>
 </div>
-<p>A digraph is defined rigorously as an ordered pair <span class="math inline">\(G=(V,E)\)</span>, where <span class="math inline">\(V\)</span> is a set of <em>vertices</em> and <span class="math inline">\(E\)</span> a set of <em>edges</em>, just as a normal graph; however, <span class="math inline">\(E\)</span> instead contains ordered pairs, so that a pair <span class="math inline">\((X,Y)\)</span> indicates that there is an edge from <span class="math inline">\(X\)</span> to <span class="math inline">\(Y\)</span>. In Figure 2<span>directedgraph</span>, <span class="math inline">\(V={A,B,C,D}\)</span> and <span class="math inline">\(E=\{(A,B),(A,C),(B,C),(C,A),(C,D)\}\)</span>. Note that this digraph is still considered simple, as while we have two edges between <span class="math inline">\(A\)</span> and <span class="math inline">\(C\)</span>, they are in different directions.</p>
+<p>A digraph is defined rigorously as an ordered pair <span class="math inline">\(G=(V,E)\)</span>, where <span class="math inline">\(V\)</span> is a set of <em>vertices</em> and <span class="math inline">\(E\)</span> a set of <em>edges</em>, just as a normal graph; however, <span class="math inline">\(E\)</span> instead contains ordered pairs, so that a pair <span class="math inline">\((X,Y)\)</span> indicates that there is an edge from <span class="math inline">\(X\)</span> to <span class="math inline">\(Y\)</span>. In Figure 2, <span class="math inline">\(V={A,B,C,D}\)</span> and <span class="math inline">\(E=\{(A,B),(A,C),(B,C),(C,A),(C,D)\}\)</span>. Note that this digraph is still considered simple, as while we have two edges between <span class="math inline">\(A\)</span> and <span class="math inline">\(C\)</span>, they are in different directions.</p>
 <p>Unless otherwise stated, the word <em>graph</em> does not usually include digraphs.</p>
 <h3 id="walks">Walks</h3>
 <p>Much of graph theory concerns itself with <em>walks</em> between vertices. A walk from vertex <span class="math inline">\(X\)</span> to vertex <span class="math inline">\(Y\)</span> is essentially a way to go from from <span class="math inline">\(X\)</span> to <span class="math inline">\(Y\)</span> only along edges; on digraphs, one must in the direction of an edge. For example, in Figure 1, <span class="math inline">\(B \rightarrow A \rightarrow C \rightarrow D\)</span> is a walk from <span class="math inline">\(B\)</span> to <span class="math inline">\(D\)</span>; however, this is not a valid walk on the directed graph in Figure 2, as there is no edge from <span class="math inline">\(B\)</span> to <span class="math inline">\(A\)</span>. Instead, one must take the walk <span class="math inline">\(B \rightarrow C \rightarrow D\)</span>.</p>
@@ -83,7 +83,7 @@ MathJax.Hub.Config({
 </div>
 <p>Another equivalent definition is that a graph is bipartite if and only if it is <em>2-colorable</em><a class="footnoteRef" href="#fn5" id="fnref5"><sup>5</sup></a>.</p>
 <h3 id="complete-graphs">Complete Graphs</h3>
-<p>The <em>complete graph</em> <span class="math inline">\(K_n\)</span> is the graph with <span class="math inline">\(n\)</span> vertices where there is an edge between every two vertices. Figure 8<span>k5graph</span> shows <span class="math inline">\(K_5\)</span>, the complete graph vertices.</p>
+<p>The <em>complete graph</em> <span class="math inline">\(K_n\)</span> is the graph with <span class="math inline">\(n\)</span> vertices where there is an edge between every two vertices. Figure 8 shows <span class="math inline">\(K_5\)</span>, the complete graph vertices.</p>
 <div class="figure">
 <img alt="K_5" src="k5graph.png" style="width:50.0%"/>
 <p class="caption">Figure 8: <span class="math inline">\(K_5\)</span><span data-label="k5graph"></span></p>
