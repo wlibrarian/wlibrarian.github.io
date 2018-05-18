@@ -64,7 +64,7 @@ MathJax.Hub.Config({
 <p>To explain the process of determining the <span class="math inline">\((n+1)^{th}\)</span> term of the sequence, one needs to understand strings and basic string notation. A string is simply a series of characters (not limited to numbers) written next to each as if the letters of a word. The process of taking an ordered collection of such characters and writing them together in this manner is referred to as concatenation (this word generally means the combination of any strings <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> into <span class="math inline">\(XY\)</span>). If <span class="math inline">\(Y\)</span> is a string, then we denote <span class="math inline">\(Y\)</span> repeated <span class="math inline">\(k\)</span> times as <span class="math inline">\(Y^k\)</span>.</p>
 <p>Thus, given the first <span class="math inline">\(n\)</span> terms of Gijswijt’s sequence, consider concatenating them into a string which can be denoted as <span class="math inline">\(XY^k\)</span>, where <span class="math inline">\(Y\)</span> is the largest “block” within the string that is repeated at the end and <span class="math inline">\(X\)</span> is the rest of the string. The <span class="math inline">\((n+1)^{th}\)</span> term is <span class="math inline">\(k\)</span>. To illustrate, let us go through the creation of the first few terms together.</p>
 <div class="figure">
-<img alt="Graph of the first few terms of Gijswijt’s Sequence." src="Gijswijt.JPG.png" style="width:80.0%"/>
+<img alt="Graph of the first few terms of Gijswijt’s Sequence." src="Gijswijt.JPG" style="width:80.0%"/>
 <p class="caption">Figure 1: Graph of the first few terms of Gijswijt’s Sequence.</p>
 </div>
 <p>Originally, we have nothing and since that nothing is “repeated once” (it is the <span class="math inline">\(Y\)</span> for this string), we write <span class="math inline">\(1\)</span> as the first term. Since 1 is repeated only once so far, we write another <span class="math inline">\(1\)</span>. Now, as there are two <span class="math inline">\(1\)</span>s in succession, we write down <span class="math inline">\(3\)</span>. See if you can understand the rest here:</p>
@@ -81,7 +81,7 @@ MathJax.Hub.Config({
 <p>One constructs the <span class="math inline">\((n+1)^{th}\)</span> term by taking the product of the first <span class="math inline">\(n\)</span> terms and adding one—you can see this above. Equivalently, one can define it, where <span class="math inline">\(s_n\)</span> is the <span class="math inline">\(n^{th}\)</span> term of the sequence, as</p>
 <p><span class="math display">\[s_n = s_{n-1}*(s_{n-1}-1)+1 \textrm{ with } s_0 = 2\]</span></p>
 <div class="figure">
-<img alt="Graph of the first few terms of Sylvester’s Sequence." src="Sylvester.JPG.png" style="width:80.0%"/>
+<img alt="Graph of the first few terms of Sylvester’s Sequence." src="Sylvester.JPG" style="width:80.0%"/>
 <p class="caption">Figure 2: Graph of the first few terms of Sylvester’s Sequence.</p>
 </div>
 <p>The fact that these two definitions are equivalent can be seen given some quick thought. Let us consider the sum of the reciprocals of the terms in Sylvester’s sequence. We can first see definitionally that</p>
@@ -100,7 +100,7 @@ MathJax.Hub.Config({
 <p><span class="math display">\[1,11,21,1211,111221, \ldots\]</span></p>
 <p>and he was asked to guess the next number in the sequence. He wasn’t able to do this, however, and after some guesses and deliberation the student revealed to him the rule for constructing the rest of the sequence. What he called the Look and Say numbers were made by reading through the previous term, counting those groups of consecutive numbers which are the same. For example, starting with <span class="math inline">\(1\)</span>, we would say that there is one <span class="math inline">\(1\)</span> and thus the next term <span class="math inline">\(11\)</span>. For something more complicated like <span class="math inline">\(1211\)</span>, we say there is <span class="math inline">\(1\)</span>, followed by one <span class="math inline">\(2\)</span> and then a final grouping of two <span class="math inline">\(1\)</span>s: thus <span class="math inline">\(11 12 21\)</span> concatenated, or <span class="math inline">\(111221\)</span>.</p>
 <div class="figure">
-<img alt="Graph of the first few terms of Look and Say." src="LookAndSay.JPG.png" style="width:80.0%"/>
+<img alt="Graph of the first few terms of Look and Say." src="LookAndSay.JPG" style="width:80.0%"/>
 <p class="caption">Figure 3: Graph of the first few terms of Look and Say.</p>
 </div>
 <p>Conway took some time later to investigate the properties of this seemingly arbitrary recurrence relation and the many sequences that one could generate from different starting integers. What was immediately apparent was that any sequence apart from the anomalous <span class="math inline">\(22,22,22, \ldots\)</span> would be divergent (tend to infinity) and that for any digit <span class="math inline">\(n \neq 1\)</span>, the sequence would be</p>
@@ -111,7 +111,7 @@ MathJax.Hub.Config({
 <p>By multiplying the “length vector” by the matrix, we get a new vector which encodes the length of what would be the next term in the look-and-say sequence. From this, Conway was able to calculate an invariant of the matrix known as its characteristic polynomial. This allowed him to deduce a new theorem…</p>
 <p>If one looks at look-and-say sequence terms’ lengths, you can see that they increase exponentially. Below is a logarithmically-scaled graph of the length of terms in the traditional look-and-say sequence starting with <span class="math inline">\(1\)</span>.</p>
 <div class="figure">
-<img alt="Logarithmic graph of length of Look and Say terms." src="LookAndSayLength.JPG.png" style="width:80.0%"/>
+<img alt="Logarithmic graph of length of Look and Say terms." src="LookAndSayLength.JPG" style="width:80.0%"/>
 <p class="caption">Figure 4: Logarithmic graph of length of Look and Say terms.</p>
 </div>
 <p>The amazingly straight line means that the length of terms scales by an almost constant value, due to the logarithmic scale on the y-axis, across the sequence. This is intriguing—basic investigation reveals that it is roughly <span class="math inline">\(30\%\)</span> increase each term. What Conway deduced from the characteristic polynomial of the aforementioned matrix was the precise value of this scale factor, <span class="math inline">\(1.303577269\ldots\)</span>, which is its only positive real root!</p>
@@ -133,7 +133,7 @@ MathJax.Hub.Config({
 
 </main>
 <footer>
-<p>In using this webpage, you agree to our <a href="terms.html">terms</a> of use.</p>
+<p>In using this webpage, you agree to our <a href="https://librarian.cf/terms.html">terms</a> of use.</p>
 </footer>
 </body>
 </html>
