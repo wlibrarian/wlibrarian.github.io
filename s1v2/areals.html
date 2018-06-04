@@ -35,10 +35,9 @@ MathJax.Hub.Config({
 <p>In order to become competent with mathematic concepts, it is helpful to practise; so, throughout this article I shall leave questions that can be done by those wishing to become competent.</p>
 <h2 id="definitions">Definitions</h2>
 <p>We say that a point anywhere in the plane <span class="math inline">\(P\)</span> has coördinates <span class="math inline">\((x,y,z)\)</span> with respect to a triangle <span class="math inline">\(\triangle{}ABC\)</span> iff <span class="math display">\[(x,y,z)=\left(\frac{[PBC]}{[ABC]},\frac{[APC]}{[ABC]},\frac{[ABP]}{[ABC]}\right)\]</span> where <span class="math inline">\([DEF]\)</span>, for some triangle <span class="math inline">\(DEF\)</span>, is the area of <span class="math inline">\(\triangle{}DEF\)</span>.</p>
-<div class="figure">
-<img alt="A point P, with respect to \triangle{}ABC." src="def-areas.png"/>
-<p class="caption">Figure 1: A point <span class="math inline">\(P\)</span>, with respect to <span class="math inline">\(\triangle{}ABC\)</span>.<span data-label="def-areas"></span></p>
-</div>
+<figure>
+<img alt="A point P, with respect to \triangle{}ABC." src="def-areas.png"/><figcaption>A point <span class="math inline">\(P\)</span>, with respect to <span class="math inline">\(\triangle{}ABC\)</span>.<span label="def-areas"></span></figcaption>
+</figure>
 <p>Note that <span class="math inline">\(x+y+z=1\)</span> is thus always true, as clearly <span class="math inline">\([PBC]+[APC]+[ABP]\)</span>. We thus have a rigorously defined unique set of coördinates for all points within the triangle. But what about those outside the triangle? First, we must define directed areas. When we name a triangle, convention says that we label its points anticlockwise. We therefore say that <span class="math inline">\([ABC]\)</span> is positive if <span class="math inline">\(A,B,C\)</span> are in order going anticlockwise around <span class="math inline">\(\triangle{}ABC\)</span>, and negative if the points are in order going clockwise. (If the points <span class="math inline">\(A,B,C\)</span> are in a straight line, then <span class="math inline">\([ABC]\)</span> is obviously zero.) We now have a distinct set of coördinate for all points in the plane.</p>
 <p>An equivalent definition exists with vectors. For any arbitrary point <span class="math inline">\(O\)</span> in the plane, point <span class="math inline">\(P\)</span> has coördinates <span class="math inline">\((x,y,z)\)</span> with respect to <span class="math inline">\(\triangle{}ABC\)</span> iff <span class="math inline">\(\overrightarrow{OP}=x\overrightarrow{OA}+y\overrightarrow{OB}+z\overrightarrow{OC}\)</span> and <span class="math inline">\(x+y+z=1\)</span>. It does not matter where we choose <span class="math inline">\(O\)</span>; we get the same set of coördinates for <span class="math inline">\(P\)</span> whereever <span class="math inline">\(O\)</span> is.</p>
 <p><br/>
@@ -77,7 +76,6 @@ MathJax.Hub.Config({
 <p>The length of a given line segment <span class="math inline">\(PQ\)</span>, where the vector taking <span class="math inline">\(P\)</span> to <span class="math inline">\(Q\)</span> (or vice versa) is <span class="math inline">\((u,v,w)\)</span>, can be found from this equation— <span class="math display">\[-PQ^2=a^2vw+b^2wu+c^2uv\]</span> which is reminiscent of the formula for circles, which should seem fairly natural given the usual definition of a circle as the set of all points which are a given distance from the centre.</p>
 <h2 id="disclaimer">Disclaimer</h2>
 <p>Ideally, one ought not to use areals, as the vast majority of geometric problems have neater, more satisfying, and easier solutions using standard Euclidean methods. However, if one is unable to use those effectively for some reason, and has tried and failed to rectify this, then areals are a possible alternative; one must, however, practise using them if one wishes to use them properly and efficiently. Note that there exist other ways of doing geometry aside from areals and Euclidean methods, including but not limited to vectors, trigonometry, complex numbers, and (although this is not recommended, and is usually unhelpful) origami.</p>
-
 </main>
 <footer>
 <p>In using this webpage, you agree to our <a href="https://librarian.cf/terms.html">terms</a> of use.</p>

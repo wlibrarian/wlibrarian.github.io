@@ -31,22 +31,20 @@ MathJax.Hub.Config({
 <main>
 <h1>An Introduction to Graph Theory</h1><p><b>Benedict Randall Shaw</b></p><p><a href="issue.html">Supplementary №2, Volume I</a></p>
 <p>It has been said that all maths is graph theory.</p>
-<p>This is a slight exaggeration. However, graph theory has proven to be an extremely useful branch of mathematics for computer science (in which it is used for modelling social media, travel (e.g. GPS algorithms), computer chip design, and a multitude of other areas), linguistics (in modelling of natural language syntax and word meaning), chemistry, physics, neuroscience, sociology, wildlife conservation, and even urban planning,<a class="footnoteRef" href="#fn1" id="fnref1"><sup>1</sup></a> to name but a few.</p>
+<p>This is a slight exaggeration. However, graph theory has proven to be an extremely useful branch of mathematics for computer science (in which it is used for modelling social media, travel (e.g. GPS algorithms), computer chip design, and a multitude of other areas), linguistics (in modelling of natural language syntax and word meaning), chemistry, physics, neuroscience, sociology, wildlife conservation, and even urban planning,<a class="footnote-ref" href="#fn1" id="fnref1"><sup>1</sup></a> to name but a few.</p>
 <h3 id="graphs">Graphs</h3>
 <p>Unsurprisingly, graph theory is the study of <em>graphs</em>, which bear no relation to bar charts and other statistical diagrams. The most basic kind of graph (a <em>simple</em>, <em>undirected</em> graph) is defined rigorously as an ordered pair <span class="math inline">\(G=(V,E)\)</span>, where <span class="math inline">\(V\)</span> is a set of <em>vertices</em> and <span class="math inline">\(E\)</span> a set of <em>edges</em>, each of which is a subset of <span class="math inline">\(V\)</span> containing two elements. This is really just a way of representing a collection of points (which we call vertices (or sometimes points or nodes)) with lines (which we call edges (or sometimes arcs or lines)) drawn between some of them.</p>
-<div class="figure">
-<img alt="A simple, undirected graph" src="simplegraph.png" style="width:50.0%"/>
-<p class="caption">Figure 1: A simple, undirected graph<span data-label="simplegraph"></span></p>
-</div>
-<p>Figure 1 would have <span class="math inline">\(V={A,B,C,D}\)</span>, as these are the vertices of the graph, and <span class="math inline">\(E=\{\{A,B\},\{A,C\},\{B,C\},\{C,D\}\}\)</span>, as each of the pairs represents one edge on the graph. We say that a graph is <em>undirected</em> if it is not <em>directed</em><a class="footnoteRef" href="#fn2" id="fnref2"><sup>2</sup></a>.</p>
+<figure>
+<img alt="A simple, undirected graph" src="simplegraph.png" style="width:50.0%"/><figcaption>A simple, undirected graph<span label="simplegraph"></span></figcaption>
+</figure>
+<p>Figure 1 would have <span class="math inline">\(V={A,B,C,D}\)</span>, as these are the vertices of the graph, and <span class="math inline">\(E=\{\{A,B\},\{A,C\},\{B,C\},\{C,D\}\}\)</span>, as each of the pairs represents one edge on the graph. We say that a graph is <em>undirected</em> if it is not <em>directed</em><a class="footnote-ref" href="#fn2" id="fnref2"><sup>2</sup></a>.</p>
 <p>We say a graph is <em>simple</em> if there are no edges which go from one vertex back to the same vertex (such edges are called <em>loops</em>) and at most one edge goes between any pair of vertices. Graphs that are not necessarily simple are sometimes called <em>multigraphs</em>, <em>pseudographs</em>, or <em>general graphs</em>, but this term is rather poorly defined, as there is no consensus as to whether these terms allow loops, among other issues; if one uses these terms, one ought to define its meaning before doing so. There is also confusion as to whether <em>graphs</em> are by default simple or not; one ought to specify this when this distinction is of any importance.</p>
 <p>A graph <span class="math inline">\(G\)</span>’s <em>vertex set</em> (the set of vertices) is notated <span class="math inline">\(V(G)\)</span>, and similarly its <em>edge set</em> <span class="math inline">\(E(G)\)</span>. We often abbreviate an edge <span class="math inline">\(\{A,B\}\)</span> to just <span class="math inline">\(AB\)</span>.</p>
 <h3 id="digraphs">Digraphs</h3>
 <p>Digraphs are <em>directed graphs</em> (hence the name <em>digraph</em>); their primary characteristic that sets them apart from other graphs is that the edges have a direction, thus:</p>
-<div class="figure">
-<img alt="A directed graph" src="directedgraph.png" style="width:50.0%"/>
-<p class="caption">Figure 2: A directed graph<span data-label="directedgraph"></span></p>
-</div>
+<figure>
+<img alt="A directed graph" src="directedgraph.png" style="width:50.0%"/><figcaption>A directed graph<span label="directedgraph"></span></figcaption>
+</figure>
 <p>A digraph is defined rigorously as an ordered pair <span class="math inline">\(G=(V,E)\)</span>, where <span class="math inline">\(V\)</span> is a set of <em>vertices</em> and <span class="math inline">\(E\)</span> a set of <em>edges</em>, just as a normal graph; however, <span class="math inline">\(E\)</span> instead contains ordered pairs, so that a pair <span class="math inline">\((X,Y)\)</span> indicates that there is an edge from <span class="math inline">\(X\)</span> to <span class="math inline">\(Y\)</span>. In Figure 2, <span class="math inline">\(V={A,B,C,D}\)</span> and <span class="math inline">\(E=\{(A,B),(A,C),(B,C),(C,A),(C,D)\}\)</span>. Note that this digraph is still considered simple, as while we have two edges between <span class="math inline">\(A\)</span> and <span class="math inline">\(C\)</span>, they are in different directions.</p>
 <p>Unless otherwise stated, the word <em>graph</em> does not usually include digraphs.</p>
 <h3 id="walks">Walks</h3>
@@ -55,51 +53,44 @@ MathJax.Hub.Config({
 <p>A <em>Hamiltonian path</em> on a given graph is a path that goes through every vertex exactly once, and <em>Hamiltonian cycles</em> are cycles that visit every vertex exactly once. Graphs with Hamiltonian paths are called <em>Hamiltonian graphs</em>.</p>
 <p>An <em>Eulerian trail</em> (or sometimes <em>Eulerian path</em>, although this is a misuse of the term path) is a trail that goes through every edge exactly once, and similarly an <em>Eulerian cycle</em> is an Eulerian trail that is also a cycle. <em>Eulerian graphs</em>, somewhat predictably, are graphs with Eulerian trails.</p>
 <p>In fact, the first ever graph theory theorem was about <em>Eulerian paths</em>. The famous mathematician Leonhard Euler wanted to know if there was a way to walk through the Prussian city of Königsberg (now Kaliningrad in Russia) and cross each of its seven bridges exactly once (without crossing the river by any other means). Königsberg had two large islands, and the bridges were situated as in Figure 3.</p>
-<div class="figure">
-<img alt="The Seven Bridges of Königsberg, as they were in Euler’s time" src="Konigsberg.png" style="width:50.0%"/>
-<p class="caption">Figure 3: The Seven Bridges of Königsberg, as they were in Euler’s time<span data-label="Konigsberg"></span></p>
-</div>
+<figure>
+<img alt="The Seven Bridges of Königsberg, as they were in Euler’s time" src="Konigsberg.png" style="width:50.0%"/><figcaption>The Seven Bridges of Königsberg, as they were in Euler’s time<span label="Konigsberg"></span></figcaption>
+</figure>
 <p>We can consider this as a graph (shown in Figure 4), with the vertices being the land masses and the edges being the bridges; then Euler’s walk across all the bridges is an Eulerian trail on our graph.</p>
-<div class="figure">
-<img alt="A graph theoretic representation of the Seven Bridges" src="Konigsberggraph.png" style="width:50.0%"/>
-<p class="caption">Figure 4: A graph theoretic representation of the Seven Bridges<span data-label="Konigsberggraph"></span></p>
-</div>
+<figure>
+<img alt="A graph theoretic representation of the Seven Bridges" src="Konigsberggraph.png" style="width:50.0%"/><figcaption>A graph theoretic representation of the Seven Bridges<span label="Konigsberggraph"></span></figcaption>
+</figure>
 <p>Except for the first and last times we cross an edge/bridge, whenever we enter a vertex/land mass, we then leave it. This means that all vertices/land masses except those at the ends of our trail must be entered as many times as they are left, and so must have even degree.</p>
 <p>If we start and end at different vertices/land masses, they must have odd degree, as we leave the former one more time than we enter it, and enter the latter one more time than we leave it. If we start and end at the same vertex/land mass, it has even degree, as we enter it as many times as we leave it.</p>
 <p>However, the graph of Königsberg has four vertices, all of which have odd degree. Thus we cannot find an Eulerian trail, as at most two vertices can have odd degree for an Eulerian trail to exist.</p>
 <p>It was stated by Euler, and later proven by Carl Hierholzer just before his death in 1871, that we can find an Eulerian trail if and only if there are exactly zero or two vertices of odd degree in a graph, and the graph is <em>connected</em>. (A graph is said to be connected if there is a walk between any two vertices. Figure 1 shows a connected graph, while Figure 5 does not.)</p>
-<div class="figure">
-<img alt="A disconnected graph" src="disconnectedgraph.png" style="width:50.0%"/>
-<p class="caption">Figure 5: A disconnected graph<span data-label="disconnectedgraph"></span></p>
-</div>
+<figure>
+<img alt="A disconnected graph" src="disconnectedgraph.png" style="width:50.0%"/><figcaption>A disconnected graph<span label="disconnectedgraph"></span></figcaption>
+</figure>
 <h3 id="trees">Trees</h3>
 <p><em>Trees</em> are graphs where there is exactly one path between any two vertices, as in Figure 6. An equivalent definition is that trees are graphs that are both <em>acyclic</em> (having no cycles) and connected.</p>
-<div class="figure">
-<img alt="A tree." src="treegraph.png" style="width:50.0%"/>
-<p class="caption">Figure 6: A tree.<span data-label="treegraph"></span></p>
-</div>
+<figure>
+<img alt="A tree." src="treegraph.png" style="width:50.0%"/><figcaption>A tree.<span label="treegraph"></span></figcaption>
+</figure>
 <p>A <em>forest</em> is a <em>disjoint union</em> (in graph theory, this essentially means ) of several trees.</p>
-<p>Every tree or forest is bipartite<a class="footnoteRef" href="#fn3" id="fnref3"><sup>3</sup></a>, and every <em>finite</em> (having finitely many vertices) tree or forest is planar<a class="footnoteRef" href="#fn4" id="fnref4"><sup>4</sup></a>.</p>
+<p>Every tree or forest is bipartite<a class="footnote-ref" href="#fn3" id="fnref3"><sup>3</sup></a>, and every <em>finite</em> (having finitely many vertices) tree or forest is planar<a class="footnote-ref" href="#fn4" id="fnref4"><sup>4</sup></a>.</p>
 <h3 id="bipartite-graphs">Bipartite Graphs</h3>
 <p>Bipartite graphs are graphs where the vertex set (the set of vertices) of the graph can be divided into two <em>disjoint</em> (having no elements in common) sets <span class="math inline">\(T,U\)</span> so that there are no edges between two vertices in <span class="math inline">\(T\)</span>, and no edges between two vertices in <span class="math inline">\(U\)</span>. It follows that all edges are between vertices in different sets.</p>
 <p>An equivalent definition is that graphs are bipartite if and only if they do not contain any <em>odd cycles</em> (cycles with an odd number of vertices). One can see why this should be true, as we can divide any single <em>even cycle</em> into two sets <span class="math inline">\(T,U\)</span> to fit our condition by simply alternating which set we put points in as we go round the cycle. It is a little more complex to prove.</p>
 <p>It follows that all trees are bipartite, and Figure 7 shows the graph from Figure 6 divided into sets <span class="math inline">\(T,U\)</span>, with vertices moved to indicate this.</p>
-<div class="figure">
-<img alt="The tree shown in Figure 6 divided into two sets so as to prove it to be bipartite." src="bipartitetree.png" style="width:50.0%"/>
-<p class="caption">Figure 7: The tree shown in Figure 6 divided into two sets so as to prove it to be bipartite.<span data-label="bipartitetree"></span></p>
-</div>
-<p>Another equivalent definition is that a graph is bipartite if and only if it is <em>2-colorable</em><a class="footnoteRef" href="#fn5" id="fnref5"><sup>5</sup></a>.</p>
+<figure>
+<img alt="The tree shown in Figure 6 divided into two sets so as to prove it to be bipartite." src="bipartitetree.png" style="width:50.0%"/><figcaption>The tree shown in Figure 6 divided into two sets so as to prove it to be bipartite.<span label="bipartitetree"></span></figcaption>
+</figure>
+<p>Another equivalent definition is that a graph is bipartite if and only if it is <em>2-colorable</em><a class="footnote-ref" href="#fn5" id="fnref5"><sup>5</sup></a>.</p>
 <h3 id="complete-graphs">Complete Graphs</h3>
 <p>The <em>complete graph</em> <span class="math inline">\(K_n\)</span> is the graph with <span class="math inline">\(n\)</span> vertices where there is an edge between every two vertices. Figure 8 shows <span class="math inline">\(K_5\)</span>, the complete graph vertices.</p>
-<div class="figure">
-<img alt="K_5" src="k5graph.png" style="width:50.0%"/>
-<p class="caption">Figure 8: <span class="math inline">\(K_5\)</span><span data-label="k5graph"></span></p>
-</div>
+<figure>
+<img alt="K_5" src="k5graph.png" style="width:50.0%"/><figcaption><span class="math inline">\(K_5\)</span><span label="k5graph"></span></figcaption>
+</figure>
 <p>The <em>complete bipartite graph</em> <span class="math inline">\(K_{m,n}\)</span> is the bipartite graph where set <span class="math inline">\(T\)</span> has <span class="math inline">\(m\)</span> vertices, set <span class="math inline">\(U\)</span> has <span class="math inline">\(n\)</span> vertices, and there is an edge from every vertex in <span class="math inline">\(T\)</span> to every vertex in <span class="math inline">\(U\)</span>. Figure 9 shows <span class="math inline">\(K_{3,3}\)</span>, which is also known as the utility graph, after the three utilities problem.</p>
-<div class="figure">
-<img alt="K_{3,3}" src="utilitygraph.png" style="width:50.0%"/>
-<p class="caption">Figure 9: <span class="math inline">\(K_{3,3}\)</span><span data-label="utilitygraph"></span></p>
-</div>
+<figure>
+<img alt="K_{3,3}" src="utilitygraph.png" style="width:50.0%"/><figcaption><span class="math inline">\(K_{3,3}\)</span><span label="utilitygraph"></span></figcaption>
+</figure>
 <h3 id="planar-graphs">Planar Graphs</h3>
 <p>The three utilities problem is stated thus:</p>
 <p>Suppose there are three cottages on a plane (or sphere) and each needs to be connected to the gas, water, and electricity companies. Without using a third dimension or sending any of the connections through another company or cottage, is there a way to make all nine connections without any of the lines crossing each other?</p>
@@ -107,10 +98,9 @@ MathJax.Hub.Config({
 <p>Is <span class="math inline">\(K_{3,3}\)</span> a planar graph?</p>
 <p>A <em>planar graph</em> is a graph that can be drawn on a plane (e.g. a flat piece of paper) so that none of the edges cross each other.</p>
 <p>A <em>subdivision</em> of a graph <span class="math inline">\(G\)</span> is a graph which can be obtained by dividing edges of <span class="math inline">\(G\)</span> and placing new points in the place where we have divided them; we are thus allowed to turn edges into the configuration shown in Figure 10. More rigorously, we are saying that we are allowed to turn the edge <span class="math inline">\(\{A,B\}\)</span>, for any vertices <span class="math inline">\(A,B\)</span>, into the two edges <span class="math inline">\(\{A,C\},\{C,B\}\)</span>, where <span class="math inline">\(C\)</span> is a new vertex we have just introduced. We can do this repeatedly, and turn <span class="math inline">\(\{A,B\}\)</span> into <span class="math inline">\(\{A,C\},\{C,D\},\{D,B\}\)</span>.</p>
-<div class="figure">
-<img alt="A subdivision of a single edge." src="subdivision.png" style="width:50.0%"/>
-<p class="caption">Figure 10: A subdivision of a single edge.<span data-label="subdivision"></span></p>
-</div>
+<figure>
+<img alt="A subdivision of a single edge." src="subdivision.png" style="width:50.0%"/><figcaption>A subdivision of a single edge.<span label="subdivision"></span></figcaption>
+</figure>
 <p>A textit<span>subgraph</span> of a graph <span class="math inline">\(G\)</span> is a graph whose vertex set is a subset of that of <span class="math inline">\(G\)</span>, and whose edge set is a subset of that of <span class="math inline">\(G\)</span>. The vertex set of the subgraph must include the endpoints of all the edges of the subgraph, but may also include lone vertices of degree 0.</p>
 <p><strong>Kuratowski’s theorem</strong> states a graph is planar if and only if it does not contain a subgraph that is a subdivision of <span class="math inline">\(K_5\)</span> or <span class="math inline">\(K_{3,3}\)</span>. This theorem was independently proven by Kazimierz Kuratowski, Orrin Frink, and Paul Smith in 1930. Karl Menger also proved it on graphs where all vertices have degree 3 in 1930.</p>
 <h3 id="colourings">Colourings</h3>
@@ -124,16 +114,16 @@ MathJax.Hub.Config({
 <li><p>A polyhedral graph is a connected graph where the vertices and edges are those of a convex polyhedron (or, equivalently, the removal of any two vertices does not render the graph disconnected). A bicubic graph is both bipartite and cubic. A cubic graph is a graph where all vertices have degree 3. Do all bicubic polyhedral graphs have Hamiltonian cycles?</p></li>
 </ol>
 
-<div class="footnotes">
+<section class="footnotes">
 <hr/>
 <ol>
-<li id="fn1"><p><span class="citation">Christopher Alexander, “A City Is Not a Tree,” <em>1965</em>, 1964</span>.<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>This term will be defined later.[definedlater]<a href="#fnref2">↩</a></p></li>
-<li id="fn3"><p>We shall define this later.<a href="#fnref3">↩</a></p></li>
-<li id="fn4"><p>We shall define this later.<a href="#fnref4">↩</a></p></li>
-<li id="fn5"><p>We shall define this later.<a href="#fnref5">↩</a></p></li>
+<li id="fn1"><p><span class="citation" data-cites="alexander1964city">Christopher Alexander, “A City Is Not a Tree,” <em>1965</em>, 1964</span>.<a class="footnote-back" href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>This term will be defined later.<span id="definedlater" label="definedlater">[definedlater]</span><a class="footnote-back" href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>We shall define this later.<a class="footnote-back" href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>We shall define this later.<a class="footnote-back" href="#fnref4">↩</a></p></li>
+<li id="fn5"><p>We shall define this later.<a class="footnote-back" href="#fnref5">↩</a></p></li>
 </ol>
-</div>
+</section>
 </main>
 <footer>
 <p>In using this webpage, you agree to our <a href="https://librarian.cf/terms.html">terms</a> of use.</p>
